@@ -27,7 +27,7 @@ import org.json.JSONObject;
  * 
  */
 public class ListAddonNormalizer extends JSONNormalizer {
-	
+
 	public String normalize(String jsonResponse) throws Exception {
 		JSONArray array = new JSONArray(jsonResponse);
 		Map<String, JSONArray> layout = new HashMap<String, JSONArray>();

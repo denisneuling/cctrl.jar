@@ -33,8 +33,8 @@ public class CloudControlledHelp extends CloudControlledMojo<CloudControlledHelp
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		String content = "\n" + "Please add the following plugin configuration to your build section of your pom.xml\n" + "\n" + "\t" + "<project>\n" + "\t\t" + "[...]\n" + "\t\t\t" + "<build>\n" + "\t\t\t\t" + "<plugins>\n" + "\t\t\t\t" + "[...]\n" + "\t\t\t\t\t" + "<plugin>\n" + "\t\t\t\t\t\t"
 				+ "<groupId>com.cloudcontrolled</groupId>\n" + "\t\t\t\t\t\t" + "<artifactId>cctrl-maven-plugin</artifactId>\n" + "\t\t\t\t\t\t" + "<version>0.0.1-SNAPSHOT</version>\n" + "\t\t\t\t\t\t" + "<configuration>\n" + "\t\t\t\t\t\t\t"
-				+ "<application><!--your ${cloudcontrol.application}, required--></application>\n" + "\t\t\t\t\t\t\t" + "<deployment><!--optional ${deployment}, default is \"default\"--></deployment>\n" + "\t\t\t\t\t\t\t" + "<version><!--optional ${commitId}, default is \"-1\"--></version>\n" + "\t\t\t\t\t\t"
-				+ "</configuration>\n" + "\t\t\t\t\t" + "</plugin>\n" + "\t\t\t\t" + "[...]\n" + "\t\t\t\t" + "</plugins>\n" + "\t\t\t" + "</build>\n" + "\t\t" + "[...]\n" + "\t" + "</project>\n";
+				+ "<application><!--your ${cloudcontrol.application}, required--></application>\n" + "\t\t\t\t\t\t\t" + "<deployment><!--optional ${deployment}, default is \"default\"--></deployment>\n" + "\t\t\t\t\t\t\t" + "<version><!--optional ${commitId}, default is \"-1\"--></version>\n"
+				+ "\t\t\t\t\t\t" + "</configuration>\n" + "\t\t\t\t\t" + "</plugin>\n" + "\t\t\t\t" + "[...]\n" + "\t\t\t\t" + "</plugins>\n" + "\t\t\t" + "</build>\n" + "\t\t" + "[...]\n" + "\t" + "</project>\n";
 
 		log.info(CloudControlSupport.LLINE);
 		System.out.println(content);

@@ -42,20 +42,20 @@ public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush
 
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
-		String deploymentQualifier = application + (deployment!=null?":" + deployment + (commitId != null ? ":" + commitId : ""):"");
+		String deploymentQualifier = application + (deployment != null ? ":" + deployment + (commitId != null ? ":" + commitId : "") : "");
 
 		log.info("Retrieving remote repository location of " + deploymentQualifier + " from CloudControl PaaS.");
 		String remoteRepository = retrieveRemoteRepositoryLocation();
 
 		log.info("Push of branch " + retrieveBranch() + " to " + remoteRepository + " may take some time...");
 		String output = push(remoteRepository);
-		
+
 		System.out.println(output);
-		
-		log.info("Successfully pushed refs of " + deploymentQualifier +" with branch " + retrieveBranch() + " to " + remoteRepository + " on CloudControl PaaS.");
+
+		log.info("Successfully pushed refs of " + deploymentQualifier + " with branch " + retrieveBranch() + " to " + remoteRepository + " on CloudControl PaaS.");
 	}
-	
-	private String retrieveRemoteRepositoryLocation() throws MojoFailureException, MojoExecutionException{
+
+	private String retrieveRemoteRepositoryLocation() throws MojoFailureException, MojoExecutionException {
 		CloudControlClient client = CloudControlSupport.createCloudControlClient();
 		ApplicationRequest applicationRequest = CloudControlSupport.createApplicationRequest(application);
 
@@ -69,14 +69,14 @@ public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush
 		} catch (CloudControlClientException ccce) {
 			throw new MojoExecutionException(ccce.getClass().getSimpleName(), ccce);
 		}
-		
+
 		String remoteRepository = "git+";
 		remoteRepository += applicationResponse.getApplication().getRepository();
-		
+
 		return remoteRepository;
 	}
-	
-	private String push(String remoteLocation) throws MojoExecutionException{
+
+	private String push(String remoteLocation) throws MojoExecutionException {
 		Repository repository = null;
 		Git git;
 		try {
@@ -86,7 +86,7 @@ public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush
 			PushCommand pushCommand = git.push();
 			pushCommand.setRemote(remoteLocation);
 			pushCommand.setRefSpecs(new RefSpec(repository.getFullBranch()));
-			
+
 			Iterable<PushResult> pushResult = pushCommand.call();
 			Iterator<PushResult> result = pushResult.iterator();
 
@@ -94,9 +94,9 @@ public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush
 			if (result.hasNext()) {
 				while (result.hasNext()) {
 					String line = result.next().getMessages();
-					if(!line.isEmpty()){
+					if (!line.isEmpty()) {
 						buffer.append(line);
-						if(result.hasNext()){
+						if (result.hasNext()) {
 							buffer.append(System.getProperty("line.separator"));
 						}
 					}

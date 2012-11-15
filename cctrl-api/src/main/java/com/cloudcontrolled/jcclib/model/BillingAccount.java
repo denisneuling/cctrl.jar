@@ -181,7 +181,7 @@ public class BillingAccount {
 
 	@Override
 	public String toString() {
-		return "BillingAccount [date_created=" + date_created + ", country=" + country + ", company=" + company + ", email=" + email + ", address_line_2=" + address_line_2 + ", address_line_1=" + address_line_1 + ", city=" + city + ", support_plan=" + support_plan + ", name=" + name + ", lastname=" + lastname
-				+ ", salutation=" + salutation + ", tax_number=" + tax_number + ", date_modified=" + date_modified + ", user=" + user + ", postal_code=" + postal_code + ", title=" + title + ", firstname=" + firstname + "]";
+		return "BillingAccount [date_created=" + date_created + ", country=" + country + ", company=" + company + ", email=" + email + ", address_line_2=" + address_line_2 + ", address_line_1=" + address_line_1 + ", city=" + city + ", support_plan=" + support_plan + ", name=" + name + ", lastname="
+				+ lastname + ", salutation=" + salutation + ", tax_number=" + tax_number + ", date_modified=" + date_modified + ", user=" + user + ", postal_code=" + postal_code + ", title=" + title + ", firstname=" + firstname + "]";
 	}
 }

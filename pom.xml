@@ -17,6 +17,12 @@
 	<description>Java cloudControl API adapter and tools</description>
 	<url>https://www.cloudcontrol.com/</url>
 
+	<modules>
+		<module>cctrl-api</module>
+		<module>cctrl-api-client</module>
+		<module>cctrl-maven-plugin</module>
+	</modules>
+
 	<scm>
 		<url>https://github.com/denisneuling/cctrl.jar</url>
 		<connection>scm:git:git://github.com/denisneuling/cctrl.jar.git</connection>
@@ -44,21 +50,15 @@
 		</license>
 	</licenses>
 
-    <distributionManagement>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>sonatype-nexus-staging</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/denisneuling/cctrl.jar/issues/new</url>
-    </issueManagement>
-
-    <modules>
-        <module>cctrl-api</module>
-        <module>cctrl-api-client</module>
-        <module>cctrl-maven-plugin</module>
-    </modules>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/denisneuling/cctrl.jar/issues/new</url>
+	</issueManagement>
 </project>

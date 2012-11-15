@@ -38,14 +38,14 @@ public class CloudcontrolledDeploy extends CloudControlledMojo<CloudcontrolledDe
 
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
-		
-		if(deployment==null || deployment.isEmpty()){
+
+		if (deployment == null || deployment.isEmpty()) {
 			deployment = retrieveBranch();
-			if(CloudControlSupport.MASTER_BRANCH.equals(deployment)){
+			if (CloudControlSupport.MASTER_BRANCH.equals(deployment)) {
 				deployment = "default";
 			}
 		}
-			
+
 		if (deployment == null) {
 			Repository repository = null;
 			try {
@@ -63,7 +63,7 @@ public class CloudcontrolledDeploy extends CloudControlledMojo<CloudcontrolledDe
 			}
 		}
 
-		String deploymentQualifier = application + (deployment!=null?":" + deployment + (commitId != null ? ":" + commitId : ""):"");
+		String deploymentQualifier = application + (deployment != null ? ":" + deployment + (commitId != null ? ":" + commitId : "") : "");
 		log.info("Deploying " + deploymentQualifier + " to CloudControl PaaS.");
 
 		CloudControlClient client = CloudControlSupport.createCloudControlClient();

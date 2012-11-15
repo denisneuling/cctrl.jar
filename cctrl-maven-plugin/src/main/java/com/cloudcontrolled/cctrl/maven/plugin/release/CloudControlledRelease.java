@@ -32,7 +32,7 @@ public class CloudControlledRelease extends CloudControlledMojo<CloudControlledR
 
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
-		String deploymentQualifier = application + (deployment!=null?":" + deployment + (commitId != null ? ":" + commitId : ""):"");
+		String deploymentQualifier = application + (deployment != null ? ":" + deployment + (commitId != null ? ":" + commitId : "") : "");
 		log.info("Releasing " + deploymentQualifier + " to CloudControl PaaS.");
 
 		CloudcontrolledPush push = new CloudcontrolledPush();

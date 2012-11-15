@@ -111,8 +111,8 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 		FileRepository repository = new FileRepository(baseDir + "/.git");
 		return repository;
 	}
-	
-	public String retrieveBranch() throws MojoExecutionException{
+
+	public String retrieveBranch() throws MojoExecutionException {
 		try {
 			return getRepository().getBranch();
 		} catch (IOException e) {

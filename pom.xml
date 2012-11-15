@@ -44,20 +44,21 @@
 		</license>
 	</licenses>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+    <distributionManagement>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/denisneuling/cctrl.jar/issues/new</url>
+    </issueManagement>
 
     <modules>
+        <module>cctrl-api</module>
+        <module>cctrl-api-client</module>
+        <module>cctrl-maven-plugin</module>
     </modules>
 </project>

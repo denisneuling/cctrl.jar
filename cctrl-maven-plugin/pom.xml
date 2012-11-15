@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.cloudcontrolled</groupId>
+		<artifactId>cctrl</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.cloudcontrolled</groupId>
+	<artifactId>cctrl-maven-plugin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>maven-plugin</packaging>
+
+	<name>com.cloudcontrolled.cctrl.maven.plugin</name>
+	<description>Maven plugin to manage continuous application deployment based on cloudControl PaaS</description>
+	<url>https://www.cloudcontrol.com/</url>
+
+	<scm>
+		<url>https://github.com/denisneuling/cctrl-maven-plugin</url>
+		<connection>scm:git:git://github.com/denisneuling/cctrl-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:denisneuling/cctrl-maven-plugin.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>denisneuling</id>
+			<name>Denis Neuling</name>
+			<email>denisneuling@gmail.com</email>
+			<timezone>+1</timezone>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-monitor</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cloudcontrolled</groupId>
+			<artifactId>cctrl-api-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>2.0.0.201206130900-r</version>
+		</dependency>
+	</dependencies>
+</project>

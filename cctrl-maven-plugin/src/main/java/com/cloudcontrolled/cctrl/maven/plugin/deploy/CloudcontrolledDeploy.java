@@ -21,12 +21,12 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.eclipse.jgit.lib.Repository;
 
+import com.cloudcontrolled.api.client.CloudControlClient;
+import com.cloudcontrolled.api.client.exception.CloudControlClientException;
+import com.cloudcontrolled.api.request.UpdateDeploymentRequest;
+import com.cloudcontrolled.api.response.UpdateDeploymentResponse;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
-import com.cloudcontrolled.jcclib.request.UpdateDeploymentRequest;
-import com.cloudcontrolled.jcclib.response.UpdateDeploymentResponse;
-import com.cloudcontrolled.jcctrlclient.CloudControlClient;
-import com.cloudcontrolled.jcctrlclient.exception.CloudControlClientException;
 
 /**
  * @author Denis Neuling (denisneuling@gmail.com)

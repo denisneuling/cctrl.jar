@@ -25,12 +25,12 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.PushResult;
 import org.eclipse.jgit.transport.RefSpec;
 
+import com.cloudcontrolled.api.client.CloudControlClient;
+import com.cloudcontrolled.api.client.exception.CloudControlClientException;
+import com.cloudcontrolled.api.request.ApplicationRequest;
+import com.cloudcontrolled.api.response.ApplicationResponse;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
-import com.cloudcontrolled.jcclib.request.ApplicationRequest;
-import com.cloudcontrolled.jcclib.response.ApplicationResponse;
-import com.cloudcontrolled.jcctrlclient.CloudControlClient;
-import com.cloudcontrolled.jcctrlclient.exception.CloudControlClientException;
 
 /**
  * @author Denis Neuling (denisneuling@gmail.com)

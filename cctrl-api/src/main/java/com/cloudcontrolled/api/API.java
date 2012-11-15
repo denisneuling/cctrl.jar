@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. 
  */
-package com.cloudcontrolled.jcclib;
+package com.cloudcontrolled.api;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +27,7 @@ import java.util.PropertyResourceBundle;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class JCcLib {
+public class API {
 
 	private static List<String> complementaryLibs;
 	private static final String KEY = "complements";
@@ -36,7 +36,7 @@ public class JCcLib {
 	public static List<String> complementaryPyCcLib() throws IOException {
 		if (complementaryLibs == null) {
 			complementaryLibs = new LinkedList<String>();
-			InputStream inputStream = JCcLib.class.getClassLoader().getResourceAsStream(FILE);
+			InputStream inputStream = API.class.getClassLoader().getResourceAsStream(FILE);
 			PropertyResourceBundle labels = new PropertyResourceBundle(inputStream);
 			Enumeration<String> bundleKeys = labels.getKeys();
 			while (bundleKeys.hasMoreElements()) {

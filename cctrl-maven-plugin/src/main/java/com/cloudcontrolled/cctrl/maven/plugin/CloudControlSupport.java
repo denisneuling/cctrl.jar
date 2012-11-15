@@ -15,10 +15,10 @@
  */
 package com.cloudcontrolled.cctrl.maven.plugin;
 
-import com.cloudcontrolled.jcclib.request.ApplicationRequest;
-import com.cloudcontrolled.jcclib.request.UpdateDeploymentRequest;
-import com.cloudcontrolled.jcctrlclient.CloudControlClient;
-import com.cloudcontrolled.jcctrlclient.auth.Credentials;
+import com.cloudcontrolled.api.client.CloudControlClient;
+import com.cloudcontrolled.api.client.auth.Credentials;
+import com.cloudcontrolled.api.request.ApplicationRequest;
+import com.cloudcontrolled.api.request.UpdateDeploymentRequest;
 
 /**
  * @author Denis Neuling (denisneuling@gmail.com)

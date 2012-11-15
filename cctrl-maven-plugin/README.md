@@ -2,7 +2,6 @@
 
 Maven plugin, which provides direct maven like management of your apps by using the awesome API of [cloudcontrol PaaS](https://www.cloudcontrol.com/).
 
-
 ### Requirements
 ---
 
@@ -22,19 +21,15 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 ### How to setup this project?
 ---
 
-1. Clone [jcclib](https://github.com/denisneuling/jcclib.git) and [jcctrlclient](https://github.com/denisneuling/jcctrlclient.git) and invoke the maven build
+1. Clone the parent project [cctrl.jar](https://github.com/denisneuling/cctrl.jar.git)
 
-   Or [download](https://github.com/denisneuling/cctrl-maven-plugin/downloads) the [latest](https://github.com/downloads/denisneuling/cctrl-maven-plugin/cctrl-maven-plugin-0.0.1-SNAPSHOT-jar-with-dependencies.jar) JAR containing all dependencies and install it to your local maven repository. [HOWTO](http://maven.apache.org/plugins/maven-install-plugin/usage.html)
+        $ git clone https://github.com/denisneuling/cctrl.jar.git
 
-2. Clone this project
+2. Change into the directory:
 
-        $ git clone https://github.com/denisneuling/cctrl-maven-plugin.git com.cloudcontrolled.cctrl.maven.plugin
+        $ cd cctrl.jar
 
-3. Change into the directory:
-
-        $ cd com.cloudcontrolled.cctrl.maven.plugin
-
-4. Run maven:
+3. Run maven:
 
         $ mvn install # fetch all dependencies and build the project
 

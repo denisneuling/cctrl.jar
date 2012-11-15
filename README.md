@@ -1,9 +1,10 @@
-# cctrl-api-client
+# cctrl.jar
 
-Maven module, which contains a client implementation to manage your the awesome [cloudcontrol PaaS](https://www.cloudcontrol.com/) applications by using the good old java way.
+Maven Project, which contains the Java [cloudcontrol PaaS](https://www.cloudcontrol.com/) API adapter and tools.
 
 ### Requirements
 ---
+
 You will need following:
 
 - [Java JRE 1.6+](http://www.oracle.com/technetwork/java/javase/downloads) ([Download page](http://www.oracle.com/technetwork/java/javase/downloads/jre6-downloads-1637595.html))
@@ -16,8 +17,10 @@ Descriptions can be found here:
 
 For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/index.html)
 
+
 ### How to setup this project?
 ---
+
 1. Clone the parent project [cctrl.jar](https://github.com/denisneuling/cctrl.jar.git)
 
         $ git clone https://github.com/denisneuling/cctrl.jar.git
@@ -30,7 +33,6 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 
         $ mvn install # fetch all dependencies and build the project
 
-### How to use cctrl-api-client?
+### What does the project contain?
 ---
-
 TODO

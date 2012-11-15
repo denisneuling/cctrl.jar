@@ -1,10 +1,9 @@
-com.cloudcontrolled.jcclib
-==========================
+# cctrl-api
 
 Java library, which contains models mapped onto the awesome API of [cloudcontrol PaaS](https://www.cloudcontrol.com/).
 
-Requirements
-------------
+### Requirements
+---
 You will need following:
 
 - [Java JRE 1.6+](http://www.oracle.com/technetwork/java/javase/downloads) ([Download page](http://www.oracle.com/technetwork/java/javase/downloads/jre6-downloads-1637595.html))
@@ -17,16 +16,15 @@ Descriptions can be found here:
 
 For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/index.html)
 
+### How to setup this project?
+---
+1. Clone the parent project [cctrl.jar](https://github.com/denisneuling/cctrl.jar.git)
 
-How to setup this project?
---------------------------
-1. Clone this project
-
-        $ git clone https://github.com/denisneuling/jcclib.git com.cloudcontrolled.jcclib
+        $ git clone https://github.com/denisneuling/cctrl.jar.git
 
 2. Change into the directory:
 
-        $ cd com.cloudcontrolled.jcclib
+        $ cd cctrl.jar
 
 3. Run maven:
 

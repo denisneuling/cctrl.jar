@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
-	<name>com.cloudcontrolled.cctrl.maven.plugin</name>
+	<name>cctrl-maven-plugin</name>
 	<description>Maven plugin to manage continuous application deployment based on cloudControl PaaS</description>
 	<url>https://www.cloudcontrol.com/</url>
 

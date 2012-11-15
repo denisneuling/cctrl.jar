@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>com.cloudcontrolled.jcctrlclient</name>
+	<name>cctrl-api-client</name>
 	<description>Java cloudControl API client</description>
 	<url>https://www.cloudcontrol.com/</url>
 

@@ -17,6 +17,11 @@
 	<description>Java cloudControl API adapter and tools</description>
 	<url>https://www.cloudcontrol.com/</url>
 
+	<properties>
+		<cctrl.api.version>0.0.1-SNAPSHOT</cctrl.api.version>
+		<cctrl.api.client.version>0.0.1-SNAPSHOT</cctrl.api.client.version>
+		<cctrl.maven.plugin.version>0.0.1-SNAPSHOT</cctrl.maven.plugin.version>
+	</properties>
 	<modules>
 		<module>cctrl-api</module>
 		<module>cctrl-api-client</module>

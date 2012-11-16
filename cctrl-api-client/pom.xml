@@ -9,7 +9,6 @@
 	</parent>
 
 	<artifactId>cctrl-api-client</artifactId>
-	<version>${cctrl.api.client.version}</version>
 	<packaging>jar</packaging>
 
 	<name>cctrl-api-client</name>

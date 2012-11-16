@@ -9,7 +9,6 @@
 	</parent>
 
 	<artifactId>cctrl-maven-plugin</artifactId>
-	<version>${cctrl.maven.plugin.version}</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>cctrl-maven-plugin</name>

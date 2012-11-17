@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class BilledBoxes {
+public class BilledBoxes extends AbstractModel {
 
 	private double costs = 0.0;
 	private double free_boxes = 0.0;

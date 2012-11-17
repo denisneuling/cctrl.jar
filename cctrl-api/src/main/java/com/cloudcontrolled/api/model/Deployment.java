@@ -22,7 +22,7 @@ import java.util.Arrays;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Deployment {
+public class Deployment extends AbstractModel {
 
 	private String name;
 	private String dep_id;

@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class BilledAddon {
+public class BilledAddon extends AbstractModel {
 
 	private double costs = 0.0;
 	private double hours = 0.0;

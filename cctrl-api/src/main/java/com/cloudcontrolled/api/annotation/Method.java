@@ -15,21 +15,30 @@
  */
 package com.cloudcontrolled.api.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import com.cloudcontrolled.api.common.HttpMethod;
+import com.cloudcontrolled.api.request.Request;
 
 /**
+ * The decorated <strong>{@link Request} type</strong> will be send via the
+ * chosen <strong>{@link HttpMethod}</strong>.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 public @interface Method {
 
+	/**
+	 * Define the {@link HttpMethod} to use.
+	 * 
+	 * @return the {@link HttpMethod} to use.
+	 */
 	HttpMethod value();
 }

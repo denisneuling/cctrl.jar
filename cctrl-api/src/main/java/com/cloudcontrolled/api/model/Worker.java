@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Worker {
+public class Worker extends AbstractModel {
 
 	/**
 	 * TODO implement

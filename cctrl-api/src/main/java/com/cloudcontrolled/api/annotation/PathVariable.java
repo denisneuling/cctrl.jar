@@ -15,19 +15,27 @@
  */
 package com.cloudcontrolled.api.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * The decorated <strong>field</strong>'s value will fill out the defined part
+ * of the request url.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = ElementType.FIELD)
 public @interface PathVariable {
 
+	/**
+	 * Defnines the placeholder of the variable to set.
+	 * 
+	 * @return the placeholder of the variable to set.
+	 */
 	String value();
 }

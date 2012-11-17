@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Log {
+public class Log extends AbstractModel {
 
 	private long time;
 	private String type;

@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class BillingAccount {
+public class BillingAccount extends AbstractModel {
 
 	private String date_created;
 	private Country country;

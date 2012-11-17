@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Type {
+public class Type extends AbstractModel {
 
 	private String name;
 

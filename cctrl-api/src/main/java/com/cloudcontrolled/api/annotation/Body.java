@@ -15,20 +15,28 @@
  */
 package com.cloudcontrolled.api.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * The decorated <strong>field</strong> will be send inside of the
+ * <strong>message body</strong> of the http request.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = ElementType.FIELD)
 public @interface Body {
 
+	/**
+	 * E.g for url encoded http parameters or the key of the json object to send
+	 * 
+	 * @return the key of the properties value
+	 */
 	String value() default "";
 
 }

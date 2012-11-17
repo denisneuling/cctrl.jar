@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class SupportPlan {
+public class SupportPlan extends AbstractModel {
 
 	private String name;
 	private double thirty_days_price = 0.0;

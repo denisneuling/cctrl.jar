@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Addon {
+public class Addon extends AbstractModel {
 
 	private Settings settings;
 	private AddonOption addon_option;

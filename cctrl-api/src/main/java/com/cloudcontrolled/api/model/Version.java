@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Version {
+public class Version extends AbstractModel {
 
 	private String pycclib;
 	private String cctrl;

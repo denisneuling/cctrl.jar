@@ -15,19 +15,26 @@
  */
 package com.cloudcontrolled.api.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * The decorated <strong>field</strong> got an optional default
+ * <strong>value</strong> in case it was not set.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = ElementType.FIELD)
 public @interface Default {
 
+	/**
+	 * The default <strong>value</strong> of the annotated <strong>field</strong>
+	 * @return default value
+	 */
 	String value();
 }

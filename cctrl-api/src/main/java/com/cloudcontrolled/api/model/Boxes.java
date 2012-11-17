@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */
-public class Boxes {
+public class Boxes extends AbstractModel {
 
 	/**
 	 * TODO implement

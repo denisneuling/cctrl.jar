@@ -15,22 +15,33 @@
  */
 package com.cloudcontrolled.api.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import com.cloudcontrolled.api.model.AbstractModel;
+import com.cloudcontrolled.api.response.Response;
 import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
 /**
+ * The decorated <strong>{@link Response} type</strong>will be built via the
+ * defined <strong>{@link JSONNormalizer}</strong>.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 public @interface Normalized {
 
+	/**
+	 * The Normalizer which prepares the mapping of the http response into the
+	 * concerning {@link AbstractModel}/{@link Response}
+	 * 
+	 * @return the concerning JSONNormalizer default {@link JSONNormalizer}
+	 */
 	Class<? extends JSONNormalizer> value() default JSONNormalizer.class;
 
 }

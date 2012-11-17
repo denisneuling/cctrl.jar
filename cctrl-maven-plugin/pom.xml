@@ -16,9 +16,9 @@
 	<url>https://www.cloudcontrol.com/</url>
 
 	<scm>
-		<url>https://github.com/denisneuling/cctrl-maven-plugin</url>
-		<connection>scm:git:git://github.com/denisneuling/cctrl-maven-plugin.git</connection>
-		<developerConnection>scm:git:git@github.com:denisneuling/cctrl-maven-plugin.git</developerConnection>
+		<url>https://github.com/denisneuling/cctrl.jar</url>
+		<connection>scm:git:git://github.com/denisneuling/cctrl.jar.git</connection>
+		<developerConnection>scm:git:git@github.com:denisneuling/cctrl.jar.git</developerConnection>
 	</scm>
 
 	<developers>

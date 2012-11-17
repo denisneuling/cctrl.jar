@@ -28,10 +28,6 @@ import org.json.JSONObject;
 public class UserNormalizer extends JSONNormalizer {
 
 	public String normalize(String jsonResponse) throws Exception {
-
-		// TODO
-		System.out.println(jsonResponse);
-
 		JSONObject body = new JSONObject(jsonResponse);
 		Map<String, JSONObject> layout = new HashMap<String, JSONObject>();
 		layout.put("user", body);

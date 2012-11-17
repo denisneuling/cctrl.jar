@@ -22,7 +22,57 @@ package com.cloudcontrolled.api.model;
  */
 public class Worker extends AbstractModel {
 
-	/**
-	 * TODO implement
-	 */
+	private String date_created;
+	private String wrk_id;
+	private String params; 
+	private String command; 
+	private int size;
+	
+	public Worker(){
+	}
+
+	public String getWrk_id() {
+		return wrk_id;
+	}
+
+	public void setWrk_id(String wrk_id) {
+		this.wrk_id = wrk_id;
+	}
+
+	public String getDate_created() {
+		return date_created;
+	}
+
+	public void setDate_created(String date_created) {
+		this.date_created = date_created;
+	}
+
+	public String getParams() {
+		return params;
+	}
+
+	public void setParams(String params) {
+		this.params = params;
+	}
+
+	public String getCommand() {
+		return command;
+	}
+
+	public void setCommand(String command) {
+		this.command = command;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	@Override
+	public String toString() {
+		return "Worker [date_created=" + date_created + ", wrk_id=" + wrk_id + ", params=" + params + ", command=" + command + ", size=" + size + "]";
+	}
 }

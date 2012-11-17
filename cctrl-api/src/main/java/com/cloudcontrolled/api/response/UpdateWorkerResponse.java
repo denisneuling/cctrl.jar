@@ -25,5 +25,4 @@ public class UpdateWorkerResponse extends Response<UpdateWorkerResponse> {
 	public String toString() {
 		return (worker != null ? "UpdateWorkerResponse [worker=" + worker + "]" : super.toString());
 	}
-
 }

@@ -21,12 +21,12 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	@Default("default")
 	@PathVariable("${dep}")
 	private String deploymentName;
-	
+
 	@Required
 	@PathVariable("${workerId}")
 	private String workerId;
 
-	public DeleteWorkerRequest(){
+	public DeleteWorkerRequest() {
 	}
 
 	public String getApplicationName() {

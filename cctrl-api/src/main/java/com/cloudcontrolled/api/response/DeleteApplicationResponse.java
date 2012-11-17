@@ -42,6 +42,6 @@ public class DeleteApplicationResponse extends Response<DeleteApplicationRespons
 
 	@Override
 	public String toString() {
-		return (message != null ? "DeleteApplicationResponse [message=" + message + "]" : super.toString());
+		return (message != null && !message.isEmpty() ? "DeleteApplicationResponse [message=" + message + "]" : super.toString());
 	}
 }

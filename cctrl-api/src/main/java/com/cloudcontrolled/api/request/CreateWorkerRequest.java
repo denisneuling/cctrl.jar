@@ -22,12 +22,12 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	@Default("default")
 	@PathVariable("${dep}")
 	private String deploymentName;
-	
+
 	@Required
 	@Body("command")
 	private String worker;
 
-	public CreateWorkerRequest(){
+	public CreateWorkerRequest() {
 	}
 
 	public String getApplicationName() {

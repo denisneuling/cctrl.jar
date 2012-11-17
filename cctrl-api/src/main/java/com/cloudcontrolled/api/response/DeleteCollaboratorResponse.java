@@ -42,6 +42,6 @@ public class DeleteCollaboratorResponse extends Response<DeleteCollaboratorRespo
 
 	@Override
 	public String toString() {
-		return (message != null ? "DeleteCollaboratorResponse [message=" + message + "]" : super.toString());
+		return (message != null && !message.isEmpty() ? "DeleteCollaboratorResponse [message=" + message + "]" : super.toString());
 	}
 }

@@ -4,12 +4,12 @@ import com.cloudcontrolled.api.annotation.Normalized;
 import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
 
 @Normalized(DeleteNormalizer.class)
-public class DeleteWorkerResponse extends Response<DeleteWorkerResponse> {
-	private static final long serialVersionUID = -1861406199671269737L;
+public class RemoveAddonResponse extends Response<RemoveAddonResponse> {
+	private static final long serialVersionUID = -4214861050387527622L;
 
 	private String message;
 
-	public DeleteWorkerResponse() {
+	public RemoveAddonResponse() {
 	}
 
 	public String getMessage() {
@@ -22,6 +22,6 @@ public class DeleteWorkerResponse extends Response<DeleteWorkerResponse> {
 
 	@Override
 	public String toString() {
-		return (message != null && !message.isEmpty() ? "DeleteWorkerResponse [message=" + message + "]" : super.toString());
+		return (message != null && !message.isEmpty() ? "RemoveAddonResponse [message=" + message + "]" : super.toString());
 	}
 }

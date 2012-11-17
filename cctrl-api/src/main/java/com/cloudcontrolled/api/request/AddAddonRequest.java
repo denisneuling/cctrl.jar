@@ -1,17 +1,18 @@
 package com.cloudcontrolled.api.request;
 
+import com.cloudcontrolled.api.annotation.Body;
 import com.cloudcontrolled.api.annotation.Default;
 import com.cloudcontrolled.api.annotation.Method;
 import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.PathVariable;
 import com.cloudcontrolled.api.annotation.Required;
 import com.cloudcontrolled.api.common.HttpMethod;
-import com.cloudcontrolled.api.response.ListWorkerResponse;
+import com.cloudcontrolled.api.response.AddAddonResponse;
 
-@Method(HttpMethod.GET)
-@Path("/app/${app}/deployment/${dep}/worker/")
-public class ListWorkerRequest extends Request<ListWorkerResponse> {
-	private static final long serialVersionUID = -767679568310726872L;
+@Method(HttpMethod.POST)
+@Path("/app/${app}/deployment/${dep}/addon/")
+public class AddAddonRequest extends Request<AddAddonResponse> {
+	private static final long serialVersionUID = -270667911073213218L;
 
 	@Required
 	@PathVariable("${app}")
@@ -22,7 +23,11 @@ public class ListWorkerRequest extends Request<ListWorkerResponse> {
 	@PathVariable("${dep}")
 	private String deploymentName;
 
-	public ListWorkerRequest() {
+	@Required
+	@Body("addon")
+	private String addonName;
+
+	public AddAddonRequest() {
 	}
 
 	public String getApplicationName() {
@@ -39,5 +44,13 @@ public class ListWorkerRequest extends Request<ListWorkerResponse> {
 
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
+	}
+
+	public String getAddonName() {
+		return addonName;
+	}
+
+	public void setAddonName(String addonName) {
+		this.addonName = addonName;
 	}
 }

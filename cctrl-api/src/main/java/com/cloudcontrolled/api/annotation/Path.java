@@ -36,6 +36,7 @@ public @interface Path {
 
 	/**
 	 * Defines the url path.
+	 * 
 	 * @return url path.
 	 */
 	String value();

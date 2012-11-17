@@ -42,6 +42,6 @@ public class DeleteUserResponse extends Response<DeleteUserResponse> {
 
 	@Override
 	public String toString() {
-		return (message != null ? "DeleteUserResponse [message=" + message + "]" : super.toString());
+		return (message != null && !message.isEmpty() ? "DeleteUserResponse [message=" + message + "]" : super.toString());
 	}
 }

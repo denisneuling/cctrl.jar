@@ -42,6 +42,6 @@ public class DeleteDeploymentResponse extends Response<DeleteDeploymentResponse>
 
 	@Override
 	public String toString() {
-		return (message != null ? "DeleteDeploymentResponse [message=" + message + "]" : super.toString());
+		return (message != null && !message.isEmpty() ? "DeleteDeploymentResponse [message=" + message + "]" : super.toString());
 	}
 }

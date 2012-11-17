@@ -23,6 +23,8 @@ package com.cloudcontrolled.api.model;
 public class AddonOption extends AbstractModel {
 
 	private String name;
+	private double thirty_days_price;
+	private boolean price_is_per_box;
 
 	public AddonOption() {
 	}
@@ -35,8 +37,25 @@ public class AddonOption extends AbstractModel {
 		this.name = name;
 	}
 
+	public double getThirtyDaysPrice() {
+		return thirty_days_price;
+	}
+
+	public void setThirtyDaysPrice(double thirty_days_price) {
+		this.thirty_days_price = thirty_days_price;
+	}
+
+	public boolean isPricePerBox() {
+		return price_is_per_box;
+	}
+
+	public void setPricePerBox(boolean price_is_per_box) {
+		this.price_is_per_box = price_is_per_box;
+	}
+
 	@Override
 	public String toString() {
-		return "AddonOption [name=" + name + "]";
+		return "AddonOption [name=" + name + ", thirtyDaysPrice=" + thirty_days_price + ", priceIsPerBox=" + price_is_per_box + "]";
 	}
+
 }

@@ -33,7 +33,9 @@ import java.lang.annotation.Target;
 public @interface Default {
 
 	/**
-	 * The default <strong>value</strong> of the annotated <strong>field</strong>
+	 * The default <strong>value</strong> of the annotated
+	 * <strong>field</strong>
+	 * 
 	 * @return default value
 	 */
 	String value();

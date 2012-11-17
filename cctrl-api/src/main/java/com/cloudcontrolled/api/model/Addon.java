@@ -15,6 +15,8 @@
  */
 package com.cloudcontrolled.api.model;
 
+import java.util.HashMap;
+
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
@@ -22,18 +24,26 @@ package com.cloudcontrolled.api.model;
  */
 public class Addon extends AbstractModel {
 
-	private Settings settings;
 	private AddonOption addon_option;
+	private HashMap<String, String> settings;
 
 	public Addon() {
 	}
 
-	public Settings getSettings() {
+	public HashMap<String, String> getSettings() {
 		return settings;
 	}
 
-	public void setSettings(Settings settings) {
+	public void setSettings(HashMap<String, String> settings) {
 		this.settings = settings;
+	}
+
+	public AddonOption getAddon_option() {
+		return addon_option;
+	}
+
+	public void setAddon_option(AddonOption addon_option) {
+		this.addon_option = addon_option;
 	}
 
 	public AddonOption getAddonOption() {

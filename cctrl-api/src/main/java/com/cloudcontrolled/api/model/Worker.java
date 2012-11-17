@@ -24,11 +24,11 @@ public class Worker extends AbstractModel {
 
 	private String date_created;
 	private String wrk_id;
-	private String params; 
-	private String command; 
+	private String params;
+	private String command;
 	private int size;
-	
-	public Worker(){
+
+	public Worker() {
 	}
 
 	public String getWrk_id() {

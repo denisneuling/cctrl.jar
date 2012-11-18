@@ -7,6 +7,10 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
+	
+	<properties>
+		<skipTests>true</skipTests>
+	</properties>
 
 	<groupId>com.cloudcontrolled</groupId>
 	<artifactId>cctrl</artifactId>

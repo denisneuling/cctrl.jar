@@ -20,10 +20,12 @@ import java.io.InputStream;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.apache.log4j.Logger;
 
+import com.cloudcontrolled.api.client.exception.AuthorizationException;
 import com.cloudcontrolled.api.client.util.HttpStatus;
 import com.cloudcontrolled.api.client.util.PathUtil;
 import com.cloudcontrolled.api.client.util.RequestUtil;
 import com.cloudcontrolled.api.client.util.Timer;
+import com.cloudcontrolled.api.request.CreateTokenRequest;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
@@ -95,6 +97,10 @@ public abstract class AbstractCloudControlClientSupport {
 	}
 
 	private <T> Response<T> toResponse(Timer timer, javax.ws.rs.core.Response cxfResponse, Request<T> request) {
+		if (!(request instanceof CreateTokenRequest) && cxfResponse.getStatus() == HttpStatus.Unauthorized.ordinal()) {
+			throw new AuthorizationException(HttpStatus.Unauthorized.toString());
+		}
+
 		InputStream inputStream = (InputStream) cxfResponse.getEntity();
 		Response<T> response = null;
 
@@ -106,6 +112,7 @@ public abstract class AbstractCloudControlClientSupport {
 			response = deserialize(inputStream, request);
 		}
 
+		response.setStatusCode(status.getCode());
 		response.setResponseTime(timer.getDifference());
 
 		return response;

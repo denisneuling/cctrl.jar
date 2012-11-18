@@ -15,6 +15,7 @@
  */
 package com.cloudcontrolled.api.request;
 
+import com.cloudcontrolled.api.annotation.Body;
 import com.cloudcontrolled.api.annotation.Method;
 import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.Required;
@@ -32,12 +33,15 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	private static final long serialVersionUID = 140888473373753015L;
 
 	@Required
+	@Body("username")
 	private String userName;
 
 	@Required
+	@Body("email")
 	private String email;
 
 	@Required
+	@Body("password")
 	private String password;
 
 	public CreateUserRequest() {

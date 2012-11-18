@@ -11,7 +11,7 @@ import com.cloudcontrolled.api.response.AmendAddonResponse;
 
 @Method(HttpMethod.PUT)
 @Path("/app/${app}/deployment/${dep}/addon/${amendFrom}/")
-public class AmendAddonRequest extends Request<AmendAddonResponse>{
+public class AmendAddonRequest extends Request<AmendAddonResponse> {
 	private static final long serialVersionUID = 5207560465418872029L;
 
 	@Required
@@ -26,12 +26,12 @@ public class AmendAddonRequest extends Request<AmendAddonResponse>{
 	@Required
 	@PathVariable("${amendFrom}")
 	private String addonAmendFrom;
-	
+
 	@Required
 	@Body("addon")
 	private String addonAmendTo;
-	
-	public AmendAddonRequest(){
+
+	public AmendAddonRequest() {
 	}
 
 	public String getApplicationName() {

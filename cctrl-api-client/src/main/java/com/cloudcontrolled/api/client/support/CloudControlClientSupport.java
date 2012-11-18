@@ -32,6 +32,7 @@ import com.cloudcontrolled.api.client.auth.Token;
 import com.cloudcontrolled.api.client.exception.SerializationException;
 import com.cloudcontrolled.api.client.json.JsonDeserializer;
 import com.cloudcontrolled.api.client.security.DumbX509TrustManager;
+import com.cloudcontrolled.api.client.util.Header;
 import com.cloudcontrolled.api.client.util.RequestUtil;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
@@ -52,8 +53,6 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 			throw new SerializationException(e);
 		}
 
-		System.out.println(content);
-
 		return deserializeError(content, request);
 	}
 
@@ -61,13 +60,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	protected <T> Response<T> deserializeError(String response, Request<T> request) {
 		Response<T> target = RequestUtil.getInstanceOfParameterizedType(request);
 		target.setError(true);
-
-		System.out.println(target);
-
-		// TODO source out and improve!
-
 		target.setContent(response);
-
 		return target;
 	}
 
@@ -116,6 +109,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 
 	protected WebClient instantiateWebClient(String targetUrl) {
 		WebClient webClient = WebClient.create(targetUrl).type("application/x-www-form-urlencoded").accept(MediaType.TEXT_PLAIN).accept(MediaType.APPLICATION_JSON);
+		webClient = Header.setHeader(webClient);
 
 		HTTPConduit conduit = WebClient.getConfig(webClient).getHttpConduit();
 		TLSClientParameters params = conduit.getTlsClientParameters();

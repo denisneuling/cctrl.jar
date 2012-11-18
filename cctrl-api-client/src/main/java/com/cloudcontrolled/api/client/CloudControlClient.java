@@ -59,7 +59,11 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 
 		HttpStatus status = HttpStatus.getStatus(createTokenResponse.getStatusCode());
 		if (status.isError()) {
-			throw new CommunicationErrorException(status);
+			if (status.equals(HttpStatus.Unauthorized)) {
+				throw new AuthorizationException(HttpStatus.Unauthorized.toString());
+			} else {
+				throw new CommunicationErrorException(status);
+			}
 		}
 
 		String newToken = createTokenResponse.getToken();
@@ -75,7 +79,13 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		PathUtil.infixPotentialDefaults(request);
 		ValidationUtil.validate(request);
 
-		T response = (T) dispatchByMethod(request);
+		T response;
+		try {
+			response = (T) dispatchByMethod(request);
+		} catch (AuthorizationException ae) {
+			renewToken();
+			response = (T) dispatchByMethod(request);
+		}
 
 		return response;
 	}
@@ -107,7 +117,6 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		if (request instanceof CreateTokenRequest) {
 			webClient = setAuthorizationBase64(webClient, toBase64(((CreateTokenRequest) request).getUser(), ((CreateTokenRequest) request).getPassword()));
 		} else {
-			renewToken();
 			webClient = setAuthorizationCCAuthToken(webClient);
 		}
 		return webClient;

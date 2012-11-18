@@ -15,6 +15,7 @@
  */
 package com.cloudcontrolled.api.request;
 
+import com.cloudcontrolled.api.annotation.Body;
 import com.cloudcontrolled.api.annotation.Method;
 import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.PathVariable;
@@ -37,6 +38,7 @@ public class ActivateUserRequest extends Request<ActivateUserResponse> {
 	private String userName;
 
 	@Required
+	@Body("activation_code")
 	private String activationCode;
 
 	public ActivateUserRequest() {

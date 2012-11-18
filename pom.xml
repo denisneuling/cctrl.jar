@@ -8,10 +8,6 @@
 		<version>7</version>
 	</parent>
 	
-	<properties>
-		<skipTests>true</skipTests>
-	</properties>
-
 	<groupId>com.cloudcontrolled</groupId>
 	<artifactId>cctrl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

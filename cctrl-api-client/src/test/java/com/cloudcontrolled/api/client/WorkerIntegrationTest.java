@@ -1,7 +1,6 @@
 package com.cloudcontrolled.api.client;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.cloudcontrolled.api.client.auth.Credentials;
@@ -13,7 +12,7 @@ import com.cloudcontrolled.api.response.CreateWorkerResponse;
 import com.cloudcontrolled.api.response.DeleteWorkerResponse;
 import com.cloudcontrolled.api.response.ListWorkerResponse;
 
-@Ignore
+//@Ignore
 public class WorkerIntegrationTest {
 
 	private String application = "zj";
@@ -62,7 +61,7 @@ public class WorkerIntegrationTest {
 		Worker[] workers = response.getWorkers();
 		if (workers != null) {
 			for (int i = 0; i < workers.length; i++) {
-				System.out.println(i + "\t" + worker);
+				System.out.println(i + "\t" + workers[i]);
 			}
 		}
 	}
@@ -79,7 +78,7 @@ public class WorkerIntegrationTest {
 	}
 
 	@Test
-	public void testAllWorkers() {
+	public void testRemoveAllWorkers() {
 		ListWorkerRequest listRequest = new ListWorkerRequest();
 		listRequest.setApplicationName(application);
 		listRequest.setDeploymentName(deployment);

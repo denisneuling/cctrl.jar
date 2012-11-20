@@ -7,7 +7,7 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-	
+
 	<groupId>com.cloudcontrolled</groupId>
 	<artifactId>cctrl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -23,11 +23,38 @@
 		<module>cctrl-maven-plugin</module>
 	</modules>
 
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.2.2</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 	<scm>
 		<url>https://github.com/denisneuling/cctrl.jar</url>
 		<connection>scm:git:git://github.com/denisneuling/cctrl.jar.git</connection>
 		<developerConnection>scm:git:git@github.com:denisneuling/cctrl.jar.git</developerConnection>
 	</scm>
+
+	<mailingLists>
+		<mailingList>
+			<name>cctrl.jar issues</name>
+			<archive>https://github.com/denisneuling/cctrl.jar/issues?state=closed</archive>
+			<subscribe>https://github.com/denisneuling/cctrl.jar/toggle_watch</subscribe>
+			<unsubscribe>https://github.com/denisneuling/cctrl.jar/toggle_watch</unsubscribe>
+			<post>https://github.com/denisneuling/cctrl.jar/issues/new</post>
+		</mailingList>
+	</mailingLists>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/denisneuling/cctrl.jar/issues/new</url>
+	</issueManagement>
 
 	<developers>
 		<developer>
@@ -57,8 +84,4 @@
 		</repository>
 	</distributionManagement>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/denisneuling/cctrl.jar/issues/new</url>
-	</issueManagement>
 </project>

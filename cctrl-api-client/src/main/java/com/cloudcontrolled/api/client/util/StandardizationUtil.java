@@ -19,8 +19,17 @@ import com.cloudcontrolled.api.annotation.Normalized;
 import com.cloudcontrolled.api.response.Response;
 import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class StandardizationUtil {
 
+	/**
+	 * 
+	 * @param response
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
 	public static <T> JSONNormalizer getJSONStandardizer(Response<T> response) {
 		JSONNormalizer standardizer = new JSONNormalizer();

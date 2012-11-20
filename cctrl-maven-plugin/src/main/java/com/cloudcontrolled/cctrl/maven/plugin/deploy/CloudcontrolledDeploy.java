@@ -29,6 +29,7 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
 
 /**
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  * @phase cctrl
@@ -36,6 +37,10 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
  */
 public class CloudcontrolledDeploy extends CloudControlledMojo<CloudcontrolledDeploy> {
 
+	/*
+	 * (non-Javadoc)
+	 * @see org.apache.maven.plugin.AbstractMojo#execute()
+	 */
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 

@@ -19,8 +19,17 @@ import com.cloudcontrolled.api.annotation.Method;
 import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.request.Request;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class HttpMethodUtil {
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	public static <T> HttpMethod retrieveMethod(Request<T> request) {
 		if (request == null) {
 			return null;

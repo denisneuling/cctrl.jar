@@ -15,6 +15,10 @@
  */
 package com.cloudcontrolled.api.client.exception;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class SerializationException extends CloudControlClientException {
 	private static final long serialVersionUID = 1L;
 

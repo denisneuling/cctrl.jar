@@ -21,9 +21,10 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ListApplicationResponse;
 
 /**
+ *
+ * @see {@link https://api.cloudcontrol.com/doc/#AppRead}
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 @Method(HttpMethod.GET)
 @Path("/app/")

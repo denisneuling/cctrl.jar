@@ -25,8 +25,9 @@ import com.cloudcontrolled.api.response.LogResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#LogREAD}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/log/${type}/")

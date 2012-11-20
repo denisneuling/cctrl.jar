@@ -37,6 +37,10 @@ import com.cloudcontrolled.api.client.util.RequestUtil;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class CloudControlClientSupport extends AbstractCloudControlClientSupport {
 
 	protected final static String ENV_API_URL_KEY = "CCTRL_API_URL";
@@ -46,6 +50,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	
 	protected JsonDeserializer jsonDeserializer = new JsonDeserializer();
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserializeError(java.io.InputStream, com.cloudcontrolled.api.request.Request)
+	 */
 	@Override
 	protected <T> Response<T> deserializeError(InputStream inputStream, Request<T> request) {
 		String content = null;
@@ -58,6 +66,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return deserializeError(content, request);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserializeError(java.lang.String, com.cloudcontrolled.api.request.Request)
+	 */
 	@Override
 	protected <T> Response<T> deserializeError(String response, Request<T> request) {
 		Response<T> target = RequestUtil.getInstanceOfParameterizedType(request);
@@ -66,6 +78,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return target;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserialize(java.io.InputStream, com.cloudcontrolled.api.request.Request)
+	 */
 	@Override
 	protected <T> Response<T> deserialize(InputStream inputStream, Request<T> request) {
 		String content = null;
@@ -78,6 +94,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return deserialize(content, request);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserialize(java.lang.String, com.cloudcontrolled.api.request.Request)
+	 */
 	@Override
 	protected <T> Response<T> deserialize(String response, Request<T> request) {
 		Response<T> target = RequestUtil.getInstanceOfParameterizedType(request);
@@ -91,6 +111,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public static String getTargetUrl() {
 		String targetUrl = System.getenv(ENV_API_URL_KEY);
 		if (targetUrl != null) {
@@ -101,6 +125,12 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return targetUrl;
 	}
 
+	/**
+	 * 
+	 * @param user
+	 * @param password
+	 * @return
+	 */
 	protected String toBase64(String user, String password) {
 		StringBuffer stringBuffer = new StringBuffer();
 		stringBuffer.append(user);
@@ -109,6 +139,11 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return Base64Utility.encode(stringBuffer.toString().getBytes());
 	}
 
+	/**
+	 * 
+	 * @param targetUrl
+	 * @return
+	 */
 	protected WebClient instantiateWebClient(String targetUrl) {
 		WebClient webClient = WebClient.create(targetUrl).type("application/x-www-form-urlencoded").accept(MediaType.TEXT_PLAIN).accept(MediaType.APPLICATION_JSON);
 		webClient = Header.setHeader(webClient);
@@ -131,10 +166,21 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 		return webClient;
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param base64
+	 * @return
+	 */
 	protected WebClient setAuthorizationBase64(WebClient webClient, String base64) {
 		return webClient.header("Authorization", "Basic " + base64);
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @return
+	 */
 	protected WebClient setAuthorizationCCAuthToken(WebClient webClient) {
 		return webClient.header("Authorization", "cc_auth_token=\"" + tokenStore.getToken() + "\"");
 	}

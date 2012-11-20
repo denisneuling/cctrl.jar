@@ -27,8 +27,17 @@ import com.cloudcontrolled.api.client.body.BodyMultivaluedMap;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class RequestUtil {
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
 	public static <T> Response<T> getInstanceOfParameterizedType(Request<T> request) {
 		Type superclazz = request.getClass().getGenericSuperclass();
@@ -40,6 +49,11 @@ public class RequestUtil {
 		}
 	}
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	public static <T> MultivaluedMap<String, String> getBodyAsMultiValuedMap(Request<T> request) {
 		MultivaluedMap<String, String> map = new BodyMultivaluedMap();
 

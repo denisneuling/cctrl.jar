@@ -17,9 +17,21 @@ package com.cloudcontrolled.api.client;
 
 import com.cloudcontrolled.api.request.Request;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public interface ICloudControlClient {
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	public <T> T send(Request<T> request);
 
+	/**
+	 * 
+	 */
 	public void renewToken();
 }

@@ -27,6 +27,11 @@ import org.json.JSONObject;
  */
 public class DeleteNormalizer extends JSONNormalizer {
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java.lang.String)
+	 */
+	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		Map<String, String> layout = new HashMap<String, String>();
 		layout.put("message", jsonResponse);

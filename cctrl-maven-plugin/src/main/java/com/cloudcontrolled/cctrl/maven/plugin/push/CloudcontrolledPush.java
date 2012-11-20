@@ -33,6 +33,7 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
 
 /**
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  * @phase cctrl
@@ -40,6 +41,10 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
  */
 public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush> {
 
+	/*
+	 * (non-Javadoc)
+	 * @see org.apache.maven.plugin.AbstractMojo#execute()
+	 */
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		String deploymentQualifier = application + (deployment != null ? ":" + deployment + (commitId != null ? ":" + commitId : "") : "");

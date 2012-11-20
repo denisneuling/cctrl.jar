@@ -19,6 +19,10 @@ import java.lang.reflect.Field;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class ValidationConstraintViolationException extends CloudControlClientException {
 	private static final long serialVersionUID = 8653296771499098292L;
 
@@ -39,10 +43,19 @@ public class ValidationConstraintViolationException extends CloudControlClientEx
 		this.constraintViolations = violations;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public List<ConstraintViolation> getConstraintViolations() {
 		return constraintViolations;
 	}
 
+	/**
+	 * 
+	 * @param violations
+	 * @return
+	 */
 	private static String inquireMessage(List<ConstraintViolation> violations) {
 		String message = null;
 		for (ConstraintViolation constraintViolation : violations) {
@@ -51,10 +64,20 @@ public class ValidationConstraintViolationException extends CloudControlClientEx
 		return message;
 	}
 
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
 	private static String concat(String a, String b) {
 		return (a != null && !a.isEmpty() ? a + lineSeparator : "") + b;
 	}
 
+	/**
+	 * 
+	 * @author Denis Neuling (denisneuling@gmail.com)
+	 */
 	public static class ConstraintViolation {
 		private String hint;
 		private Field field;
@@ -64,10 +87,20 @@ public class ValidationConstraintViolationException extends CloudControlClientEx
 			this.field = field;
 		}
 
+		/**
+		 * 
+		 * @param hint
+		 * @param field
+		 * @return
+		 */
 		public static ConstraintViolation newConstraintViolation(String hint, Field field) {
 			return new ConstraintViolation(hint, field);
 		}
 
+		/*
+		 * (non-Javadoc)
+		 * @see java.lang.Object#toString()
+		 */
 		@Override
 		public String toString() {
 			return "\t" + hint + " " + field;

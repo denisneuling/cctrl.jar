@@ -24,8 +24,8 @@ import org.apache.maven.plugin.logging.Log;
 import org.eclipse.jgit.storage.file.FileRepository;
 
 /**
- * @author Denis Neuling (denisneuling@gmail.com)
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public abstract class CloudControlledMojo<T> extends AbstractMojo {
 
@@ -56,48 +56,90 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	 */
 	protected String commitId;
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getApplication() {
 		return application;
 	}
 
+	/**
+	 * 
+	 * @param application
+	 */
 	public void setApplication(String application) {
 		this.application = application;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getDeployment() {
 		return deployment;
 	}
 
+	/**
+	 * 
+	 * @param deployment
+	 */
 	public void setDeployment(String deployment) {
 		this.deployment = deployment;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getCommitId() {
 		return commitId;
 	}
 
+	/**
+	 * 
+	 * @param commitId
+	 */
 	public void setCommitId(String commitId) {
 		this.commitId = commitId;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public void setLog(Log log) {
 		this.log = log;
 	}
 
+	/**
+	 * 
+	 */
 	@SuppressWarnings("rawtypes")
 	public void setPluginContext(Map pluginContext) {
 		this.pluginContext = pluginContext;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getBaseDir() {
 		return baseDir;
 	}
 
+	/**
+	 * 
+	 * @param baseDir
+	 */
 	public void setBaseDir(String baseDir) {
 		this.baseDir = baseDir;
 	}
 
+	/**
+	 * 
+	 * @param ccmojo
+	 */
 	public void copyPropertiesfromAnother(CloudControlledMojo<?> ccmojo) {
 		this.setApplication(ccmojo.getApplication());
 		this.setDeployment(ccmojo.getDeployment());
@@ -107,11 +149,21 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 		this.setBaseDir(ccmojo.getBaseDir());
 	}
 
+	/**
+	 * 
+	 * @return
+	 * @throws IOException
+	 */
 	public FileRepository getRepository() throws IOException {
 		FileRepository repository = new FileRepository(baseDir + "/.git");
 		return repository;
 	}
 
+	/**
+	 * 
+	 * @return
+	 * @throws MojoExecutionException
+	 */
 	public String retrieveBranch() throws MojoExecutionException {
 		try {
 			return getRepository().getBranch();

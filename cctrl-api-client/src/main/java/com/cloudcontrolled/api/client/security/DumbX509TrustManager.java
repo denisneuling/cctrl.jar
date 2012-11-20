@@ -22,22 +22,46 @@ import javax.net.ssl.TrustManager;
 
 import com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class DumbX509TrustManager extends X509ExtendedTrustManager implements TrustManager {
 
+	/*
+	 * (non-Javadoc)
+	 * @see javax.net.ssl.X509TrustManager#checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)
+	 */
 	public void checkClientTrusted(X509Certificate[] arg0, String arg1) throws CertificateException {
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see javax.net.ssl.X509TrustManager#checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)
+	 */
 	public void checkServerTrusted(X509Certificate[] arg0, String arg1) throws CertificateException {
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see javax.net.ssl.X509TrustManager#getAcceptedIssuers()
+	 */
 	public X509Certificate[] getAcceptedIssuers() {
 		return null;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager#checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public void checkClientTrusted(X509Certificate[] arg0, String arg1, String arg2, String arg3) throws CertificateException {
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager#checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, java.lang.String, java.lang.String)
+	 */
 	@Override
 	public void checkServerTrusted(X509Certificate[] arg0, String arg1, String arg2, String arg3) throws CertificateException {
 	}

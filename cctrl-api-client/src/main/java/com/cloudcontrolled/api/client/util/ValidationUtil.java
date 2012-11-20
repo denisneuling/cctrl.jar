@@ -24,10 +24,19 @@ import com.cloudcontrolled.api.client.exception.ValidationConstraintViolationExc
 import com.cloudcontrolled.api.client.exception.ValidationConstraintViolationException.ConstraintViolation;
 import com.cloudcontrolled.api.request.Request;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class ValidationUtil {
 
 	private static final String preMessage = "Request breaks constraints.";
 
+	/**
+	 * 
+	 * @param request
+	 * @throws ValidationConstraintViolationException
+	 */
 	public static <T> void validate(Request<T> request) throws ValidationConstraintViolationException {
 		if (request != null) {
 			Class<?> clazz = request.getClass();

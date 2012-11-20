@@ -24,6 +24,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class JsonDeserializer {
 
 	protected Gson gson;
@@ -32,6 +36,9 @@ public class JsonDeserializer {
 		initializeGson();
 	}
 
+	/**
+	 * 
+	 */
 	private void initializeGson() {
 		gson = new GsonBuilder().setExclusionStrategies(new ExclusionStrategy() {
 			public boolean shouldSkipField(FieldAttributes fieldAttributes) {
@@ -47,6 +54,12 @@ public class JsonDeserializer {
 		}).create();
 	}
 
+	/**
+	 * 
+	 * @param response
+	 * @param target
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
 	public <T> Response<T> fromJSON(String response, Response<T> target) {
 		try {

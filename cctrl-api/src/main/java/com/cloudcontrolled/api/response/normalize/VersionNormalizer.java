@@ -27,6 +27,11 @@ import org.json.JSONObject;
  */
 public class VersionNormalizer extends JSONNormalizer {
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java.lang.String)
+	 */
+	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		JSONObject body = new JSONObject(jsonResponse);
 		Map<String, JSONObject> layout = new HashMap<String, JSONObject>();

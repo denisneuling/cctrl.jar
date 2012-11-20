@@ -29,9 +29,19 @@ import com.cloudcontrolled.api.request.CreateTokenRequest;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public abstract class AbstractCloudControlClientSupport {
 	protected final Logger log = Logger.getLogger(this.getClass());
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param request
+	 * @return
+	 */
 	protected <T> Response<T> doGet(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
 
@@ -48,6 +58,12 @@ public abstract class AbstractCloudControlClientSupport {
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param request
+	 * @return
+	 */
 	protected <T> Response<T> doPost(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
 
@@ -64,6 +80,12 @@ public abstract class AbstractCloudControlClientSupport {
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param request
+	 * @return
+	 */
 	protected <T> Response<T> doPut(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
 
@@ -80,6 +102,12 @@ public abstract class AbstractCloudControlClientSupport {
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param request
+	 * @return
+	 */
 	protected <T> Response<T> doDelete(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
 
@@ -96,6 +124,13 @@ public abstract class AbstractCloudControlClientSupport {
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param timer
+	 * @param cxfResponse
+	 * @param request
+	 * @return
+	 */
 	private <T> Response<T> toResponse(Timer timer, javax.ws.rs.core.Response cxfResponse, Request<T> request) {
 		if (!(request instanceof CreateTokenRequest) && cxfResponse.getStatus() == HttpStatus.Unauthorized.ordinal()) {
 			throw new AuthorizationException(HttpStatus.Unauthorized.toString());
@@ -118,16 +153,45 @@ public abstract class AbstractCloudControlClientSupport {
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	protected <T> String inquirePath(Request<T> request) {
 		return PathUtil.resolveResourcePath(request);
 	}
 
+	/**
+	 * 
+	 * @param response
+	 * @param request
+	 * @return
+	 */
 	protected abstract <T> Response<T> deserialize(String response, Request<T> request);
 
+	/**
+	 * 
+	 * @param inputStream
+	 * @param request
+	 * @return
+	 */
 	protected abstract <T> Response<T> deserialize(InputStream inputStream, Request<T> request);
 
+	/**
+	 * 
+	 * @param inputStream
+	 * @param request
+	 * @return
+	 */
 	protected abstract <T> Response<T> deserializeError(InputStream inputStream, Request<T> request);
 
+	/**
+	 * 
+	 * @param response
+	 * @param request
+	 * @return
+	 */
 	protected abstract <T> Response<T> deserializeError(String response, Request<T> request);
 
 }

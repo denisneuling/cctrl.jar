@@ -24,8 +24,10 @@ import com.cloudcontrolled.api.response.ApplicationResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
  * 
+ * @see {@link https://api.cloudcontrol.com/doc/#AppREAD}
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/")

@@ -27,14 +27,29 @@ import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.PathVariable;
 import com.cloudcontrolled.api.request.Request;
 
+
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com)
+ */
 public class PathUtil {
 
 	private static final String PATTERN = "\\$\\{(.*?)*\\}(.*?)";
 
+	/**
+	 * 
+	 * @param request
+	 */
 	public static <T> void infixPotentialDefaults(Request<T> request) {
 		infixPotentialDefaults(request, request.getClass(), true);
 	}
 
+	/**
+	 * 
+	 * @param request
+	 * @param targetClazz
+	 * @param infixPotentialValuesOfSuperClass
+	 */
 	public static <T> void infixPotentialDefaults(Request<T> request, Class<?> targetClazz, boolean infixPotentialValuesOfSuperClass) {
 		Class<?> superClass = targetClazz.getSuperclass();
 		if (infixPotentialValuesOfSuperClass && superClass != null && superClass.equals(Request.class)) {
@@ -58,6 +73,11 @@ public class PathUtil {
 		}
 	}
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	public static <T> String resolveResourcePath(Request<T> request) {
 		Class<?> clazz = request.getClass();
 

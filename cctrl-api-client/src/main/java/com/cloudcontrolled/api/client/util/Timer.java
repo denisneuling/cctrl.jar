@@ -17,17 +17,29 @@ package com.cloudcontrolled.api.client.util;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class Timer {
 
 	private Date start;
 	private long difference = 0;
 
+	/**
+	 * 
+	 * @return
+	 */
 	public static Timer tic() {
 		Timer timer = new Timer();
 		timer.start = new Date();
 		return timer;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public long toc() {
 		Date end = new Date();
 		difference = end.getTime() - start.getTime();
@@ -35,6 +47,10 @@ public class Timer {
 		return difference;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public long getDifference() {
 		return difference;
 	}

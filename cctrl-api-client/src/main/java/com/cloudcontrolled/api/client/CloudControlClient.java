@@ -32,6 +32,10 @@ import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.CreateTokenResponse;
 import com.cloudcontrolled.api.response.Response;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class CloudControlClient extends CloudControlClientSupport implements ICloudControlClient {
 
 	private Credentials credentials;
@@ -44,6 +48,11 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		this.credentials = credentials;
 	}
 	
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.ICloudControlClient#renewToken()
+	 */
+	@Override
 	public void renewToken() {
 		CreateTokenRequest createTokenRequest = new CreateTokenRequest();
 		createTokenRequest.setUser(credentials.getUserName());
@@ -69,7 +78,11 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		tokenStore.setToken(newToken);
 	}
 
-
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.client.ICloudControlClient#send(com.cloudcontrolled.api.request.Request)
+	 */
+	@Override
 	@SuppressWarnings("unchecked")
 	public <T> T send(Request<T> request) {
 
@@ -90,6 +103,11 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		return response;
 	}
 
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
 	private <T> Response<T> dispatchByMethod(Request<T> request) {
 		HttpMethod method = HttpMethodUtil.retrieveMethod(request);
 
@@ -113,6 +131,12 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		}
 	}
 
+	/**
+	 * 
+	 * @param webClient
+	 * @param request
+	 * @return
+	 */
 	private <T> WebClient prepareAuthorization(WebClient webClient, Request<T> request) {
 		if (request instanceof CreateTokenRequest) {
 			webClient = setAuthorizationBase64(webClient, toBase64(((CreateTokenRequest) request).getUser(), ((CreateTokenRequest) request).getPassword()));

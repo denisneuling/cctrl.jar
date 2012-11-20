@@ -76,10 +76,19 @@ public enum HttpStatus {
 		this.code = code;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getCode() {
 		return code;
 	}
 
+	/**
+	 * 
+	 * @param code
+	 * @return
+	 */
 	public static HttpStatus getStatus(int code) {
 		if (code < 0) {
 			return Unknown;
@@ -90,6 +99,10 @@ public enum HttpStatus {
 		return status;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Enum#toString()
+	 */
 	@Override
 	public String toString() {
 		if (this.name().startsWith("Unassigned_")) {
@@ -98,6 +111,10 @@ public enum HttpStatus {
 		return this.name().replace("_", " ") + " (" + (this.equals(Unknown) ? "0" : (this.ordinal())) + ")";
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean isError() {
 		return (this.code >= 400 && this.code < 600);
 	}

@@ -28,6 +28,11 @@ import org.json.JSONObject;
  */
 public class ListCollaboratorNormalizer extends JSONNormalizer {
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java.lang.String)
+	 */
+	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		if (jsonResponse.equals("Not Implemented")) {
 			return "{users: []}";

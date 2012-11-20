@@ -21,8 +21,8 @@ import com.cloudcontrolled.api.request.ApplicationRequest;
 import com.cloudcontrolled.api.request.UpdateDeploymentRequest;
 
 /**
- * @author Denis Neuling (denisneuling@gmail.com)
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class CloudControlSupport {
 
@@ -32,6 +32,10 @@ public class CloudControlSupport {
 	public static final String MASTER_BRANCH = "master";
 	public static final String LLINE = "------------------------------------------------------------------------";
 
+	/**
+	 * 
+	 * @return
+	 */
 	private static Credentials retrieveCredentials() {
 		String userName;
 		String password;
@@ -49,6 +53,10 @@ public class CloudControlSupport {
 		return credentials;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public static CloudControlClient createCloudControlClient() {
 		Credentials credentials = retrieveCredentials();
 		CloudControlClient cloudControlClient = new CloudControlClient(credentials);
@@ -56,6 +64,13 @@ public class CloudControlSupport {
 		return cloudControlClient;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 * @param deploymentName
+	 * @param commitId
+	 * @return
+	 */
 	public static UpdateDeploymentRequest createUpdateDeploymentRequest(String applicationName, String deploymentName, String commitId) {
 		UpdateDeploymentRequest updateDeploymentRequest = new UpdateDeploymentRequest();
 		updateDeploymentRequest.setApplicationName(applicationName);
@@ -65,6 +80,11 @@ public class CloudControlSupport {
 		return updateDeploymentRequest;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 * @return
+	 */
 	public static ApplicationRequest createApplicationRequest(String applicationName) {
 		ApplicationRequest applicationRequest = new ApplicationRequest();
 		applicationRequest.setApplicationName(applicationName);

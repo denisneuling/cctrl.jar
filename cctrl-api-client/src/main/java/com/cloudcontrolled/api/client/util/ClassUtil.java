@@ -20,8 +20,20 @@ import java.lang.reflect.Field;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 
+ * @author Denis Neuling (denisneuling@gmail.com) 
+ */
 public class ClassUtil {
 
+	/**
+	 * 
+	 * @param source
+	 * @param annotation
+	 * @param attributeName
+	 * @param expected
+	 * @return
+	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static <T> T getClassAnnotationValue(Class source, Class annotation, String attributeName, Class<T> expected) {
 		Annotation instance = source.getAnnotation(annotation);
@@ -35,6 +47,12 @@ public class ClassUtil {
 		return value;
 	}
 
+	/**
+	 * 
+	 * @param clazz
+	 * @param annotationClass
+	 * @return
+	 */
 	public static <T> List<Field> getAnnotatedFields(Class<?> clazz, Class<? extends Annotation> annotationClass) {
 		List<Field> annotatedFields = new LinkedList<Field>();
 		Field[] allFields = getAllDeclaredFields(clazz);
@@ -46,6 +64,11 @@ public class ClassUtil {
 		return annotatedFields;
 	}
 
+	/**
+	 * 
+	 * @param clazz
+	 * @return
+	 */
 	public static Field[] getAllDeclaredFields(Class<?> clazz) {
 		Field[] declaredFields = clazz.getDeclaredFields();
 		Class<?> superClass = clazz.getSuperclass();
@@ -55,6 +78,14 @@ public class ClassUtil {
 		return declaredFields;
 	}
 
+	/**
+	 * 
+	 * @param field
+	 * @param reference
+	 * @param referenceClazz
+	 * @param valueType
+	 * @return
+	 */
 	public static <T> T getValueOf(Field field, Object reference, Class<?> referenceClazz, Class<T> valueType) {
 		try {
 			field.setAccessible(true);
@@ -66,6 +97,14 @@ public class ClassUtil {
 		}
 	}
 
+	/**
+	 * 
+	 * @param fieldName
+	 * @param reference
+	 * @param referenceClazz
+	 * @param valueType
+	 * @return
+	 */
 	public static <T> T getValueOf(String fieldName, Object reference, Class<?> referenceClazz, Class<T> valueType) {
 		try {
 			Field field = referenceClazz.getDeclaredField(fieldName);
@@ -79,6 +118,12 @@ public class ClassUtil {
 		}
 	}
 
+	/**
+	 * 
+	 * @param field
+	 * @param ref
+	 * @return
+	 */
 	public static Object getValueOfField(Field field, Object ref) {
 		field.setAccessible(true);
 		Object value = null;

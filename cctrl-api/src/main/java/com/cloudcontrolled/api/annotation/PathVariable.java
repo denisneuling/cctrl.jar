@@ -33,7 +33,7 @@ import java.lang.annotation.Target;
 public @interface PathVariable {
 
 	/**
-	 * Defnines the placeholder of the variable to set.
+	 * Defines the placeholder of the variable to set.
 	 * 
 	 * @return the placeholder of the variable to set.
 	 */

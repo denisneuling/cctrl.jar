@@ -28,6 +28,11 @@ import org.json.JSONObject;
  */
 public class ListApplicationNormalizer extends JSONNormalizer {
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java.lang.String)
+	 */
+	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		JSONArray array = new JSONArray(jsonResponse);
 		Map<String, JSONArray> layout = new HashMap<String, JSONArray>();

@@ -16,12 +16,50 @@
 package com.cloudcontrolled.api.common;
 
 /**
- * Enum which holds the Http method def.
+ * Enum which holds the Http method to use.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 public enum HttpMethod {
 
-	GET, POST, PUT, DELETE, HEAD, TRACE, CONNECT, OPTIONS;
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Get}
+	 */
+	GET,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Post}
+	 */
+	POST,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Put}
+	 */
+	PUT,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Delete}
+	 */
+	DELETE,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Head}
+	 */
+	HEAD,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Trace}
+	 */
+	TRACE,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Connect}
+	 */
+	CONNECT,
+
+	/**
+	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Options} 
+	 */
+	OPTIONS;
 
 }

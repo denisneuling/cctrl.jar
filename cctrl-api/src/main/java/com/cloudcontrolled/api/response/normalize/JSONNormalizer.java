@@ -21,6 +21,13 @@ package com.cloudcontrolled.api.response.normalize;
  * 
  */
 public class JSONNormalizer {
+	
+	/**
+	 * 
+	 * @param jsonResponse
+	 * @return
+	 * @throws Exception
+	 */
 	public String normalize(String jsonResponse) throws Exception {
 		return jsonResponse;
 	}

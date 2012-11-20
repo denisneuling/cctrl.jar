@@ -20,7 +20,6 @@ import java.util.Arrays;
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 public class Application extends AbstractModel {
 

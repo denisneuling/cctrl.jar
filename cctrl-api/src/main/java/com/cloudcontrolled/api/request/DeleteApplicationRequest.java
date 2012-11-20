@@ -23,9 +23,10 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteApplicationResponse;
 
 /**
+ *
+ * @see {@link https://api.cloudcontrol.com/doc/#AppDELETE}
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/")

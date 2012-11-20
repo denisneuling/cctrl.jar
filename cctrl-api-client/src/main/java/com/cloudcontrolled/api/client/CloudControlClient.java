@@ -18,7 +18,6 @@ package com.cloudcontrolled.api.client;
 import org.apache.cxf.jaxrs.client.WebClient;
 
 import com.cloudcontrolled.api.client.auth.Credentials;
-import com.cloudcontrolled.api.client.auth.Token;
 import com.cloudcontrolled.api.client.exception.AuthorizationException;
 import com.cloudcontrolled.api.client.exception.CommunicationErrorException;
 import com.cloudcontrolled.api.client.exception.ValidationConstraintViolationException;
@@ -44,7 +43,7 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	public CloudControlClient(Credentials credentials) {
 		this.credentials = credentials;
 	}
-
+	
 	public void renewToken() {
 		CreateTokenRequest createTokenRequest = new CreateTokenRequest();
 		createTokenRequest.setUser(credentials.getUserName());
@@ -67,8 +66,9 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		}
 
 		String newToken = createTokenResponse.getToken();
-		Token.getInstance().setToken(newToken);
+		tokenStore.setToken(newToken);
 	}
+
 
 	@SuppressWarnings("unchecked")
 	public <T> T send(Request<T> request) {

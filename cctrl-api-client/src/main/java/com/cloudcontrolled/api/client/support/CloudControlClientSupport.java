@@ -28,7 +28,7 @@ import org.apache.cxf.jaxrs.client.WebClient;
 import org.apache.cxf.transport.http.HTTPConduit;
 import org.apache.cxf.transports.http.configuration.HTTPClientPolicy;
 
-import com.cloudcontrolled.api.client.auth.Token;
+import com.cloudcontrolled.api.client.auth.TokenStore;
 import com.cloudcontrolled.api.client.exception.SerializationException;
 import com.cloudcontrolled.api.client.json.JsonDeserializer;
 import com.cloudcontrolled.api.client.security.DumbX509TrustManager;
@@ -42,6 +42,8 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	protected final static String ENV_API_URL_KEY = "CCTRL_API_URL";
 	protected final static String apiUrl = "https://api.cloudcontrol.com";
 
+	protected TokenStore tokenStore = new TokenStore();
+	
 	protected JsonDeserializer jsonDeserializer = new JsonDeserializer();
 
 	@Override
@@ -134,6 +136,6 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	}
 
 	protected WebClient setAuthorizationCCAuthToken(WebClient webClient) {
-		return webClient.header("Authorization", "cc_auth_token=\"" + Token.getInstance().toString() + "\"");
+		return webClient.header("Authorization", "cc_auth_token=\"" + tokenStore.getToken() + "\"");
 	}
 }

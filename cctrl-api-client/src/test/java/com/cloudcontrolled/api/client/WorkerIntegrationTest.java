@@ -1,6 +1,7 @@
 package com.cloudcontrolled.api.client;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.cloudcontrolled.api.client.auth.Credentials;
@@ -12,7 +13,7 @@ import com.cloudcontrolled.api.response.CreateWorkerResponse;
 import com.cloudcontrolled.api.response.DeleteWorkerResponse;
 import com.cloudcontrolled.api.response.ListWorkerResponse;
 
-//@Ignore
+@Ignore
 public class WorkerIntegrationTest {
 
 	private String application = "zj";

@@ -29,38 +29,74 @@ public class BilledBoxes extends AbstractModel {
 	public BilledBoxes() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getCosts() {
 		return costs;
 	}
 
+	/**
+	 * 
+	 * @param costs
+	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getFreeBoxes() {
 		return free_boxes;
 	}
 
+	/**
+	 * 
+	 * @param free_boxes
+	 */
 	public void setFreeBoxes(double free_boxes) {
 		this.free_boxes = free_boxes;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getUntil() {
 		return until;
 	}
 
+	/**
+	 * 
+	 * @param until
+	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getBoxes() {
 		return boxes;
 	}
 
+	/**
+	 * 
+	 * @param boxes
+	 */
 	public void setBoxes(double boxes) {
 		this.boxes = boxes;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "BilledBoxes [costs=" + costs + ", freeBoxes=" + free_boxes + ", until=" + until + ", boxes=" + boxes + "]";

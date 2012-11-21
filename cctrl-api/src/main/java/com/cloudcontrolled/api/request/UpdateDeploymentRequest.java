@@ -26,8 +26,9 @@ import com.cloudcontrolled.api.response.UpdateDeploymentResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#DeploymentUPDATE}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.PUT)
 @Path("/app/${app}/deployment/${dep}/")

@@ -32,5 +32,4 @@ public class VersionRequest extends Request<VersionResponse> {
 
 	public VersionRequest() {
 	}
-
 }

@@ -24,6 +24,8 @@ import com.cloudcontrolled.api.response.CreateCollaboratorResponse;
 
 /**
  * 
+ * @see {@link https://api.cloudcontrol.com/doc/#AppUserCREATE}
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */

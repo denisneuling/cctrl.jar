@@ -27,22 +27,42 @@ public class Version extends AbstractModel {
 	public Version() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getPycclib() {
 		return pycclib;
 	}
 
+	/**
+	 * 
+	 * @param pycclib
+	 */
 	public void setPycclib(String pycclib) {
 		this.pycclib = pycclib;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getCctrl() {
 		return cctrl;
 	}
 
+	/**
+	 * 
+	 * @param cctrl
+	 */
 	public void setCctrl(String cctrl) {
 		this.cctrl = cctrl;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Version [pycclib=" + pycclib + ", cctrl=" + cctrl + "]";

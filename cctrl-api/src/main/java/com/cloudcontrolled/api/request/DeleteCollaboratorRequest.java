@@ -24,8 +24,9 @@ import com.cloudcontrolled.api.response.DeleteCollaboratorResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#AppUserDELETE}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/user/${user}/")

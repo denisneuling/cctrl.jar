@@ -30,30 +30,58 @@ public class Addon extends AbstractModel {
 	public Addon() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public HashMap<String, String> getSettings() {
 		return settings;
 	}
 
+	/**
+	 * 
+	 * @param settings
+	 */
 	public void setSettings(HashMap<String, String> settings) {
 		this.settings = settings;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public AddonOption getAddon_option() {
 		return addon_option;
 	}
 
+	/**
+	 * 
+	 * @param addon_option
+	 */
 	public void setAddon_option(AddonOption addon_option) {
 		this.addon_option = addon_option;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public AddonOption getAddonOption() {
 		return addon_option;
 	}
 
+	/**
+	 * 
+	 * @param addon_option
+	 */
 	public void setAddonOption(AddonOption addon_option) {
 		this.addon_option = addon_option;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Addon [settings=" + settings + ", addonOption=" + addon_option + "]";

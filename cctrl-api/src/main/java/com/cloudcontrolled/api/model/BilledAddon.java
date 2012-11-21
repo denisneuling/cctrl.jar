@@ -29,38 +29,74 @@ public class BilledAddon extends AbstractModel {
 	public BilledAddon() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getCosts() {
 		return costs;
 	}
 
+	/**
+	 * 
+	 * @param costs
+	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getHours() {
 		return hours;
 	}
 
+	/**
+	 * 
+	 * @param hours
+	 */
 	public void setHours(double hours) {
 		this.hours = hours;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getUntil() {
 		return until;
 	}
 
+	/**
+	 * 
+	 * @param until
+	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getAddon() {
 		return addon;
 	}
 
+	/**
+	 * 
+	 * @param addon
+	 */
 	public void setAddon(String addon) {
 		this.addon = addon;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "BilledAddon [costs=" + costs + ", hours=" + hours + ", until=" + until + ", addon=" + addon + "]";

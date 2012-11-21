@@ -24,6 +24,8 @@ import com.cloudcontrolled.api.response.CreateUserResponse;
 
 /**
  * 
+ * @see {#link https://api.cloudcontrol.com/doc/#AnonymousUserCREATE}
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  */

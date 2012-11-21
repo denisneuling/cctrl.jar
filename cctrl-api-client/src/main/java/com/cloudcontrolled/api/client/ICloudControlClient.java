@@ -26,7 +26,7 @@ public interface ICloudControlClient {
 	/**
 	 * 
 	 * @param request
-	 * @return
+	 * @return response
 	 */
 	public <T> T send(Request<T> request);
 

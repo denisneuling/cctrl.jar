@@ -26,8 +26,9 @@ import com.cloudcontrolled.api.response.CreateWorkerResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#WorkerCREATE}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/worker/")

@@ -21,14 +21,31 @@ package com.cloudcontrolled.api.model;
  */
 public enum LogType {
 
-	ERROR("error"), WORKER("worker"), ACCESS("access");
+	/**
+	 * 
+	 */
+	ERROR("error"), 
+	
+	/**
+	 * 
+	 */
+	WORKER("worker"), 
+	
+	/**
+	 * 
+	 */
+	ACCESS("access");
 
 	private String name;
-
 	private LogType(String type) {
 		this.name = type;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Enum#toString()
+	 */
+	@Override
 	public String toString() {
 		return name;
 	}

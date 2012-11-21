@@ -18,7 +18,6 @@ package com.cloudcontrolled.api.model;
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 public class AddonOption extends AbstractModel {
 
@@ -29,30 +28,58 @@ public class AddonOption extends AbstractModel {
 	public AddonOption() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getThirtyDaysPrice() {
 		return thirty_days_price;
 	}
 
+	/**
+	 * 
+	 * @param thirty_days_price
+	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
 		this.thirty_days_price = thirty_days_price;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean isPricePerBox() {
 		return price_is_per_box;
 	}
 
+	/**
+	 * 
+	 * @param price_is_per_box
+	 */
 	public void setPricePerBox(boolean price_is_per_box) {
 		this.price_is_per_box = price_is_per_box;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "AddonOption [name=" + name + ", thirtyDaysPrice=" + thirty_days_price + ", priceIsPerBox=" + price_is_per_box + "]";

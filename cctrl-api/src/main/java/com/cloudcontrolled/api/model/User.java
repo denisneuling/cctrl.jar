@@ -30,46 +30,90 @@ public class User extends AbstractModel {
 	public User() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getFirstName() {
 		return first_name;
 	}
 
+	/**
+	 * 
+	 * @param first_name
+	 */
 	public void setFirstName(String first_name) {
 		this.first_name = first_name;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getUsername() {
 		return username;
 	}
 
+	/**
+	 * 
+	 * @param username
+	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean isIsActive() {
 		return is_active;
 	}
 
+	/**
+	 * 
+	 * @param is_active
+	 */
 	public void setIsActive(boolean is_active) {
 		this.is_active = is_active;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * 
+	 * @param email
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getLastName() {
 		return last_name;
 	}
 
+	/**
+	 * 
+	 * @param last_name
+	 */
 	public void setLastName(String last_name) {
 		this.last_name = last_name;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "User [firstName=" + first_name + ", username=" + username + ", isActive=" + is_active + ", email=" + email + ", lastName=" + last_name + "]";

@@ -27,22 +27,42 @@ public class SupportPlan extends AbstractModel {
 	public SupportPlan() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public double getThirtyDaysPrice() {
 		return thirty_days_price;
 	}
 
+	/**
+	 * 
+	 * @param thirty_days_price
+	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
 		this.thirty_days_price = thirty_days_price;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "SupportPlan [name=" + name + ", thirtyDaysPrice=" + thirty_days_price + "]";

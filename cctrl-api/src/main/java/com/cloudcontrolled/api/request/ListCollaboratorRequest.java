@@ -24,8 +24,9 @@ import com.cloudcontrolled.api.response.ListCollaboratorResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#AppUserREAD}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/user/")

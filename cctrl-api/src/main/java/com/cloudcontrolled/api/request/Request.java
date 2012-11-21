@@ -20,6 +20,8 @@ import java.io.Serializable;
 /**
  * Abstract request class whi9ch binds the concerning response to it;
  * 
+ * @see {@link https://api.cloudcontrol.com/doc/#top}
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 
  * @param <Response>

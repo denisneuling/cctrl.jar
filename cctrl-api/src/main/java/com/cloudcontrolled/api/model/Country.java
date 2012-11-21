@@ -28,30 +28,58 @@ public class Country extends AbstractModel {
 	public Country() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getCode() {
 		return code;
 	}
-
+	
+	/**
+	 * 
+	 * @param code
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean isIs_eu() {
 		return is_eu;
 	}
 
+	/**
+	 * 
+	 * @param is_eu
+	 */
 	public void setIs_eu(boolean is_eu) {
 		this.is_eu = is_eu;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Country [name=" + name + ", code=" + code + ", is_eu=" + is_eu + "]";

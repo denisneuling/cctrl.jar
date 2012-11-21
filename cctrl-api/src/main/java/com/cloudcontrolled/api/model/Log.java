@@ -28,30 +28,58 @@ public class Log extends AbstractModel {
 	public Log() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public long getTime() {
 		return time;
 	}
 
+	/**
+	 * 
+	 * @param time
+	 */
 	public void setTime(long time) {
 		this.time = time;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getMessage() {
 		return message;
 	}
 
+	/**
+	 * 
+	 * @param message
+	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getType() {
 		return type;
 	}
 
+	/**
+	 * 
+	 * @param type
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Log [time=" + time + ", type=" + type + ", message=" + message + "]";

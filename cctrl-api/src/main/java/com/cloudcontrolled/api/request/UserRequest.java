@@ -24,8 +24,9 @@ import com.cloudcontrolled.api.response.UserResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#UserREAD}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}")

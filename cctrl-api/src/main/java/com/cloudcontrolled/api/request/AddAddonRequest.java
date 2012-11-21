@@ -26,8 +26,9 @@ import com.cloudcontrolled.api.response.AddAddonResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {@link https://api.cloudcontrol.com/doc/#DeploymentAddonCREATE}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/addon/")

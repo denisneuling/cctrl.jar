@@ -27,7 +27,8 @@ import com.cloudcontrolled.api.response.AmendAddonResponse;
 /**
  * 
  * 
- * @see {@link 	@see {@link https://api.cloudcontrol.com/doc/#DeploymentAddonUPDATE}}
+ * @see {@link @see {@link https
+ *      ://api.cloudcontrol.com/doc/#DeploymentAddonUPDATE}
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

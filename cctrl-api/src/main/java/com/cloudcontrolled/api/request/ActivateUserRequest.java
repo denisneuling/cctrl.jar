@@ -25,8 +25,9 @@ import com.cloudcontrolled.api.response.ActivateUserResponse;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com)
+ * @see {#link https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE}
  * 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Method(HttpMethod.PUT)
 @Path("/user/${user}")

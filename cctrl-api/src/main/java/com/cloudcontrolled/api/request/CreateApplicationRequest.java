@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.CreateApplicationResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#Appcreate}
+ * @see {@link https://api.cloudcontrol.com/doc/#AppCREATE}
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

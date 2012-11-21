@@ -20,7 +20,6 @@ import java.util.Arrays;
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 public class AddonAnonymous extends AbstractModel {
 
@@ -31,30 +30,58 @@ public class AddonAnonymous extends AbstractModel {
 	public AddonAnonymous() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getStage() {
 		return stage;
 	}
 
+	/**
+	 * 
+	 * @param stage
+	 */
 	public void setStage(String stage) {
 		this.stage = stage;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public AddonOption[] getOptions() {
 		return options;
 	}
 
+	/**
+	 * 
+	 * @param options
+	 */
 	public void setOptions(AddonOption[] options) {
 		this.options = options;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "AddonAnonymous [name=" + name + ", stage=" + stage + ", options=" + (options != null ? Arrays.toString(options) : "[]") + "]";

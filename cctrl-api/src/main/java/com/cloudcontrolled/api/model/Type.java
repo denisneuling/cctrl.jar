@@ -25,7 +25,27 @@ public class Type extends AbstractModel {
 
 	public Type() {
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getName() {
+		return name;
+	}
 
+	/**
+	 * 
+	 * @param name
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Type [name=" + name + "]";

@@ -20,7 +20,9 @@ import java.io.Serializable;
 /**
  * Abstract request class which binds the concerning response to it.
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#top">https://api.cloudcontrol.com/doc/#top</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#top"
+ * >https://api.cloudcontrol.com/doc/#top</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 

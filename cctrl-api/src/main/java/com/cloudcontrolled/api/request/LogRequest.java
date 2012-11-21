@@ -25,7 +25,9 @@ import com.cloudcontrolled.api.response.LogResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#LogREAD">https://api.cloudcontrol.com/doc/#LogREAD</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#LogREAD"
+ * >https://api.cloudcontrol.com/doc/#LogREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

@@ -9,7 +9,7 @@ import org.apache.cxf.jaxrs.client.WebClient;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class Header {
 

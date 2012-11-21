@@ -29,7 +29,10 @@ public class UserNormalizer extends JSONNormalizer {
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java.lang.String)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
+	 * .lang.String)
 	 */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {

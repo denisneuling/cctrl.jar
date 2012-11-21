@@ -26,7 +26,7 @@ import com.google.gson.JsonSyntaxException;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class JsonDeserializer {
 

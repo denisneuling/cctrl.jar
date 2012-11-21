@@ -24,7 +24,9 @@ import com.cloudcontrolled.api.response.ListDeploymentResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentREAD">https://api.cloudcontrol.com/doc/#DeploymentREAD</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#DeploymentREAD"
+ * >https://api.cloudcontrol.com/doc/#DeploymentREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

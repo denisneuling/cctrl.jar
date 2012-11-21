@@ -34,7 +34,7 @@ import com.cloudcontrolled.api.response.Response;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class CloudControlClient extends CloudControlClientSupport implements ICloudControlClient {
 
@@ -47,9 +47,10 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	public CloudControlClient(Credentials credentials) {
 		this.credentials = credentials;
 	}
-	
+
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see com.cloudcontrolled.api.client.ICloudControlClient#renewToken()
 	 */
 	@Override
@@ -80,7 +81,10 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.client.ICloudControlClient#send(com.cloudcontrolled.api.request.Request)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.client.ICloudControlClient#send(com.cloudcontrolled
+	 * .api.request.Request)
 	 */
 	@Override
 	@SuppressWarnings("unchecked")
@@ -118,16 +122,16 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		webClient = prepareAuthorization(webClient, request);
 
 		switch (method) {
-		case GET:
-			return doGet(webClient, request);
-		case POST:
-			return doPost(webClient, request);
-		case PUT:
-			return doPut(webClient, request);
-		case DELETE:
-			return doDelete(webClient, request);
-		default:
-			throw new CommunicationErrorException(HttpStatus.Not_Implemented);
+			case GET:
+				return doGet(webClient, request);
+			case POST:
+				return doPost(webClient, request);
+			case PUT:
+				return doPut(webClient, request);
+			case DELETE:
+				return doDelete(webClient, request);
+			default:
+				throw new CommunicationErrorException(HttpStatus.Not_Implemented);
 		}
 	}
 

@@ -27,7 +27,6 @@ import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.PathVariable;
 import com.cloudcontrolled.api.request.Request;
 
-
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)

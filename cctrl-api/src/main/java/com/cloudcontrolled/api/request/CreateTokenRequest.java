@@ -23,7 +23,9 @@ import com.cloudcontrolled.api.response.CreateTokenResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#TokenCREATE">https://api.cloudcontrol.com/doc/#TokenCREATE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#TokenCREATE"
+ * >https://api.cloudcontrol.com/doc/#TokenCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

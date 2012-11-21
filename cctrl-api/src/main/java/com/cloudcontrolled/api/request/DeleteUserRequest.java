@@ -24,7 +24,9 @@ import com.cloudcontrolled.api.response.DeleteUserResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#UserDELETE">https://api.cloudcontrol.com/doc/#UserDELETE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#UserDELETE"
+ * >https://api.cloudcontrol.com/doc/#UserDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

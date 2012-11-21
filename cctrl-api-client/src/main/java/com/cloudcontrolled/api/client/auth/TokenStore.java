@@ -2,13 +2,13 @@ package com.cloudcontrolled.api.client.auth;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class TokenStore {
 
 	private String token;
-	
-	public TokenStore(){
+
+	public TokenStore() {
 	}
 
 	/**

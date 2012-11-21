@@ -17,8 +17,8 @@ package com.cloudcontrolled.api.model;
 
 /**
  * The billed add-on model contains informations about the usage of the
- * concerning addon and which price you have to offer since the addon was added to your
- * deployment.
+ * concerning addon and which price you have to offer since the addon was added
+ * to your deployment.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

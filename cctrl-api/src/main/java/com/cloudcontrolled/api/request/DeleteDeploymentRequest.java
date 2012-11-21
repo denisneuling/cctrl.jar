@@ -25,7 +25,9 @@ import com.cloudcontrolled.api.response.DeleteDeploymentResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentDELETE">https://api.cloudcontrol.com/doc/#DeploymentDELETE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#DeploymentDELETE"
+ * >https://api.cloudcontrol.com/doc/#DeploymentDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

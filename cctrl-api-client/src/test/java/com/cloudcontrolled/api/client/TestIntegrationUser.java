@@ -13,9 +13,9 @@ import com.cloudcontrolled.api.response.CreateUserResponse;
 @Ignore
 public class TestIntegrationUser {
 
-//	private String deployment = "default";
-//	private String addonName = "mysqlsdev.free";
-//	private String addonAmendTo = "mysqlsdev.512mb";
+	// private String deployment = "default";
+	// private String addonName = "mysqlsdev.free";
+	// private String addonAmendTo = "mysqlsdev.512mb";
 
 	private Credentials credentials;
 	private CloudControlClient client;

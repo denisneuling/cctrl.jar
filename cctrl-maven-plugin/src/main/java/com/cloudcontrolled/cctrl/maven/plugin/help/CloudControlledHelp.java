@@ -32,6 +32,7 @@ public class CloudControlledHelp extends CloudControlledMojo<CloudControlledHelp
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see org.apache.maven.plugin.AbstractMojo#execute()
 	 */
 	@Override

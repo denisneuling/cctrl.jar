@@ -31,7 +31,7 @@ import com.cloudcontrolled.api.response.Response;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public abstract class AbstractCloudControlClientSupport {
 	protected final Logger log = Logger.getLogger(this.getClass());

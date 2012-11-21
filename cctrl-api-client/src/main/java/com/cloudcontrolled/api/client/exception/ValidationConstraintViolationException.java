@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class ValidationConstraintViolationException extends CloudControlClientException {
 	private static final long serialVersionUID = 8653296771499098292L;
@@ -99,6 +99,7 @@ public class ValidationConstraintViolationException extends CloudControlClientEx
 
 		/*
 		 * (non-Javadoc)
+		 * 
 		 * @see java.lang.Object#toString()
 		 */
 		@Override

@@ -19,10 +19,10 @@ import java.util.Arrays;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class ArrayUtils {
-	
+
 	/**
 	 * 
 	 * @param first

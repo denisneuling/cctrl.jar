@@ -17,7 +17,7 @@ package com.cloudcontrolled.api.client.auth;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class Credentials {
 

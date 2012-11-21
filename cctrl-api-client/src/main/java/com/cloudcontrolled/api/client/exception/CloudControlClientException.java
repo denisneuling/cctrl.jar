@@ -17,7 +17,7 @@ package com.cloudcontrolled.api.client.exception;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class CloudControlClientException extends RuntimeException {
 	private static final long serialVersionUID = -1578931888585925712L;

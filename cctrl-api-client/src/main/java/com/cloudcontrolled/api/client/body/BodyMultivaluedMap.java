@@ -23,14 +23,16 @@ import javax.ws.rs.core.MultivaluedMap;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class BodyMultivaluedMap extends HashMap<String, List<String>> implements MultivaluedMap<String, String> {
 	private static final long serialVersionUID = -4545725304226984837L;
 
 	/*
 	 * (non-Javadoc)
-	 * @see javax.ws.rs.core.MultivaluedMap#putSingle(java.lang.Object, java.lang.Object)
+	 * 
+	 * @see javax.ws.rs.core.MultivaluedMap#putSingle(java.lang.Object,
+	 * java.lang.Object)
 	 */
 	@Override
 	public void putSingle(String key, String value) {
@@ -39,7 +41,9 @@ public class BodyMultivaluedMap extends HashMap<String, List<String>> implements
 
 	/*
 	 * (non-Javadoc)
-	 * @see javax.ws.rs.core.MultivaluedMap#add(java.lang.Object, java.lang.Object)
+	 * 
+	 * @see javax.ws.rs.core.MultivaluedMap#add(java.lang.Object,
+	 * java.lang.Object)
 	 */
 	@Override
 	public void add(String key, String value) {
@@ -52,6 +56,7 @@ public class BodyMultivaluedMap extends HashMap<String, List<String>> implements
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see javax.ws.rs.core.MultivaluedMap#getFirst(java.lang.Object)
 	 */
 	@Override

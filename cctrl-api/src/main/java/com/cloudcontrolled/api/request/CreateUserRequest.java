@@ -24,7 +24,9 @@ import com.cloudcontrolled.api.response.CreateUserResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AnonymousUserCREATE">https://api.cloudcontrol.com/doc/#AnonymousUserCREATE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#AnonymousUserCREATE"
+ * >https://api.cloudcontrol.com/doc/#AnonymousUserCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 

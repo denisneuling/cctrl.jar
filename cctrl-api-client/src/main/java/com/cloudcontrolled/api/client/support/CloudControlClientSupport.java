@@ -39,7 +39,7 @@ import com.cloudcontrolled.api.response.Response;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class CloudControlClientSupport extends AbstractCloudControlClientSupport {
 
@@ -47,12 +47,16 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	protected final static String apiUrl = "https://api.cloudcontrol.com";
 
 	protected TokenStore tokenStore = new TokenStore();
-	
+
 	protected JsonDeserializer jsonDeserializer = new JsonDeserializer();
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserializeError(java.io.InputStream, com.cloudcontrolled.api.request.Request)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport
+	 * #deserializeError(java.io.InputStream,
+	 * com.cloudcontrolled.api.request.Request)
 	 */
 	@Override
 	protected <T> Response<T> deserializeError(InputStream inputStream, Request<T> request) {
@@ -68,7 +72,11 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserializeError(java.lang.String, com.cloudcontrolled.api.request.Request)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport
+	 * #deserializeError(java.lang.String,
+	 * com.cloudcontrolled.api.request.Request)
 	 */
 	@Override
 	protected <T> Response<T> deserializeError(String response, Request<T> request) {
@@ -80,7 +88,11 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserialize(java.io.InputStream, com.cloudcontrolled.api.request.Request)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport
+	 * #deserialize(java.io.InputStream,
+	 * com.cloudcontrolled.api.request.Request)
 	 */
 	@Override
 	protected <T> Response<T> deserialize(InputStream inputStream, Request<T> request) {
@@ -96,7 +108,10 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 
 	/*
 	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport#deserialize(java.lang.String, com.cloudcontrolled.api.request.Request)
+	 * 
+	 * @see
+	 * com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport
+	 * #deserialize(java.lang.String, com.cloudcontrolled.api.request.Request)
 	 */
 	@Override
 	protected <T> Response<T> deserialize(String response, Request<T> request) {

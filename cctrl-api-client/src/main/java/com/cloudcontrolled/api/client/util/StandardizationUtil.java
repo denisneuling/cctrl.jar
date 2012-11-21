@@ -21,7 +21,7 @@ import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
 /**
  * 
- * @author Denis Neuling (denisneuling@gmail.com) 
+ * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class StandardizationUtil {
 

@@ -25,7 +25,9 @@ import com.cloudcontrolled.api.response.ActivateUserResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE">https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE"
+ * >https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

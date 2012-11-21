@@ -26,7 +26,9 @@ import com.cloudcontrolled.api.response.UpdateDeploymentResponse;
 
 /**
  * 
- * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentUPDATE">https://api.cloudcontrol.com/doc/#DeploymentUPDATE</a>
+ * Or for reference have a look here: <a
+ * href="https://api.cloudcontrol.com/doc/#DeploymentUPDATE"
+ * >https://api.cloudcontrol.com/doc/#DeploymentUPDATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

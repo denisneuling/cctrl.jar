@@ -21,7 +21,7 @@ package com.cloudcontrolled.api.response.normalize;
  * 
  */
 public class JSONNormalizer {
-	
+
 	/**
 	 * 
 	 * @param jsonResponse

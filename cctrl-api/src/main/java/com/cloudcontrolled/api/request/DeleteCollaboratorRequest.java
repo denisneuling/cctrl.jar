@@ -24,7 +24,7 @@ import com.cloudcontrolled.api.response.DeleteCollaboratorResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppUserDELETE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppUserDELETE">https://api.cloudcontrol.com/doc/#AppUserDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

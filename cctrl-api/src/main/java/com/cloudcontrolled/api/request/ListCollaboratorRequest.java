@@ -24,7 +24,7 @@ import com.cloudcontrolled.api.response.ListCollaboratorResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppUserREAD}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppUserREAD">https://api.cloudcontrol.com/doc/#AppUserREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

@@ -16,6 +16,9 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The billed boxed object contains informations about the amount of hours and
+ * boxes you used whithin the last invoice period of the concerning deployment.
+ * It also contains the amount of free to use boxes you still own.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -95,6 +98,7 @@ public class BilledBoxes extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

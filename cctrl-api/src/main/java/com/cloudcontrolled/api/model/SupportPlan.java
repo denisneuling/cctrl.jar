@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The support plan object contains pricing informations about the plan you had
+ * chosen before.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -61,6 +63,7 @@ public class SupportPlan extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

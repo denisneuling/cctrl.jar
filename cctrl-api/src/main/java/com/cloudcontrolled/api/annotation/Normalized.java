@@ -26,7 +26,7 @@ import com.cloudcontrolled.api.response.Response;
 import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
 /**
- * The decorated <strong>{@link Response} type</strong>will be built via the
+ * The decorated <strong>{@link Response} type</strong> will be built via the
  * defined <strong>{@link JSONNormalizer}</strong>.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)

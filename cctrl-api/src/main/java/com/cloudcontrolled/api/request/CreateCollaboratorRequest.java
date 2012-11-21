@@ -24,7 +24,7 @@ import com.cloudcontrolled.api.response.CreateCollaboratorResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppUserCREATE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppUserCREATE">https://api.cloudcontrol.com/doc/#AppUserCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 

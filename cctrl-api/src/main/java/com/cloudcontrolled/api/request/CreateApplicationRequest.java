@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.CreateApplicationResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppCREATE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppCREATE">https://api.cloudcontrol.com/doc/#AppCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

@@ -16,27 +16,35 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * There are three log types in which the deployments log is separated.
+ * You might chose between:
+ * <ul>
+ * <li><strong>access</strong> <small>for an overview about the activity of your deployment</small></li>
+ * <li><strong>error</strong> <small>for an overview about everything else what goes through STDOUT or STDERR</small></li>
+ * <li><strong>worker</strong> <small>for an overview about the activity of your workers belonging to your deployment</small></li>
+ * </ul> 
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 public enum LogType {
 
 	/**
-	 * 
+	 * Everything which goes over STDOUT or STDERR.
 	 */
 	ERROR("error"), 
 	
 	/**
-	 * 
+	 * Logs, which were produced by your deployments worker.
 	 */
 	WORKER("worker"), 
 	
 	/**
-	 * 
+	 * Access logs, which were produces by accessing the concerning deployment.
 	 */
 	ACCESS("access");
 
 	private String name;
+	
 	private LogType(String type) {
 		this.name = type;
 	}

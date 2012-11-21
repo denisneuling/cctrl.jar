@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.ListWorkerResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#WorkerREAD}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#WorkerREAD">https://api.cloudcontrol.com/doc/#WorkerREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

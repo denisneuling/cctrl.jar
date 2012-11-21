@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.RemoveAddonResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE">https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

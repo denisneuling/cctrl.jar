@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The billing account object contains informations about the recipient of the
+ * current invoices.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -73,7 +75,7 @@ public class BillingAccount extends AbstractModel {
 	public void setCountry(Country country) {
 		this.country = country;
 	}
-	
+
 	/**
 	 * 
 	 * @return
@@ -316,6 +318,7 @@ public class BillingAccount extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

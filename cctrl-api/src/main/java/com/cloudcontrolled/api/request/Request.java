@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.request;
 import java.io.Serializable;
 
 /**
- * Abstract request class whi9ch binds the concerning response to it;
+ * Abstract request class which binds the concerning response to it.
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#top}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#top">https://api.cloudcontrol.com/doc/#top</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * 

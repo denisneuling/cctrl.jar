@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The add-on options object contains the unique name <small>or as you want the ID</small> of
+ * the add-on and some informations about the pricing.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -78,6 +80,7 @@ public class AddonOption extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

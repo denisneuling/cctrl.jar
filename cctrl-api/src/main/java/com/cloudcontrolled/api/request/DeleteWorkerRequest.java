@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.DeleteWorkerResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#WorkerDELETE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#WorkerDELETE">https://api.cloudcontrol.com/doc/#WorkerDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

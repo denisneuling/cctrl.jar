@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.AddonResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#DeploymentAddonREAD}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentAddonREAD">https://api.cloudcontrol.com/doc/#DeploymentAddonREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

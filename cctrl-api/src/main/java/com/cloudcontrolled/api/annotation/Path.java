@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.request.Request;
 
 /**
  * The decorated <strong>{@link Request} type</strong> is mapped onto the
- * defined an url path.
+ * defined url path.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

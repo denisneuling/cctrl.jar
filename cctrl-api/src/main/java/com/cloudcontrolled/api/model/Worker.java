@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The worker object contains informations about your heavy working scripts and
+ * / or programs which are connected to your deployment.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -112,6 +114,7 @@ public class Worker extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

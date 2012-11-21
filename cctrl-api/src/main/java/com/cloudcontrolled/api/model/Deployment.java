@@ -18,6 +18,9 @@ package com.cloudcontrolled.api.model;
 import java.util.Arrays;
 
 /**
+ * The deployment object contains information of your currently installed branch
+ * of your application. It also provides a raw overview of used resources
+ * concerning to that deployment.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -301,6 +304,7 @@ public class Deployment extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

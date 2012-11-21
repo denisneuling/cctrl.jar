@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The stack object contains the name of the software stack which is associated
+ * to your deployment.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -44,6 +46,7 @@ public class Stack extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

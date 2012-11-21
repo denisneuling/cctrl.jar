@@ -16,10 +16,13 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * Superclass of each response model.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 public abstract class AbstractModel {
-
+	
+	/**
+	 * TODO create identity of the concerning object
+	 */
 }

@@ -23,7 +23,6 @@ import com.cloudcontrolled.api.response.VersionResponse;
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 @Method(HttpMethod.GET)
 @Path("/.meta/version/")

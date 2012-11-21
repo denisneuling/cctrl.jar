@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.ApplicationResponse;
 /**
  * 
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppREAD}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppREAD">https://api.cloudcontrol.com/doc/#AppREAD</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

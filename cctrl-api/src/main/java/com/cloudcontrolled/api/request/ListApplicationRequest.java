@@ -22,7 +22,7 @@ import com.cloudcontrolled.api.response.ListApplicationResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppRead}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppRead">https://api.cloudcontrol.com/doc/#AppRead</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

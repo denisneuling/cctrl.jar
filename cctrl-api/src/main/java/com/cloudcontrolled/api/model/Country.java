@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The country object contains the country code and the name of the concerning
+ * country.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -51,7 +53,7 @@ public class Country extends AbstractModel {
 	public String getCode() {
 		return code;
 	}
-	
+
 	/**
 	 * 
 	 * @param code
@@ -78,6 +80,7 @@ public class Country extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

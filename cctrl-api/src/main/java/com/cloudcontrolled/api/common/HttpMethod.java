@@ -16,49 +16,65 @@
 package com.cloudcontrolled.api.common;
 
 /**
- * Enum which holds the Http method to use.
+ * Enum which holds the HTTP method to use.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 public enum HttpMethod {
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Get}
+	 * Http GET method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Get
 	 */
 	GET,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Post}
+	 * HTTP POST method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Post
 	 */
 	POST,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Put}
+	 * HTTP PUT method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Put
 	 */
 	PUT,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Delete}
+	 * HTTP DELETE method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Delete
 	 */
 	DELETE,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Head}
+	 * HTTP HEAD method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Head
 	 */
 	HEAD,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Trace}
+	 * HTTP TRACE method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Trace
 	 */
 	TRACE,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Connect}
+	 * HTTP CONNECT method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Connect
 	 */
 	CONNECT,
 
 	/**
-	 * {@link http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Options} 
+	 * HTTP OPTIONS method descriptor.
+	 * 
+	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#Options 
 	 */
 	OPTIONS;
 

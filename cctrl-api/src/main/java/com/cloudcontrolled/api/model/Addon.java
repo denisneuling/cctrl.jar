@@ -18,9 +18,13 @@ package com.cloudcontrolled.api.model;
 import java.util.HashMap;
 
 /**
+ * The addon object contains the settings how to access the concerning addon and
+ * its configurable options.
+ * <p>Example</p>
+ * If you add a <strong>datasource</strong> the settings map contains at least your
+ * <strong>credentials</strong> and the unified resource locator of the concerning addon.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 public class Addon extends AbstractModel {
 
@@ -31,8 +35,7 @@ public class Addon extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return settings the settings map which contains all you need to use the addon.
 	 */
 	public HashMap<String, String> getSettings() {
 		return settings;
@@ -40,7 +43,7 @@ public class Addon extends AbstractModel {
 
 	/**
 	 * 
-	 * @param settings
+	 * @param settings 
 	 */
 	public void setSettings(HashMap<String, String> settings) {
 		this.settings = settings;
@@ -80,6 +83,7 @@ public class Addon extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

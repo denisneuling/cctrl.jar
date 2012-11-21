@@ -18,6 +18,9 @@ package com.cloudcontrolled.api.model;
 import java.util.Arrays;
 
 /**
+ * The anonymous add-on object contains the name and the staging phase in which
+ * the available add-on currently is. It also contains some options you might
+ * use for your application.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -80,6 +83,7 @@ public class AddonAnonymous extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

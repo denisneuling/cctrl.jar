@@ -22,8 +22,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * The decorated <strong>field</strong> was marked as required for concerning
- * this request.
+ * The decorated <strong>field</strong> was marked as required for the
+ * concerning request.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

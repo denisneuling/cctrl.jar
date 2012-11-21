@@ -16,6 +16,9 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The user object contains informations about requested users. For example
+ * users which have access to your application / deployment or user accounts you
+ * own.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -112,6 +115,7 @@ public class User extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

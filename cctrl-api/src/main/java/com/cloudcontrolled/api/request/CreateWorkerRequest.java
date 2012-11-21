@@ -26,7 +26,7 @@ import com.cloudcontrolled.api.response.CreateWorkerResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#WorkerCREATE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#WorkerCREATE">https://api.cloudcontrol.com/doc/#WorkerCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

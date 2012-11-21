@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The version object contains informations about the latest available software
+ * to access the cloudCOntrol API.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -61,6 +63,7 @@ public class Version extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

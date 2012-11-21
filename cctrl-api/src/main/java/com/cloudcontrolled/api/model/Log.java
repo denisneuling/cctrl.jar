@@ -16,6 +16,8 @@
 package com.cloudcontrolled.api.model;
 
 /**
+ * The log object contains the timestamp, the type and the content of your log
+ * messages of your installed deployment.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -78,6 +80,7 @@ public class Log extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

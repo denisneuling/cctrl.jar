@@ -24,7 +24,7 @@ import com.cloudcontrolled.api.response.DeleteApplicationResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#AppDELETE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#AppDELETE">https://api.cloudcontrol.com/doc/#AppDELETE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

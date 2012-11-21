@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.CreateDeploymentResponse;
 
 /**
  * 
- * @see {@link https://api.cloudcontrol.com/doc/#DeploymentCREATE}
+ * Or for reference have a look here: <a href="https://api.cloudcontrol.com/doc/#DeploymentCREATE">https://api.cloudcontrol.com/doc/#DeploymentCREATE</a>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */

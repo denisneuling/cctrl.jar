@@ -18,6 +18,9 @@ package com.cloudcontrolled.api.model;
 import java.util.Arrays;
 
 /**
+ * The application model contains informations about your application. For
+ * example you get an overview over the collaborators which are allowed to
+ * manage the application or a list of the currently installed deployments.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
@@ -182,6 +185,7 @@ public class Application extends AbstractModel {
 
 	/*
 	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

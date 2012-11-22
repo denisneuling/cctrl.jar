@@ -33,64 +33,56 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return costs the costs of the billed addon
 	 */
 	public double getCosts() {
 		return costs;
 	}
 
 	/**
-	 * 
-	 * @param costs
+	 * @param costs the costs to set
 	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return hours the hours which were billed
 	 */
 	public double getHours() {
 		return hours;
 	}
 
 	/**
-	 * 
-	 * @param hours
+	 * @param hours the hours to set
 	 */
 	public void setHours(double hours) {
 		this.hours = hours;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return until the datetime when the addon was started to be billed 
 	 */
 	public String getUntil() {
 		return until;
 	}
 
 	/**
-	 * 
-	 * @param until
+	 * @param until the date to set
 	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return the addon to be billed
 	 */
 	public String getAddon() {
 		return addon;
 	}
 
 	/**
-	 * 
-	 * @param addon
+	 * @param addon the addon to set
 	 */
 	public void setAddon(String addon) {
 		this.addon = addon;

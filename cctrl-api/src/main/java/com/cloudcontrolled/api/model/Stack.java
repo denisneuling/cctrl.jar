@@ -29,16 +29,14 @@ public class Stack extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return name the name of the concerning stack
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * 
-	 * @param name
+	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;

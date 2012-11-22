@@ -32,47 +32,42 @@ public class Country extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return name the name of the country
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * 
-	 * @param name
+	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return code the country code
 	 */
 	public String getCode() {
 		return code;
 	}
 
 	/**
-	 * 
-	 * @param code
+	 * @param code the country code to set
 	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return isEU the boolean value which specifies if the country is whithin the EU
 	 */
 	public boolean isIs_eu() {
 		return is_eu;
 	}
 
 	/**
-	 * 
-	 * @param is_eu
+	 * @param is_eu the boolean value which specifies whether the country is whithin the EU to set 
 	 */
 	public void setIs_eu(boolean is_eu) {
 		this.is_eu = is_eu;

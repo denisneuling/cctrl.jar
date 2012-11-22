@@ -30,24 +30,21 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return name the name of the concerning support plan
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * 
-	 * @param name
+	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return thirtyDaysPrice the price of 30 days for that support plan
 	 */
 	public double getThirtyDaysPrice() {
 		return thirty_days_price;
@@ -55,7 +52,7 @@ public class SupportPlan extends AbstractModel {
 
 	/**
 	 * 
-	 * @param thirty_days_price
+	 * @param thirty_days_price the price of 30 days support to set
 	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
 		this.thirty_days_price = thirty_days_price;

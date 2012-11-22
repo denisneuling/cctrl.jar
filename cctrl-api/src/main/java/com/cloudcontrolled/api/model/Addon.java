@@ -47,7 +47,7 @@ public class Addon extends AbstractModel {
 
 	/**
 	 * 
-	 * @param settings
+	 * @param settings the settings to set
 	 */
 	public void setSettings(HashMap<String, String> settings) {
 		this.settings = settings;
@@ -55,23 +55,7 @@ public class Addon extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
-	 */
-	public AddonOption getAddon_option() {
-		return addon_option;
-	}
-
-	/**
-	 * 
-	 * @param addon_option
-	 */
-	public void setAddon_option(AddonOption addon_option) {
-		this.addon_option = addon_option;
-	}
-
-	/**
-	 * 
-	 * @return
+	 * @return addonOption the addon options of the concerning add-on
 	 */
 	public AddonOption getAddonOption() {
 		return addon_option;
@@ -79,7 +63,7 @@ public class Addon extends AbstractModel {
 
 	/**
 	 * 
-	 * @param addon_option
+	 * @param addon_option the addon options to set
 	 */
 	public void setAddonOption(AddonOption addon_option) {
 		this.addon_option = addon_option;

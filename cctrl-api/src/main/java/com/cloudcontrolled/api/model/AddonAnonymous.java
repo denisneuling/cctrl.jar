@@ -34,50 +34,45 @@ public class AddonAnonymous extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return name the name of the concerning addon
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * 
-	 * @param name
+	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return stage the staging phase in which the concerning add-on currently is
 	 */
 	public String getStage() {
 		return stage;
 	}
 
 	/**
-	 * 
-	 * @param stage
+	 * @param stage set the staging phase of the concerning add-on
 	 */
 	public void setStage(String stage) {
 		this.stage = stage;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return addonOption the add-on options of the concerning add-on 
 	 */
-	public AddonOption[] getOptions() {
+	public AddonOption[] getAddonOptions() {
 		return options;
 	}
 
 	/**
 	 * 
-	 * @param options
+	 * @param options the add-on options to set
 	 */
-	public void setOptions(AddonOption[] options) {
+	public void setAddonOptions(AddonOption[] options) {
 		this.options = options;
 	}
 

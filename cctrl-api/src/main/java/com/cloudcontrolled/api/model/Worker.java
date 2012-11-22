@@ -33,80 +33,70 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return workerId the id of the concerning worker
 	 */
 	public String getWrk_id() {
 		return wrk_id;
 	}
 
 	/**
-	 * 
-	 * @param wrk_id
+	 * @param wrk_id the worker id to set
 	 */
 	public void setWrk_id(String wrk_id) {
 		this.wrk_id = wrk_id;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return created the datetime when the worker was created
 	 */
 	public String getDate_created() {
 		return date_created;
 	}
 
 	/**
-	 * 
-	 * @param date_created
+	 * @param date_created the datetime to set
 	 */
 	public void setDate_created(String date_created) {
 		this.date_created = date_created;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return parameters the parameters of the worker start command
 	 */
 	public String getParams() {
 		return params;
 	}
 
 	/**
-	 * 
-	 * @param params
+	 * @param params the parameters to set
 	 */
 	public void setParams(String params) {
 		this.params = params;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return command the command how the worker was started
 	 */
 	public String getCommand() {
 		return command;
 	}
 
 	/**
-	 * 
-	 * @param command
+	 * @param command the command to set
 	 */
 	public void setCommand(String command) {
 		this.command = command;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return size the amount of memory which the worker can use
 	 */
 	public int getSize() {
 		return size;
 	}
 
 	/**
-	 * 
-	 * @param size
+	 * @param size the amount of memory to set
 	 */
 	public void setSize(int size) {
 		this.size = size;

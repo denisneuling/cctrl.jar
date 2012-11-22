@@ -30,32 +30,28 @@ public class Version extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return pycclib the latest pycclib release version
 	 */
 	public String getPycclib() {
 		return pycclib;
 	}
 
 	/**
-	 * 
-	 * @param pycclib
+	 * @param pycclib the latest pycclib release version
 	 */
 	public void setPycclib(String pycclib) {
 		this.pycclib = pycclib;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return cctrl the latest cctrl release version 
 	 */
 	public String getCctrl() {
 		return cctrl;
 	}
 
 	/**
-	 * 
-	 * @param cctrl
+	 * @param cctrl the latest cctrl release version to set
 	 */
 	public void setCctrl(String cctrl) {
 		this.cctrl = cctrl;

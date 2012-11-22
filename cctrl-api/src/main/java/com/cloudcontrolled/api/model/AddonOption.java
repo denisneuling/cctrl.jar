@@ -32,7 +32,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return name the name of the add-on options
 	 */
 	public String getName() {
 		return name;
@@ -40,7 +40,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @param name
+	 * @param name the name to set of the concerning add-on option
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -48,7 +48,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return thirtyDaysPrice the thrity days price of the concerning add-on option
 	 */
 	public double getThirtyDaysPrice() {
 		return thirty_days_price;
@@ -56,7 +56,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @param thirty_days_price
+	 * @param thirty_days_price the thrity days price of the concerning add-on option to set
 	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
 		this.thirty_days_price = thirty_days_price;
@@ -64,7 +64,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return pricePerBox the boolean value which specifies whether the price is per box
 	 */
 	public boolean isPricePerBox() {
 		return price_is_per_box;
@@ -72,7 +72,7 @@ public class AddonOption extends AbstractModel {
 
 	/**
 	 * 
-	 * @param price_is_per_box
+	 * @param price_is_per_box set the boolean value whether the price is per box
 	 */
 	public void setPricePerBox(boolean price_is_per_box) {
 		this.price_is_per_box = price_is_per_box;

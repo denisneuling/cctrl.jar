@@ -33,64 +33,56 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return costs the costs of the billed boxes
 	 */
 	public double getCosts() {
 		return costs;
 	}
 
 	/**
-	 * 
-	 * @param costs
+	 * @param costs the costs to set
 	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return free the free boxes
 	 */
 	public double getFreeBoxes() {
 		return free_boxes;
 	}
 
 	/**
-	 * 
-	 * @param free_boxes
+	 * @param free_boxes the free boxes to set
 	 */
 	public void setFreeBoxes(double free_boxes) {
 		this.free_boxes = free_boxes;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return until the datetime when the boxes were started to be billed
 	 */
 	public String getUntil() {
 		return until;
 	}
 
 	/**
-	 * 
-	 * @param until
+	 * @param until the date to set
 	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @returnm boxes the boxes to be billed
 	 */
 	public double getBoxes() {
 		return boxes;
 	}
 
 	/**
-	 * 
-	 * @param boxes
+	 * @param boxes the boxes to set
 	 */
 	public void setBoxes(double boxes) {
 		this.boxes = boxes;

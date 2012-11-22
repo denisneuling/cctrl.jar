@@ -31,48 +31,42 @@ public class Log extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return dateTime the datetime when the log entry was produced
 	 */
 	public long getTime() {
 		return time;
 	}
 
 	/**
-	 * 
-	 * @param time
+	 * @param time the time to set
 	 */
 	public void setTime(long time) {
 		this.time = time;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return message the message of the log entry
 	 */
 	public String getMessage() {
 		return message;
 	}
 
 	/**
-	 * 
-	 * @param message
+	 * @param message the message to set
 	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return type the type of the log entry
 	 */
 	public String getType() {
 		return type;
 	}
 
 	/**
-	 * 
-	 * @param type
+	 * @param type the type to set
 	 */
 	public void setType(String type) {
 		this.type = type;

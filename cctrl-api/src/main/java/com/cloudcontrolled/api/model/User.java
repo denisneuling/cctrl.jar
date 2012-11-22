@@ -34,80 +34,70 @@ public class User extends AbstractModel {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return preName the prename of the concerning user
 	 */
 	public String getFirstName() {
 		return first_name;
 	}
 
 	/**
-	 * 
-	 * @param first_name
+	 * @param first_name the prename to set
 	 */
 	public void setFirstName(String first_name) {
 		this.first_name = first_name;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return username the username of the concerning user
 	 */
 	public String getUsername() {
 		return username;
 	}
 
 	/**
-	 * 
-	 * @param username
+	 * @param username the username to set
 	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return active the boolean value which specifies whether the user is active
 	 */
-	public boolean isIsActive() {
+	public boolean isActive() {
 		return is_active;
 	}
 
 	/**
-	 * 
-	 * @param is_active
+	 * @param is_active the boolean value to set
 	 */
-	public void setIsActive(boolean is_active) {
+	public void setActive(boolean is_active) {
 		this.is_active = is_active;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return emailAddress the eamil address of the user
 	 */
 	public String getEmail() {
 		return email;
 	}
 
 	/**
-	 * 
-	 * @param email
+	 * @param email the email address to set
 	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return surName the surname of the concerning user
 	 */
 	public String getLastName() {
 		return last_name;
 	}
 
 	/**
-	 * 
-	 * @param last_name
+	 * @param last_name the surname to set
 	 */
 	public void setLastName(String last_name) {
 		this.last_name = last_name;

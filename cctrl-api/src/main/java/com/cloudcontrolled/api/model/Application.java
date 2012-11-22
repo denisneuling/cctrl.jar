@@ -41,7 +41,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return name the name of the application
 	 */
 	public String getName() {
 		return name;
@@ -49,7 +49,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @param name
+	 * @param name the name of the application to set
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -57,7 +57,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return type the type of the application
 	 */
 	public Type getType() {
 		return type;
@@ -65,7 +65,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @param type
+	 * @param type the type of the application to set
 	 */
 	public void setType(Type type) {
 		this.type = type;
@@ -73,7 +73,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return repository the repository which contains the applications code
 	 */
 	public String getRepository() {
 		return repository;
@@ -81,23 +81,21 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @param repository
+	 * @param repository the repository to set
 	 */
 	public void setResository(String repository) {
 		this.repository = repository;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return users the users which are invited to this application
 	 */
 	public User[] getInvitations() {
 		return invitations;
 	}
 
 	/**
-	 * 
-	 * @param invitations
+	 * @param invitations the invotations to set 
 	 */
 	public void setInvitations(User[] invitations) {
 		this.invitations = invitations;
@@ -105,7 +103,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return user the owner of the application
 	 */
 	public User getOwner() {
 		return owner;
@@ -113,7 +111,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @param owner
+	 * @param owner the user to set
 	 */
 	public void setOwner(User owner) {
 		this.owner = owner;
@@ -121,7 +119,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return date the date of creation
 	 */
 	public String getDateCreated() {
 		return date_created;
@@ -129,7 +127,7 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @param date_created
+	 * @param date_created the date_created to set
 	 */
 	public void setDateCreated(String date_created) {
 		this.date_created = date_created;
@@ -137,47 +135,42 @@ public class Application extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return modified the date when the application was modified at least
 	 */
 	public String getDateModified() {
 		return date_modified;
 	}
 
 	/**
-	 * 
-	 * @param date_modified
+	 * @param date_modified the date_modified to set
 	 */
 	public void setDateModified(String date_modified) {
 		this.date_modified = date_modified;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return users the users which are currently involved to that application
 	 */
 	public User[] getUsers() {
 		return users;
 	}
 
 	/**
-	 * 
-	 * @param users
+	 * @param users the users to set
 	 */
 	public void setUsers(User[] users) {
 		this.users = users;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return deployments the deployments of the application
 	 */
 	public Deployment[] getDeployments() {
 		return deployments;
 	}
 
 	/**
-	 * 
-	 * @param deployments
+	 * @param deployments the deployments to set
 	 */
 	public void setDeployments(Deployment[] deployments) {
 		this.deployments = deployments;

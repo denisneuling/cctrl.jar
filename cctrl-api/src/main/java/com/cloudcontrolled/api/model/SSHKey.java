@@ -31,7 +31,7 @@ public class SSHKey extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return key the sshKey
 	 */
 	public String getKey() {
 		return key;
@@ -39,7 +39,7 @@ public class SSHKey extends AbstractModel {
 
 	/**
 	 * 
-	 * @param key
+	 * @param key the sshKey to set
 	 */
 	public void setKey(String key) {
 		this.key = key;
@@ -47,7 +47,7 @@ public class SSHKey extends AbstractModel {
 
 	/**
 	 * 
-	 * @return
+	 * @return keyId the ssh key id
 	 */
 	public String getKeyId() {
 		return key_id;
@@ -55,7 +55,7 @@ public class SSHKey extends AbstractModel {
 
 	/**
 	 * 
-	 * @param keyId
+	 * @param keyId the ssh key id to set
 	 */
 	public void setKeyId(String keyId) {
 		this.key_id = keyId;

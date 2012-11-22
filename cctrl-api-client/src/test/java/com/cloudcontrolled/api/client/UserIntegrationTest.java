@@ -29,8 +29,7 @@ import com.cloudcontrolled.api.response.CreateUserResponse;
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
-@Ignore
-public class TestIntegrationUser {
+public class UserIntegrationTest {
 
 	// private String deployment = "default";
 	// private String addonName = "mysqlsdev.free";

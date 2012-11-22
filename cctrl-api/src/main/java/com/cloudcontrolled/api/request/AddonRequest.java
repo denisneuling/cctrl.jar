@@ -52,26 +52,50 @@ public class AddonRequest extends Request<AddonResponse> {
 	public AddonRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return addonName
+	 */
 	public String getAddonName() {
 		return addonName;
 	}
 
+	/**
+	 * 
+	 * @param addonName
+	 */
 	public void setAddonName(String addonName) {
 		this.addonName = addonName;
 	}

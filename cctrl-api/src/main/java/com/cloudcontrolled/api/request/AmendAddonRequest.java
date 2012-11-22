@@ -58,34 +58,66 @@ public class AmendAddonRequest extends Request<AmendAddonResponse> {
 	public AmendAddonRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return addonAmendFrom
+	 */
 	public String getAddonAmendFrom() {
 		return addonAmendFrom;
 	}
 
+	/**
+	 * 
+	 * @param addonAmendFrom
+	 */
 	public void setAddonAmendFrom(String addonAmendFrom) {
 		this.addonAmendFrom = addonAmendFrom;
 	}
 
+	/**
+	 * 
+	 * @return addonAmendTo
+	 */
 	public String getAddonAmendTo() {
 		return addonAmendTo;
 	}
 
+	/**
+	 * 
+	 * @param addonAmendTo
+	 */
 	public void setAddonAmendTo(String addonAmendTo) {
 		this.addonAmendTo = addonAmendTo;
 	}

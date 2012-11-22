@@ -48,18 +48,34 @@ public class ListWorkerRequest extends Request<ListWorkerResponse> {
 	public ListWorkerRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}

@@ -47,18 +47,34 @@ public class ActivateUserRequest extends Request<ActivateUserResponse> {
 	public ActivateUserRequest() {
 	}
 
+	/**
+	 * 
+	 * @return userName
+	 */
 	public String getUserName() {
 		return userName;
 	}
 
+	/**
+	 * 
+	 * @param userName
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
+	/**
+	 * 
+	 * @return activationCode
+	 */
 	public String getActivationCode() {
 		return activationCode;
 	}
 
+	/**
+	 * 
+	 * @param activationCode
+	 */
 	public void setActivationCode(String activationCode) {
 		this.activationCode = activationCode;
 	}

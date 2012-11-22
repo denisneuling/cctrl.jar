@@ -46,18 +46,34 @@ public class CreateCollaboratorRequest extends Request<CreateCollaboratorRespons
 	public CreateCollaboratorRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return email
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * 
+	 * @param email
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}

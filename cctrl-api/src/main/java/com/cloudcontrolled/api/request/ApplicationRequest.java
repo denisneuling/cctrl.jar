@@ -43,10 +43,18 @@ public class ApplicationRequest extends Request<ApplicationResponse> {
 	public ApplicationRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}

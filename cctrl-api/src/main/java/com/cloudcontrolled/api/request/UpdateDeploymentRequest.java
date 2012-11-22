@@ -63,58 +63,114 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	public UpdateDeploymentRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return version
+	 */
 	public String getVersion() {
 		return version;
 	}
 
+	/**
+	 * 
+	 * @param version
+	 */
 	public void setVersion(String version) {
 		this.version = version;
 	}
 
+	/**
+	 * 
+	 * @return min
+	 */
 	public String getMin() {
 		return min;
 	}
 
+	/**
+	 * 
+	 * @param min
+	 */
 	public void setMin(String min) {
 		this.min = min;
 	}
 
+	/**
+	 * 
+	 * @return max
+	 */
 	public String getMax() {
 		return max;
 	}
 
+	/**
+	 * 
+	 * @param max
+	 */
 	public void setMax(String max) {
 		this.max = max;
 	}
 
+	/**
+	 * 
+	 * @return billingAccount
+	 */
 	public String getBillingAccount() {
 		return billingAccount;
 	}
 
+	/**
+	 * 
+	 * @param billingAccount
+	 */
 	public void setBillingAccount(String billingAccount) {
 		this.billingAccount = billingAccount;
 	}
 
+	/**
+	 * 
+	 * @return stack
+	 */
 	public String getStack() {
 		return stack;
 	}
 
+	/**
+	 * 
+	 * @param stack
+	 */
 	public void setStack(String stack) {
 		this.stack = stack;
 	}

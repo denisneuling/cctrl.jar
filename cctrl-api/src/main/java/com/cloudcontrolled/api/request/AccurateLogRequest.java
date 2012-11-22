@@ -58,34 +58,66 @@ public class AccurateLogRequest extends Request<LogResponse> {
 	public AccurateLogRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return logType
+	 */
 	public String getLogType() {
 		return logType;
 	}
 
+	/**
+	 * 
+	 * @param logType
+	 */
 	public void setLogType(String logType) {
 		this.logType = logType;
 	}
 
+	/**
+	 * 
+	 * @return unixTime
+	 */
 	public String getUnixTime() {
 		return unixTime;
 	}
 
+	/**
+	 * 
+	 * @param unixTime
+	 */
 	public void setUnixTime(String unixTime) {
 		this.unixTime = unixTime;
 	}

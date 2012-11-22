@@ -42,10 +42,18 @@ public class DeleteUserRequest extends Request<DeleteUserResponse> {
 	public DeleteUserRequest() {
 	}
 
+	/**
+	 * 
+	 * @return userName
+	 */
 	public String getUserName() {
 		return userName;
 	}
 
+	/**
+	 * 
+	 * @param userName
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

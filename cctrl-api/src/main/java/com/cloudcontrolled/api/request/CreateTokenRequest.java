@@ -48,18 +48,34 @@ public class CreateTokenRequest extends Request<CreateTokenResponse> {
 		this.password = password;
 	}
 
+	/**
+	 * 
+	 * @return user
+	 */
 	public String getUser() {
 		return user;
 	}
 
+	/**
+	 * 
+	 * @param user
+	 */
 	public void setUser(String user) {
 		this.user = user;
 	}
 
+	/**
+	 * 
+	 * @return password
+	 */
 	public String getPassword() {
 		return password;
 	}
 
+	/**
+	 * 
+	 * @param password
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}

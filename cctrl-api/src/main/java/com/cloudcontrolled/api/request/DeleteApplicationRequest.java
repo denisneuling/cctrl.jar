@@ -37,16 +37,24 @@ public class DeleteApplicationRequest extends Request<DeleteApplicationResponse>
 
 	@Required
 	@PathVariable("${app}")
-	private String ApplicationName;
+	private String applicationName;
 
 	public DeleteApplicationRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
-		return ApplicationName;
+		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
-		ApplicationName = applicationName;
+		this.applicationName = applicationName;
 	}
 }

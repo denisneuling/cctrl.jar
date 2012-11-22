@@ -42,10 +42,18 @@ public class ListCollaboratorRequest extends Request<ListCollaboratorResponse> {
 	public ListCollaboratorRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}

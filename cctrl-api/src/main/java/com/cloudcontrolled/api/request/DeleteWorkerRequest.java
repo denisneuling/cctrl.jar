@@ -52,26 +52,50 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	public DeleteWorkerRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return workerId
+	 */
 	public String getWorkerId() {
 		return workerId;
 	}
 
+	/**
+	 * 
+	 * @param workerId
+	 */
 	public void setWorkerId(String workerId) {
 		this.workerId = workerId;
 	}

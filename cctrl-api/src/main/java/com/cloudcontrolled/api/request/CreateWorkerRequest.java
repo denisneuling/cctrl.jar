@@ -53,26 +53,50 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	public CreateWorkerRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return deploymentName
+	 */
 	public String getDeploymentName() {
 		return deploymentName;
 	}
 
+	/**
+	 * 
+	 * @param deploymentName
+	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
+	/**
+	 * 
+	 * @return worker
+	 */
 	public String getWorker() {
 		return worker;
 	}
 
+	/**
+	 * 
+	 * @param worker
+	 */
 	public void setWorker(String worker) {
 		this.worker = worker;
 	}

@@ -53,26 +53,50 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	public CreateApplicationRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
+	/**
+	 * 
+	 * @return type
+	 */
 	public String getType() {
 		return type;
 	}
 
+	/**
+	 * 
+	 * @param type
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
-
+	
+	/**
+	 * 
+	 * @return repositoryType
+	 */
 	public String getRepositoryType() {
 		return repositoryType;
 	}
 
+	/**
+	 * 
+	 * @param repositoryType
+	 */
 	public void setRepositoryType(String repositoryType) {
 		this.repositoryType = repositoryType;
 	}

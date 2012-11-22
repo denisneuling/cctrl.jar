@@ -42,10 +42,18 @@ public class ListDeploymentRequest extends Request<ListDeploymentResponse> {
 	public ListDeploymentRequest() {
 	}
 
+	/**
+	 * 
+	 * @return applicationName
+	 */
 	public String getApplicationName() {
 		return applicationName;
 	}
 
+	/**
+	 * 
+	 * @param applicationName
+	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}

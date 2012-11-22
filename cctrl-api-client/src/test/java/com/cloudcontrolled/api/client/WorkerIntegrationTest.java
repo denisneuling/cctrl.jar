@@ -20,14 +20,24 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.cloudcontrolled.api.client.auth.Credentials;
-import com.cloudcontrolled.api.request.CreateUserRequest;
-import com.cloudcontrolled.api.response.CreateUserResponse;
+import com.cloudcontrolled.api.model.Worker;
+import com.cloudcontrolled.api.request.CreateWorkerRequest;
+import com.cloudcontrolled.api.request.DeleteWorkerRequest;
+import com.cloudcontrolled.api.request.ListWorkerRequest;
+import com.cloudcontrolled.api.response.CreateWorkerResponse;
+import com.cloudcontrolled.api.response.DeleteWorkerResponse;
+import com.cloudcontrolled.api.response.ListWorkerResponse;
 
 /**
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
+@Ignore
 public class WorkerIntegrationTest {
+
+	private String application = "zj";
+	private String deployment = "default";
+	private String worker = "worker.long";
 
 	private Credentials credentials;
 	private CloudControlClient client;
@@ -42,14 +52,70 @@ public class WorkerIntegrationTest {
 	}
 
 	@Test
-	public void testCreateUser() {
-		CreateUserRequest request = new CreateUserRequest();
-		
-		request.setEmail("denisneuling@gmail.com");
-		request.setUserName("denisneuling");
-		request.setPassword("Loikaemie");
-		
-		CreateUserResponse response = client.send(request);
+	public void testCreate10() {
+		for (int i = 0; i < 10; i++) {
+			testCreateWorker();
+		}
+	}
+
+	@Test
+	public void testCreateWorker() {
+		CreateWorkerRequest request = new CreateWorkerRequest();
+		request.setApplicationName(application);
+		request.setDeploymentName(deployment);
+		request.setWorker(worker);
+
+		CreateWorkerResponse response = client.send(request);
 		System.out.println(response);
+	}
+
+	@Test
+	public void testListWorkers() {
+		ListWorkerRequest request = new ListWorkerRequest();
+		request.setApplicationName(application);
+		request.setDeploymentName(deployment);
+
+		ListWorkerResponse response = client.send(request);
+		System.out.println(response);
+
+		Worker[] workers = response.getWorkers();
+		if (workers != null) {
+			for (int i = 0; i < workers.length; i++) {
+				System.out.println(i + "\t" + workers[i]);
+			}
+		}
+	}
+
+	@Test
+	public void testDeleteWorker() {
+		DeleteWorkerRequest request = new DeleteWorkerRequest();
+		request.setApplicationName(application);
+		request.setDeploymentName(deployment);
+		request.setWorkerId(worker);
+
+		DeleteWorkerResponse response = client.send(request);
+		System.out.println(response);
+	}
+
+	@Test
+	public void testRemoveAllWorkers() {
+		ListWorkerRequest listRequest = new ListWorkerRequest();
+		listRequest.setApplicationName(application);
+		listRequest.setDeploymentName(deployment);
+		ListWorkerResponse listResponse = client.send(listRequest);
+		Worker[] workers = listResponse.getWorkers();
+		if (workers != null) {
+			for (Worker worker : workers) {
+				System.out.println(worker);
+
+				DeleteWorkerRequest request = new DeleteWorkerRequest();
+				request.setApplicationName(application);
+				request.setDeploymentName(deployment);
+				request.setWorkerId(worker.getWrk_id());
+
+				DeleteWorkerResponse response = client.send(request);
+				System.out.println(response);
+			}
+		}
 	}
 }

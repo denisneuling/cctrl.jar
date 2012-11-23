@@ -28,15 +28,25 @@ import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
 /**
+ * <p>
+ * RequestUtil class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class RequestUtil {
 
 	/**
+	 * <p>
+	 * getInstanceOfParameterizedType.
+	 * </p>
 	 * 
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> Response<T> getInstanceOfParameterizedType(Request<T> request) {
@@ -50,9 +60,15 @@ public class RequestUtil {
 	}
 
 	/**
+	 * <p>
+	 * getBodyAsMultiValuedMap.
+	 * </p>
 	 * 
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link javax.ws.rs.core.MultivaluedMap} object.
 	 */
 	public static <T> MultivaluedMap<String, String> getBodyAsMultiValuedMap(Request<T> request) {
 		MultivaluedMap<String, String> map = new BodyMultivaluedMap();

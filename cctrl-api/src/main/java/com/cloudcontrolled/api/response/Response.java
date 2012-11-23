@@ -20,10 +20,10 @@ import java.io.Serializable;
 /**
  * Abstract Response class which represents the http response of the fired http
  * request
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * @param <T>
- *
+ * 
  */
 public abstract class Response<T> implements Serializable {
 	private static final long serialVersionUID = 60689416775607883L;
@@ -34,8 +34,10 @@ public abstract class Response<T> implements Serializable {
 	private boolean error = false;
 
 	/**
-	 * <p>Getter for the field <code>content</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>content</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getContent() {
@@ -43,17 +45,22 @@ public abstract class Response<T> implements Serializable {
 	}
 
 	/**
-	 * <p>Setter for the field <code>content</code>.</p>
-	 *
-	 * @param content a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>content</code>.
+	 * </p>
+	 * 
+	 * @param content
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
 	/**
-	 * <p>Getter for the field <code>statusCode</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>statusCode</code>.
+	 * </p>
+	 * 
 	 * @return a int.
 	 */
 	public int getStatusCode() {
@@ -61,17 +68,22 @@ public abstract class Response<T> implements Serializable {
 	}
 
 	/**
-	 * <p>Setter for the field <code>statusCode</code>.</p>
-	 *
-	 * @param statusCode a int.
+	 * <p>
+	 * Setter for the field <code>statusCode</code>.
+	 * </p>
+	 * 
+	 * @param statusCode
+	 *            a int.
 	 */
 	public void setStatusCode(int statusCode) {
 		this.statusCode = statusCode;
 	}
 
 	/**
-	 * <p>Getter for the field <code>responseTime</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>responseTime</code>.
+	 * </p>
+	 * 
 	 * @return a long.
 	 */
 	public long getResponseTime() {
@@ -79,17 +91,22 @@ public abstract class Response<T> implements Serializable {
 	}
 
 	/**
-	 * <p>Setter for the field <code>responseTime</code>.</p>
-	 *
-	 * @param responseTime a long.
+	 * <p>
+	 * Setter for the field <code>responseTime</code>.
+	 * </p>
+	 * 
+	 * @param responseTime
+	 *            a long.
 	 */
 	public void setResponseTime(long responseTime) {
 		this.responseTime = responseTime;
 	}
 
 	/**
-	 * <p>isError.</p>
-	 *
+	 * <p>
+	 * isError.
+	 * </p>
+	 * 
 	 * @return a boolean.
 	 */
 	public boolean isError() {
@@ -97,9 +114,12 @@ public abstract class Response<T> implements Serializable {
 	}
 
 	/**
-	 * <p>Setter for the field <code>error</code>.</p>
-	 *
-	 * @param error a boolean.
+	 * <p>
+	 * Setter for the field <code>error</code>.
+	 * </p>
+	 * 
+	 * @param error
+	 *            a boolean.
 	 */
 	public void setError(boolean error) {
 		this.error = error;

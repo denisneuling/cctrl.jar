@@ -25,13 +25,22 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 
 /**
+ * <p>
+ * JsonDeserializer class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class JsonDeserializer {
 
 	protected Gson gson;
 
+	/**
+	 * <p>
+	 * Constructor for JsonDeserializer.
+	 * </p>
+	 */
 	public JsonDeserializer() {
 		initializeGson();
 	}
@@ -55,10 +64,17 @@ public class JsonDeserializer {
 	}
 
 	/**
+	 * <p>
+	 * fromJSON.
+	 * </p>
 	 * 
 	 * @param response
+	 *            a {@link java.lang.String} object.
 	 * @param target
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.response.Response} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	@SuppressWarnings("unchecked")
 	public <T> Response<T> fromJSON(String response, Response<T> target) {

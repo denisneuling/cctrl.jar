@@ -26,9 +26,9 @@ package com.cloudcontrolled.api.model;
  * <li><strong>worker</strong> <small>for an overview about the activity of your
  * workers belonging to your deployment</small></li>
  * </ul>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public enum LogType {
 

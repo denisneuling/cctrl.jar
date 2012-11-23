@@ -24,11 +24,11 @@ import java.lang.annotation.Target;
 import com.cloudcontrolled.api.request.Request;
 
 /**
- * The decorated <strong>{@link com.cloudcontrolled.api.request.Request} type</strong> is mapped onto the
- * defined url path.
- *
+ * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}
+ * type</strong> is mapped onto the defined url path.
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

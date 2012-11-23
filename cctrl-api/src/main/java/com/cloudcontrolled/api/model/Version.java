@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The version object contains informations about the latest available software
  * to access the cloudCOntrol API.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class Version extends AbstractModel {
 
@@ -28,14 +28,18 @@ public class Version extends AbstractModel {
 	private String cctrl;
 
 	/**
-	 * <p>Constructor for Version.</p>
+	 * <p>
+	 * Constructor for Version.
+	 * </p>
 	 */
 	public Version() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>pycclib</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>pycclib</code>.
+	 * </p>
+	 * 
 	 * @return pycclib the latest pycclib release version
 	 */
 	public String getPycclib() {
@@ -43,17 +47,22 @@ public class Version extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>pycclib</code>.</p>
-	 *
-	 * @param pycclib the latest pycclib release version
+	 * <p>
+	 * Setter for the field <code>pycclib</code>.
+	 * </p>
+	 * 
+	 * @param pycclib
+	 *            the latest pycclib release version
 	 */
 	public void setPycclib(String pycclib) {
 		this.pycclib = pycclib;
 	}
 
 	/**
-	 * <p>Getter for the field <code>cctrl</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>cctrl</code>.
+	 * </p>
+	 * 
 	 * @return cctrl the latest cctrl release version
 	 */
 	public String getCctrl() {
@@ -61,9 +70,12 @@ public class Version extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>cctrl</code>.</p>
-	 *
-	 * @param cctrl the latest cctrl release version to set
+	 * <p>
+	 * Setter for the field <code>cctrl</code>.
+	 * </p>
+	 * 
+	 * @param cctrl
+	 *            the latest cctrl release version to set
 	 */
 	public void setCctrl(String cctrl) {
 		this.cctrl = cctrl;

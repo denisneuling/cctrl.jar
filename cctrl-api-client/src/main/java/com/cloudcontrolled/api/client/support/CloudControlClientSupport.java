@@ -38,12 +38,18 @@ import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
 /**
+ * <p>
+ * CloudControlClientSupport class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class CloudControlClientSupport extends AbstractCloudControlClientSupport {
 
+	/** Constant <code>ENV_API_URL_KEY="CCTRL_API_URL"</code> */
 	protected final static String ENV_API_URL_KEY = "CCTRL_API_URL";
+	/** Constant <code>apiUrl="https://api.cloudcontrol.com"</code> */
 	protected final static String apiUrl = "https://api.cloudcontrol.com";
 
 	protected TokenStore tokenStore = new TokenStore();
@@ -58,6 +64,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * #deserializeError(java.io.InputStream,
 	 * com.cloudcontrolled.api.request.Request)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	protected <T> Response<T> deserializeError(InputStream inputStream, Request<T> request) {
 		String content = null;
@@ -78,6 +85,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * #deserializeError(java.lang.String,
 	 * com.cloudcontrolled.api.request.Request)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	protected <T> Response<T> deserializeError(String response, Request<T> request) {
 		Response<T> target = RequestUtil.getInstanceOfParameterizedType(request);
@@ -94,6 +102,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * #deserialize(java.io.InputStream,
 	 * com.cloudcontrolled.api.request.Request)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	protected <T> Response<T> deserialize(InputStream inputStream, Request<T> request) {
 		String content = null;
@@ -113,6 +122,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * com.cloudcontrolled.api.client.support.AbstractCloudControlClientSupport
 	 * #deserialize(java.lang.String, com.cloudcontrolled.api.request.Request)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	protected <T> Response<T> deserialize(String response, Request<T> request) {
 		Response<T> target = RequestUtil.getInstanceOfParameterizedType(request);
@@ -127,8 +137,11 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	}
 
 	/**
+	 * <p>
+	 * getTargetUrl.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link java.lang.String} object.
 	 */
 	public static String getTargetUrl() {
 		String targetUrl = System.getenv(ENV_API_URL_KEY);
@@ -141,10 +154,15 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	}
 
 	/**
+	 * <p>
+	 * toBase64.
+	 * </p>
 	 * 
 	 * @param user
+	 *            a {@link java.lang.String} object.
 	 * @param password
-	 * @return
+	 *            a {@link java.lang.String} object.
+	 * @return a {@link java.lang.String} object.
 	 */
 	protected String toBase64(String user, String password) {
 		StringBuffer stringBuffer = new StringBuffer();
@@ -155,9 +173,13 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	}
 
 	/**
+	 * <p>
+	 * instantiateWebClient.
+	 * </p>
 	 * 
 	 * @param targetUrl
-	 * @return
+	 *            a {@link java.lang.String} object.
+	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 */
 	protected WebClient instantiateWebClient(String targetUrl) {
 		WebClient webClient = WebClient.create(targetUrl).type("application/x-www-form-urlencoded").accept(MediaType.TEXT_PLAIN).accept(MediaType.APPLICATION_JSON);
@@ -182,19 +204,28 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	}
 
 	/**
+	 * <p>
+	 * setAuthorizationBase64.
+	 * </p>
 	 * 
 	 * @param webClient
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param base64
-	 * @return
+	 *            a {@link java.lang.String} object.
+	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 */
 	protected WebClient setAuthorizationBase64(WebClient webClient, String base64) {
 		return webClient.header("Authorization", "Basic " + base64);
 	}
 
 	/**
+	 * <p>
+	 * setAuthorizationCCAuthToken.
+	 * </p>
 	 * 
 	 * @param webClient
-	 * @return
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
+	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 */
 	protected WebClient setAuthorizationCCAuthToken(WebClient webClient) {
 		return webClient.header("Authorization", "cc_auth_token=\"" + tokenStore.getToken() + "\"");

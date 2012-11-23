@@ -22,13 +22,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateTokenResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#TokenCREATE"
  * >https://api.cloudcontrol.com/doc/#TokenCREATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.POST)
 @Path("/token/")
@@ -42,16 +42,22 @@ public class CreateTokenRequest extends Request<CreateTokenResponse> {
 	private String password;
 
 	/**
-	 * <p>Constructor for CreateTokenRequest.</p>
+	 * <p>
+	 * Constructor for CreateTokenRequest.
+	 * </p>
 	 */
 	public CreateTokenRequest() {
 	}
 
 	/**
-	 * <p>Constructor for CreateTokenRequest.</p>
-	 *
-	 * @param user a {@link java.lang.String} object.
-	 * @param password a {@link java.lang.String} object.
+	 * <p>
+	 * Constructor for CreateTokenRequest.
+	 * </p>
+	 * 
+	 * @param user
+	 *            a {@link java.lang.String} object.
+	 * @param password
+	 *            a {@link java.lang.String} object.
 	 */
 	public CreateTokenRequest(String user, String password) {
 		this.user = user;
@@ -59,8 +65,10 @@ public class CreateTokenRequest extends Request<CreateTokenResponse> {
 	}
 
 	/**
-	 * <p>Getter for the field <code>user</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>user</code>.
+	 * </p>
+	 * 
 	 * @return user
 	 */
 	public String getUser() {
@@ -68,17 +76,22 @@ public class CreateTokenRequest extends Request<CreateTokenResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>user</code>.</p>
-	 *
-	 * @param user a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>user</code>.
+	 * </p>
+	 * 
+	 * @param user
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setUser(String user) {
 		this.user = user;
 	}
 
 	/**
-	 * <p>Getter for the field <code>password</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>password</code>.
+	 * </p>
+	 * 
 	 * @return password
 	 */
 	public String getPassword() {
@@ -86,9 +99,12 @@ public class CreateTokenRequest extends Request<CreateTokenResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>password</code>.</p>
-	 *
-	 * @param password a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>password</code>.
+	 * </p>
+	 * 
+	 * @param password
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setPassword(String password) {
 		this.password = password;

@@ -22,10 +22,12 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * <p>ListSSHKeyNormalizer class.</p>
- *
+ * <p>
+ * ListSSHKeyNormalizer class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class ListSSHKeyNormalizer extends JSONNormalizer {
 

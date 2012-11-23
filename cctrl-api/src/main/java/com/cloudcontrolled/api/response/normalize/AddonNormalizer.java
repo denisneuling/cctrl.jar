@@ -21,10 +21,12 @@ import java.util.Map;
 import org.json.JSONObject;
 
 /**
- * <p>AddonNormalizer class.</p>
- *
+ * <p>
+ * AddonNormalizer class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class AddonNormalizer extends JSONNormalizer {
 

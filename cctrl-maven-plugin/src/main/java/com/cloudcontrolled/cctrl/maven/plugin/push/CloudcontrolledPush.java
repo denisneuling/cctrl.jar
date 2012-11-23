@@ -33,12 +33,14 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
 
 /**
- * <p>CloudcontrolledPush class.</p>
- *
+ * <p>
+ * CloudcontrolledPush class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * @phase cctrl
  * @goal push
- *
+ * 
  */
 public class CloudcontrolledPush extends CloudControlledMojo<CloudcontrolledPush> {
 

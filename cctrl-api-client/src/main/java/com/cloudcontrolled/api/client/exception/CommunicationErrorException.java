@@ -18,24 +18,64 @@ package com.cloudcontrolled.api.client.exception;
 import com.cloudcontrolled.api.client.util.HttpStatus;
 
 /**
+ * <p>
+ * CommunicationErrorException class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class CommunicationErrorException extends CloudControlClientException {
 	private static final long serialVersionUID = 212232635139714702L;
 
+	/**
+	 * <p>
+	 * Constructor for CommunicationErrorException.
+	 * </p>
+	 * 
+	 * @param message
+	 *            a {@link java.lang.String} object.
+	 */
 	public CommunicationErrorException(String message) {
 		super(message);
 	}
 
+	/**
+	 * <p>
+	 * Constructor for CommunicationErrorException.
+	 * </p>
+	 * 
+	 * @param th
+	 *            a {@link java.lang.Throwable} object.
+	 */
 	public CommunicationErrorException(Throwable th) {
 		super(th);
 	}
 
+	/**
+	 * <p>
+	 * Constructor for CommunicationErrorException.
+	 * </p>
+	 * 
+	 * @param httpStatus
+	 *            a {@link com.cloudcontrolled.api.client.util.HttpStatus}
+	 *            object.
+	 * @param message
+	 *            a {@link java.lang.String} object.
+	 */
 	public CommunicationErrorException(HttpStatus httpStatus, String message) {
 		super(httpStatus.getCode() + " " + message);
 	}
 
+	/**
+	 * <p>
+	 * Constructor for CommunicationErrorException.
+	 * </p>
+	 * 
+	 * @param httpStatus
+	 *            a {@link com.cloudcontrolled.api.client.util.HttpStatus}
+	 *            object.
+	 */
 	public CommunicationErrorException(HttpStatus httpStatus) {
 		super(httpStatus.getCode() + " " + httpStatus.toString());
 	}

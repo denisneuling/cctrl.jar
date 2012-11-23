@@ -33,8 +33,12 @@ import com.cloudcontrolled.api.response.CreateTokenResponse;
 import com.cloudcontrolled.api.response.Response;
 
 /**
+ * <p>
+ * CloudControlClient class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class CloudControlClient extends CloudControlClientSupport implements ICloudControlClient {
 
@@ -44,6 +48,15 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	private CloudControlClient() {
 	}
 
+	/**
+	 * <p>
+	 * Constructor for CloudControlClient.
+	 * </p>
+	 * 
+	 * @param credentials
+	 *            a {@link com.cloudcontrolled.api.client.auth.Credentials}
+	 *            object.
+	 */
 	public CloudControlClient(Credentials credentials) {
 		this.credentials = credentials;
 	}
@@ -53,6 +66,7 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	 * 
 	 * @see com.cloudcontrolled.api.client.ICloudControlClient#renewToken()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void renewToken() {
 		CreateTokenRequest createTokenRequest = new CreateTokenRequest();
@@ -86,6 +100,7 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	 * com.cloudcontrolled.api.client.ICloudControlClient#send(com.cloudcontrolled
 	 * .api.request.Request)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	@SuppressWarnings("unchecked")
 	public <T> T send(Request<T> request) {

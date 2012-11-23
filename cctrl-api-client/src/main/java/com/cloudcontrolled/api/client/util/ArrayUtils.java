@@ -18,16 +18,27 @@ package com.cloudcontrolled.api.client.util;
 import java.util.Arrays;
 
 /**
+ * <p>
+ * ArrayUtils class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class ArrayUtils {
 
 	/**
+	 * <p>
+	 * concat.
+	 * </p>
 	 * 
 	 * @param first
+	 *            an array of T objects.
 	 * @param second
-	 * @return
+	 *            an array of T objects.
+	 * @param <T>
+	 *            a T object.
+	 * @return an array of T objects.
 	 */
 	public static <T> T[] concat(T[] first, T[] second) {
 		T[] result = Arrays.copyOf(first, (first.length + second.length));

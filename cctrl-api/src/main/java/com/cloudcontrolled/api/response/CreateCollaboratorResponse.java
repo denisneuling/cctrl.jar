@@ -20,10 +20,12 @@ import com.cloudcontrolled.api.model.User;
 import com.cloudcontrolled.api.response.normalize.UserNormalizer;
 
 /**
- * <p>CreateCollaboratorResponse class.</p>
- *
+ * <p>
+ * CreateCollaboratorResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(UserNormalizer.class)
 public class CreateCollaboratorResponse extends Response<CreateCollaboratorResponse> {
@@ -32,14 +34,18 @@ public class CreateCollaboratorResponse extends Response<CreateCollaboratorRespo
 	private User user;
 
 	/**
-	 * <p>Constructor for CreateCollaboratorResponse.</p>
+	 * <p>
+	 * Constructor for CreateCollaboratorResponse.
+	 * </p>
 	 */
 	public CreateCollaboratorResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>user</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>user</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.User} object.
 	 */
 	public User getUser() {
@@ -47,9 +53,12 @@ public class CreateCollaboratorResponse extends Response<CreateCollaboratorRespo
 	}
 
 	/**
-	 * <p>Setter for the field <code>user</code>.</p>
-	 *
-	 * @param user a {@link com.cloudcontrolled.api.model.User} object.
+	 * <p>
+	 * Setter for the field <code>user</code>.
+	 * </p>
+	 * 
+	 * @param user
+	 *            a {@link com.cloudcontrolled.api.model.User} object.
 	 */
 	public void setUser(User user) {
 		this.user = user;

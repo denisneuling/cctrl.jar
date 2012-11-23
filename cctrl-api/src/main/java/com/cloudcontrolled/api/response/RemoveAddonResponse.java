@@ -19,10 +19,12 @@ import com.cloudcontrolled.api.annotation.Normalized;
 import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
 
 /**
- * <p>RemoveAddonResponse class.</p>
- *
+ * <p>
+ * RemoveAddonResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(DeleteNormalizer.class)
 public class RemoveAddonResponse extends Response<RemoveAddonResponse> {
@@ -31,14 +33,18 @@ public class RemoveAddonResponse extends Response<RemoveAddonResponse> {
 	private String message;
 
 	/**
-	 * <p>Constructor for RemoveAddonResponse.</p>
+	 * <p>
+	 * Constructor for RemoveAddonResponse.
+	 * </p>
 	 */
 	public RemoveAddonResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>message</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>message</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getMessage() {
@@ -46,9 +52,12 @@ public class RemoveAddonResponse extends Response<RemoveAddonResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>message</code>.</p>
-	 *
-	 * @param message a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>message</code>.
+	 * </p>
+	 * 
+	 * @param message
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setMessage(String message) {
 		this.message = message;

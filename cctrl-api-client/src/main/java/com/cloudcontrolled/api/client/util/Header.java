@@ -8,11 +8,16 @@ import java.util.Properties;
 import org.apache.cxf.jaxrs.client.WebClient;
 
 /**
+ * <p>
+ * Header class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class Header {
 
+	/** Constant <code>PROPERTIESLOACTION="header.properties"</code> */
 	public static final String PROPERTIESLOACTION = "header.properties";
 
 	private static Header INSTANCE;
@@ -56,8 +61,11 @@ public class Header {
 	}
 
 	/**
+	 * <p>
+	 * getInstance.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link com.cloudcontrolled.api.client.util.Header} object.
 	 */
 	public static Header getInstance() {
 		if (INSTANCE == null) {
@@ -72,9 +80,13 @@ public class Header {
 	}
 
 	/**
+	 * <p>
+	 * Setter for the field <code>header</code>.
+	 * </p>
 	 * 
 	 * @param webClient
-	 * @return
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
+	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 */
 	public static WebClient setHeader(WebClient webClient) {
 		Properties properties = getInstance().getHeader();

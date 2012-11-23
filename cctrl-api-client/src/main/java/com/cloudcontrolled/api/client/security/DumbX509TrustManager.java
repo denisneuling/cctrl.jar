@@ -23,8 +23,12 @@ import javax.net.ssl.TrustManager;
 import com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager;
 
 /**
+ * <p>
+ * DumbX509TrustManager class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class DumbX509TrustManager extends X509ExtendedTrustManager implements TrustManager {
 
@@ -35,6 +39,7 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * javax.net.ssl.X509TrustManager#checkClientTrusted(java.security.cert.
 	 * X509Certificate[], java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	public void checkClientTrusted(X509Certificate[] arg0, String arg1) throws CertificateException {
 	}
 
@@ -45,6 +50,7 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * javax.net.ssl.X509TrustManager#checkServerTrusted(java.security.cert.
 	 * X509Certificate[], java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	public void checkServerTrusted(X509Certificate[] arg0, String arg1) throws CertificateException {
 	}
 
@@ -52,6 +58,13 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * (non-Javadoc)
 	 * 
 	 * @see javax.net.ssl.X509TrustManager#getAcceptedIssuers()
+	 */
+	/**
+	 * <p>
+	 * getAcceptedIssuers.
+	 * </p>
+	 * 
+	 * @return an array of {@link java.security.cert.X509Certificate} objects.
 	 */
 	public X509Certificate[] getAcceptedIssuers() {
 		return null;
@@ -65,6 +78,7 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * (java.security.cert.X509Certificate[], java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void checkClientTrusted(X509Certificate[] arg0, String arg1, String arg2, String arg3) throws CertificateException {
 	}
@@ -77,6 +91,7 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * (java.security.cert.X509Certificate[], java.lang.String,
 	 * java.lang.String, java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void checkServerTrusted(X509Certificate[] arg0, String arg1, String arg2, String arg3) throws CertificateException {
 	}

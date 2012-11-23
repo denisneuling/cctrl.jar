@@ -21,10 +21,12 @@ import java.util.Map;
 import org.json.JSONObject;
 
 /**
- * <p>VersionNormalizer class.</p>
- *
+ * <p>
+ * VersionNormalizer class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class VersionNormalizer extends JSONNormalizer {
 

@@ -20,15 +20,25 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.request.Request;
 
 /**
+ * <p>
+ * HttpMethodUtil class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class HttpMethodUtil {
 
 	/**
+	 * <p>
+	 * retrieveMethod.
+	 * </p>
 	 * 
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.common.HttpMethod} object.
 	 */
 	public static <T> HttpMethod retrieveMethod(Request<T> request) {
 		if (request == null) {

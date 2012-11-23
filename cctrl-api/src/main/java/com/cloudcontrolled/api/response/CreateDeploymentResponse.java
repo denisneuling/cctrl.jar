@@ -20,10 +20,12 @@ import com.cloudcontrolled.api.model.Deployment;
 import com.cloudcontrolled.api.response.normalize.DeploymentNormalizer;
 
 /**
- * <p>CreateDeploymentResponse class.</p>
- *
+ * <p>
+ * CreateDeploymentResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(DeploymentNormalizer.class)
 public class CreateDeploymentResponse extends Response<CreateDeploymentResponse> {
@@ -32,14 +34,18 @@ public class CreateDeploymentResponse extends Response<CreateDeploymentResponse>
 	private Deployment deployment;
 
 	/**
-	 * <p>Constructor for CreateDeploymentResponse.</p>
+	 * <p>
+	 * Constructor for CreateDeploymentResponse.
+	 * </p>
 	 */
 	public CreateDeploymentResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>deployment</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deployment</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.Deployment} object.
 	 */
 	public Deployment getDeployment() {
@@ -47,9 +53,12 @@ public class CreateDeploymentResponse extends Response<CreateDeploymentResponse>
 	}
 
 	/**
-	 * <p>Setter for the field <code>deployment</code>.</p>
-	 *
-	 * @param deployment a {@link com.cloudcontrolled.api.model.Deployment} object.
+	 * <p>
+	 * Setter for the field <code>deployment</code>.
+	 * </p>
+	 * 
+	 * @param deployment
+	 *            a {@link com.cloudcontrolled.api.model.Deployment} object.
 	 */
 	public void setDeployment(Deployment deployment) {
 		this.deployment = deployment;

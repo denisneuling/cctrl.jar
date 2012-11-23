@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.model;
  * The billed add-on model contains informations about the usage of the
  * concerning addon and which price you have to offer since the addon was added
  * to your deployment.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class BilledAddon extends AbstractModel {
 
@@ -31,14 +31,18 @@ public class BilledAddon extends AbstractModel {
 	private String addon; // addon name
 
 	/**
-	 * <p>Constructor for BilledAddon.</p>
+	 * <p>
+	 * Constructor for BilledAddon.
+	 * </p>
 	 */
 	public BilledAddon() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>costs</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>costs</code>.
+	 * </p>
+	 * 
 	 * @return costs the costs of the billed addon
 	 */
 	public double getCosts() {
@@ -46,17 +50,22 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>costs</code>.</p>
-	 *
-	 * @param costs the costs to set
+	 * <p>
+	 * Setter for the field <code>costs</code>.
+	 * </p>
+	 * 
+	 * @param costs
+	 *            the costs to set
 	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
 	/**
-	 * <p>Getter for the field <code>hours</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>hours</code>.
+	 * </p>
+	 * 
 	 * @return hours the hours which were billed
 	 */
 	public double getHours() {
@@ -64,17 +73,22 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>hours</code>.</p>
-	 *
-	 * @param hours the hours to set
+	 * <p>
+	 * Setter for the field <code>hours</code>.
+	 * </p>
+	 * 
+	 * @param hours
+	 *            the hours to set
 	 */
 	public void setHours(double hours) {
 		this.hours = hours;
 	}
 
 	/**
-	 * <p>Getter for the field <code>until</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>until</code>.
+	 * </p>
+	 * 
 	 * @return until the datetime when the addon was started to be billed
 	 */
 	public String getUntil() {
@@ -82,17 +96,22 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>until</code>.</p>
-	 *
-	 * @param until the date to set
+	 * <p>
+	 * Setter for the field <code>until</code>.
+	 * </p>
+	 * 
+	 * @param until
+	 *            the date to set
 	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
 	/**
-	 * <p>Getter for the field <code>addon</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>addon</code>.
+	 * </p>
+	 * 
 	 * @return the addon to be billed
 	 */
 	public String getAddon() {
@@ -100,9 +119,12 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>addon</code>.</p>
-	 *
-	 * @param addon the addon to set
+	 * <p>
+	 * Setter for the field <code>addon</code>.
+	 * </p>
+	 * 
+	 * @param addon
+	 *            the addon to set
 	 */
 	public void setAddon(String addon) {
 		this.addon = addon;

@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateDeploymentResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentCREATE"
  * >https://api.cloudcontrol.com/doc/#DeploymentCREATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/")
@@ -50,14 +50,18 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	private String stack;
 
 	/**
-	 * <p>Constructor for CreateDeploymentRequest.</p>
+	 * <p>
+	 * Constructor for CreateDeploymentRequest.
+	 * </p>
 	 */
 	public CreateDeploymentRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -65,17 +69,22 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deploymentName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -83,17 +92,22 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deploymentName</code>.</p>
-	 *
-	 * @param deploymentName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>stack</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>stack</code>.
+	 * </p>
+	 * 
 	 * @return stack
 	 */
 	public String getStack() {
@@ -101,9 +115,12 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>stack</code>.</p>
-	 *
-	 * @param stack a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>stack</code>.
+	 * </p>
+	 * 
+	 * @param stack
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setStack(String stack) {
 		this.stack = stack;

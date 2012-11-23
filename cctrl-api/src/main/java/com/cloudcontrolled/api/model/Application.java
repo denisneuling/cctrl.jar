@@ -21,9 +21,9 @@ import java.util.Arrays;
  * The application model contains informations about your application. For
  * example you get an overview over the collaborators which are allowed to
  * manage the application or a list of the currently installed deployments.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class Application extends AbstractModel {
 
@@ -38,14 +38,18 @@ public class Application extends AbstractModel {
 	private Deployment[] deployments;
 
 	/**
-	 * <p>Constructor for Application.</p>
+	 * <p>
+	 * Constructor for Application.
+	 * </p>
 	 */
 	public Application() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>name</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>name</code>.
+	 * </p>
+	 * 
 	 * @return name the name of the application
 	 */
 	public String getName() {
@@ -53,17 +57,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>name</code>.</p>
-	 *
-	 * @param name the name of the application to set
+	 * <p>
+	 * Setter for the field <code>name</code>.
+	 * </p>
+	 * 
+	 * @param name
+	 *            the name of the application to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * <p>Getter for the field <code>type</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>type</code>.
+	 * </p>
+	 * 
 	 * @return type the type of the application
 	 */
 	public Type getType() {
@@ -71,17 +80,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>type</code>.</p>
-	 *
-	 * @param type the type of the application to set
+	 * <p>
+	 * Setter for the field <code>type</code>.
+	 * </p>
+	 * 
+	 * @param type
+	 *            the type of the application to set
 	 */
 	public void setType(Type type) {
 		this.type = type;
 	}
 
 	/**
-	 * <p>Getter for the field <code>repository</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>repository</code>.
+	 * </p>
+	 * 
 	 * @return repository the repository which contains the applications code
 	 */
 	public String getRepository() {
@@ -89,17 +103,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>setResository.</p>
-	 *
-	 * @param repository the repository to set
+	 * <p>
+	 * setResository.
+	 * </p>
+	 * 
+	 * @param repository
+	 *            the repository to set
 	 */
 	public void setResository(String repository) {
 		this.repository = repository;
 	}
 
 	/**
-	 * <p>Getter for the field <code>invitations</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>invitations</code>.
+	 * </p>
+	 * 
 	 * @return users the users which are invited to this application
 	 */
 	public User[] getInvitations() {
@@ -107,17 +126,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>invitations</code>.</p>
-	 *
-	 * @param invitations the invotations to set
+	 * <p>
+	 * Setter for the field <code>invitations</code>.
+	 * </p>
+	 * 
+	 * @param invitations
+	 *            the invotations to set
 	 */
 	public void setInvitations(User[] invitations) {
 		this.invitations = invitations;
 	}
 
 	/**
-	 * <p>Getter for the field <code>owner</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>owner</code>.
+	 * </p>
+	 * 
 	 * @return user the owner of the application
 	 */
 	public User getOwner() {
@@ -125,17 +149,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>owner</code>.</p>
-	 *
-	 * @param owner the user to set
+	 * <p>
+	 * Setter for the field <code>owner</code>.
+	 * </p>
+	 * 
+	 * @param owner
+	 *            the user to set
 	 */
 	public void setOwner(User owner) {
 		this.owner = owner;
 	}
 
 	/**
-	 * <p>getDateCreated.</p>
-	 *
+	 * <p>
+	 * getDateCreated.
+	 * </p>
+	 * 
 	 * @return date the date of creation
 	 */
 	public String getDateCreated() {
@@ -143,17 +172,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>setDateCreated.</p>
-	 *
-	 * @param date_created the date_created to set
+	 * <p>
+	 * setDateCreated.
+	 * </p>
+	 * 
+	 * @param date_created
+	 *            the date_created to set
 	 */
 	public void setDateCreated(String date_created) {
 		this.date_created = date_created;
 	}
 
 	/**
-	 * <p>getDateModified.</p>
-	 *
+	 * <p>
+	 * getDateModified.
+	 * </p>
+	 * 
 	 * @return modified the date when the application was modified at least
 	 */
 	public String getDateModified() {
@@ -161,17 +195,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>setDateModified.</p>
-	 *
-	 * @param date_modified the date_modified to set
+	 * <p>
+	 * setDateModified.
+	 * </p>
+	 * 
+	 * @param date_modified
+	 *            the date_modified to set
 	 */
 	public void setDateModified(String date_modified) {
 		this.date_modified = date_modified;
 	}
 
 	/**
-	 * <p>Getter for the field <code>users</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>users</code>.
+	 * </p>
+	 * 
 	 * @return users the users which are currently involved to that application
 	 */
 	public User[] getUsers() {
@@ -179,17 +218,22 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>users</code>.</p>
-	 *
-	 * @param users the users to set
+	 * <p>
+	 * Setter for the field <code>users</code>.
+	 * </p>
+	 * 
+	 * @param users
+	 *            the users to set
 	 */
 	public void setUsers(User[] users) {
 		this.users = users;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deployments</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deployments</code>.
+	 * </p>
+	 * 
 	 * @return deployments the deployments of the application
 	 */
 	public Deployment[] getDeployments() {
@@ -197,9 +241,12 @@ public class Application extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deployments</code>.</p>
-	 *
-	 * @param deployments the deployments to set
+	 * <p>
+	 * Setter for the field <code>deployments</code>.
+	 * </p>
+	 * 
+	 * @param deployments
+	 *            the deployments to set
 	 */
 	public void setDeployments(Deployment[] deployments) {
 		this.deployments = deployments;

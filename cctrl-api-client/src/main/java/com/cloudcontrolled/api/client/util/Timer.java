@@ -18,8 +18,12 @@ package com.cloudcontrolled.api.client.util;
 import java.util.Date;
 
 /**
+ * <p>
+ * Timer class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class Timer {
 
@@ -27,8 +31,11 @@ public class Timer {
 	private long difference = 0;
 
 	/**
+	 * <p>
+	 * tic.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link com.cloudcontrolled.api.client.util.Timer} object.
 	 */
 	public static Timer tic() {
 		Timer timer = new Timer();
@@ -37,8 +44,11 @@ public class Timer {
 	}
 
 	/**
+	 * <p>
+	 * toc.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a long.
 	 */
 	public long toc() {
 		Date end = new Date();
@@ -48,8 +58,11 @@ public class Timer {
 	}
 
 	/**
+	 * <p>
+	 * Getter for the field <code>difference</code>.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a long.
 	 */
 	public long getDifference() {
 		return difference;

@@ -21,10 +21,12 @@ import com.cloudcontrolled.api.request.ApplicationRequest;
 import com.cloudcontrolled.api.request.UpdateDeploymentRequest;
 
 /**
- * <p>CloudControlSupport class.</p>
- *
+ * <p>
+ * CloudControlSupport class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class CloudControlSupport {
 
@@ -35,7 +37,10 @@ public class CloudControlSupport {
 
 	/** Constant <code>MASTER_BRANCH="master"</code> */
 	public static final String MASTER_BRANCH = "master";
-	/** Constant <code>LLINE="---------------------------------------"{trunked}</code> */
+	/**
+	 * Constant
+	 * <code>LLINE="---------------------------------------"{trunked}</code>
+	 */
 	public static final String LLINE = "------------------------------------------------------------------------";
 
 	/**
@@ -60,9 +65,12 @@ public class CloudControlSupport {
 	}
 
 	/**
-	 * <p>createCloudControlClient.</p>
-	 *
-	 * @return a {@link com.cloudcontrolled.api.client.CloudControlClient} object.
+	 * <p>
+	 * createCloudControlClient.
+	 * </p>
+	 * 
+	 * @return a {@link com.cloudcontrolled.api.client.CloudControlClient}
+	 *         object.
 	 */
 	public static CloudControlClient createCloudControlClient() {
 		Credentials credentials = retrieveCredentials();
@@ -72,12 +80,18 @@ public class CloudControlSupport {
 	}
 
 	/**
-	 * <p>createUpdateDeploymentRequest.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
-	 * @param deploymentName a {@link java.lang.String} object.
-	 * @param commitId a {@link java.lang.String} object.
-	 * @return a {@link com.cloudcontrolled.api.request.UpdateDeploymentRequest} object.
+	 * <p>
+	 * createUpdateDeploymentRequest.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
+	 * @param commitId
+	 *            a {@link java.lang.String} object.
+	 * @return a {@link com.cloudcontrolled.api.request.UpdateDeploymentRequest}
+	 *         object.
 	 */
 	public static UpdateDeploymentRequest createUpdateDeploymentRequest(String applicationName, String deploymentName, String commitId) {
 		UpdateDeploymentRequest updateDeploymentRequest = new UpdateDeploymentRequest();
@@ -89,10 +103,14 @@ public class CloudControlSupport {
 	}
 
 	/**
-	 * <p>createApplicationRequest.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
-	 * @return a {@link com.cloudcontrolled.api.request.ApplicationRequest} object.
+	 * <p>
+	 * createApplicationRequest.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
+	 * @return a {@link com.cloudcontrolled.api.request.ApplicationRequest}
+	 *         object.
 	 */
 	public static ApplicationRequest createApplicationRequest(String applicationName) {
 		ApplicationRequest applicationRequest = new ApplicationRequest();

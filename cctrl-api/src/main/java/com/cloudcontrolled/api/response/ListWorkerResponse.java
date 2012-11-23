@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.Worker;
 import com.cloudcontrolled.api.response.normalize.ListWorkerNormalizer;
 
 /**
- * <p>ListWorkerResponse class.</p>
- *
+ * <p>
+ * ListWorkerResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ListWorkerNormalizer.class)
 public class ListWorkerResponse extends Response<ListWorkerResponse> {
@@ -34,14 +36,18 @@ public class ListWorkerResponse extends Response<ListWorkerResponse> {
 	private Worker[] workers;
 
 	/**
-	 * <p>Constructor for ListWorkerResponse.</p>
+	 * <p>
+	 * Constructor for ListWorkerResponse.
+	 * </p>
 	 */
 	public ListWorkerResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>workers</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>workers</code>.
+	 * </p>
+	 * 
 	 * @return an array of {@link com.cloudcontrolled.api.model.Worker} objects.
 	 */
 	public Worker[] getWorkers() {
@@ -49,9 +55,13 @@ public class ListWorkerResponse extends Response<ListWorkerResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>workers</code>.</p>
-	 *
-	 * @param workers an array of {@link com.cloudcontrolled.api.model.Worker} objects.
+	 * <p>
+	 * Setter for the field <code>workers</code>.
+	 * </p>
+	 * 
+	 * @param workers
+	 *            an array of {@link com.cloudcontrolled.api.model.Worker}
+	 *            objects.
 	 */
 	public void setWorkers(Worker[] workers) {
 		this.workers = workers;

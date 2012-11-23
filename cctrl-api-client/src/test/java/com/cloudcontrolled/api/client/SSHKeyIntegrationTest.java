@@ -54,37 +54,37 @@ public class SSHKeyIntegrationTest {
 	public void testListSSHKeys() {
 		ListSSHKeyRequest request = new ListSSHKeyRequest();
 		request.setUserName(user);
-		
+
 		ListSSHKeyResponse response = client.send(request);
 		System.out.println(response);
 	}
-	
+
 	@Test
-	public void testCreateSSHKey(){
+	public void testCreateSSHKey() {
 		CreateSSHKeyRequest request = new CreateSSHKeyRequest();
 		request.setUserName(user);
 		request.setSshKey("5w8JWmAFVe");
-		
+
 		CreateSSHKeyResponse response = client.send(request);
 		System.out.println(response);
 	}
-	
+
 	@Test
-	public void testSSHKey(){
+	public void testSSHKey() {
 		SSHKeyRequest request = new SSHKeyRequest();
 		request.setUserName(user);
 		request.setSshKeyId("JX62HbVjHr");
-		
+
 		SSHKeyResponse response = client.send(request);
 		System.out.println(response);
 	}
-	
+
 	@Test
-	public void testDeleteSSHKey(){
+	public void testDeleteSSHKey() {
 		DeleteSSHKeyRequest request = new DeleteSSHKeyRequest();
 		request.setUserName(user);
 		request.setSshKeyId("5w8JWmAFVe");
-		
+
 		DeleteSSHKeyResponse response = client.send(request);
 		System.out.println(response);
 	}

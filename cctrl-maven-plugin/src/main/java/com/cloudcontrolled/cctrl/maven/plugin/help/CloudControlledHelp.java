@@ -22,12 +22,14 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
 
 /**
- * <p>CloudControlledHelp class.</p>
- *
+ * <p>
+ * CloudControlledHelp class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  * @phase cctrl
  * @goal help
- *
+ * 
  */
 public class CloudControlledHelp extends CloudControlledMojo<CloudControlledHelp> {
 

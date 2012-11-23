@@ -24,9 +24,9 @@ import java.lang.annotation.Target;
 /**
  * The decorated <strong>field</strong>'s value will fill out the defined part
  * of the request url.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

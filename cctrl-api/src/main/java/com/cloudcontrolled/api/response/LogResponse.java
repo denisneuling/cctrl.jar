@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.Log;
 import com.cloudcontrolled.api.response.normalize.LogNormalizer;
 
 /**
- * <p>LogResponse class.</p>
- *
+ * <p>
+ * LogResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(LogNormalizer.class)
 public class LogResponse extends Response<LogResponse> {
@@ -34,14 +36,18 @@ public class LogResponse extends Response<LogResponse> {
 	private Log[] logs;
 
 	/**
-	 * <p>Constructor for LogResponse.</p>
+	 * <p>
+	 * Constructor for LogResponse.
+	 * </p>
 	 */
 	public LogResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>logs</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>logs</code>.
+	 * </p>
+	 * 
 	 * @return an array of {@link com.cloudcontrolled.api.model.Log} objects.
 	 */
 	public Log[] getLogs() {
@@ -49,9 +55,12 @@ public class LogResponse extends Response<LogResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>logs</code>.</p>
-	 *
-	 * @param logs an array of {@link com.cloudcontrolled.api.model.Log} objects.
+	 * <p>
+	 * Setter for the field <code>logs</code>.
+	 * </p>
+	 * 
+	 * @param logs
+	 *            an array of {@link com.cloudcontrolled.api.model.Log} objects.
 	 */
 	public void setLogs(Log[] logs) {
 		this.logs = logs;

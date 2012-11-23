@@ -25,13 +25,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateWorkerResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#WorkerCREATE"
  * >https://api.cloudcontrol.com/doc/#WorkerCREATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/worker/")
@@ -52,14 +52,18 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	private String worker;
 
 	/**
-	 * <p>Constructor for CreateWorkerRequest.</p>
+	 * <p>
+	 * Constructor for CreateWorkerRequest.
+	 * </p>
 	 */
 	public CreateWorkerRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -67,17 +71,22 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deploymentName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -85,17 +94,22 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deploymentName</code>.</p>
-	 *
-	 * @param deploymentName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>worker</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>worker</code>.
+	 * </p>
+	 * 
 	 * @return worker
 	 */
 	public String getWorker() {
@@ -103,9 +117,12 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>worker</code>.</p>
-	 *
-	 * @param worker a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>worker</code>.
+	 * </p>
+	 * 
+	 * @param worker
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setWorker(String worker) {
 		this.worker = worker;

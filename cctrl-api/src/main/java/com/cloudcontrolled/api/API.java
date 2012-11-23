@@ -23,8 +23,10 @@ import java.util.List;
 import java.util.PropertyResourceBundle;
 
 /**
- * <p>API support class.</p>
- *
+ * <p>
+ * API support class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 public class API {
@@ -34,10 +36,13 @@ public class API {
 	private static final String FILE = "complements";
 
 	/**
-	 * <p>complementaryPyCcLib.</p>
-	 *
+	 * <p>
+	 * complementaryPyCcLib.
+	 * </p>
+	 * 
 	 * @return a {@link java.util.List} object.
-	 * @throws java.io.IOException if any.
+	 * @throws java.io.IOException
+	 *             if any.
 	 */
 	public static List<String> complementaryPyCcLib() throws IOException {
 		if (complementaryLibs == null) {

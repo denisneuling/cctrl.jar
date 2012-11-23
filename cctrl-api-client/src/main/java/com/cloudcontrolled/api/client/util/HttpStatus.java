@@ -21,8 +21,8 @@ package com.cloudcontrolled.api.client.util;
  * @see <a
  *      href="http://www.iana.org/assignments/http-status-codes/http-status-codes.xml">
  *      http://www.iana.org/assignments/http-status-codes/http-status-codes.xml</a>
- * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public enum HttpStatus {
 

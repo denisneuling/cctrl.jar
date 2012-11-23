@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.model;
  * The billed boxed object contains informations about the amount of hours and
  * boxes you used whithin the last invoice period of the concerning deployment.
  * It also contains the amount of free to use boxes you still own.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class BilledBoxes extends AbstractModel {
 
@@ -31,14 +31,18 @@ public class BilledBoxes extends AbstractModel {
 	private double boxes = 0.0;
 
 	/**
-	 * <p>Constructor for BilledBoxes.</p>
+	 * <p>
+	 * Constructor for BilledBoxes.
+	 * </p>
 	 */
 	public BilledBoxes() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>costs</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>costs</code>.
+	 * </p>
+	 * 
 	 * @return costs the costs of the billed boxes
 	 */
 	public double getCosts() {
@@ -46,17 +50,22 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>costs</code>.</p>
-	 *
-	 * @param costs the costs to set
+	 * <p>
+	 * Setter for the field <code>costs</code>.
+	 * </p>
+	 * 
+	 * @param costs
+	 *            the costs to set
 	 */
 	public void setCosts(double costs) {
 		this.costs = costs;
 	}
 
 	/**
-	 * <p>getFreeBoxes.</p>
-	 *
+	 * <p>
+	 * getFreeBoxes.
+	 * </p>
+	 * 
 	 * @return free the free boxes
 	 */
 	public double getFreeBoxes() {
@@ -64,17 +73,22 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
-	 * <p>setFreeBoxes.</p>
-	 *
-	 * @param free_boxes the free boxes to set
+	 * <p>
+	 * setFreeBoxes.
+	 * </p>
+	 * 
+	 * @param free_boxes
+	 *            the free boxes to set
 	 */
 	public void setFreeBoxes(double free_boxes) {
 		this.free_boxes = free_boxes;
 	}
 
 	/**
-	 * <p>Getter for the field <code>until</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>until</code>.
+	 * </p>
+	 * 
 	 * @return until the datetime when the boxes were started to be billed
 	 */
 	public String getUntil() {
@@ -82,17 +96,22 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>until</code>.</p>
-	 *
-	 * @param until the date to set
+	 * <p>
+	 * Setter for the field <code>until</code>.
+	 * </p>
+	 * 
+	 * @param until
+	 *            the date to set
 	 */
 	public void setUntil(String until) {
 		this.until = until;
 	}
 
 	/**
-	 * <p>Getter for the field <code>boxes</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>boxes</code>.
+	 * </p>
+	 * 
 	 * @returnm boxes the boxes to be billed
 	 * @return a double.
 	 */
@@ -101,9 +120,12 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>boxes</code>.</p>
-	 *
-	 * @param boxes the boxes to set
+	 * <p>
+	 * Setter for the field <code>boxes</code>.
+	 * </p>
+	 * 
+	 * @param boxes
+	 *            the boxes to set
 	 */
 	public void setBoxes(double boxes) {
 		this.boxes = boxes;

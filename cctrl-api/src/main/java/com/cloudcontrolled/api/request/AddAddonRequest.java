@@ -25,13 +25,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.AddAddonResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentAddonCREATE"
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonCREATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/addon/")
@@ -52,14 +52,18 @@ public class AddAddonRequest extends Request<AddAddonResponse> {
 	private String addonName;
 
 	/**
-	 * <p>Constructor for AddAddonRequest.</p>
+	 * <p>
+	 * Constructor for AddAddonRequest.
+	 * </p>
 	 */
 	public AddAddonRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -67,17 +71,22 @@ public class AddAddonRequest extends Request<AddAddonResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deploymentName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -85,17 +94,22 @@ public class AddAddonRequest extends Request<AddAddonResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deploymentName</code>.</p>
-	 *
-	 * @param deploymentName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>addonName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>addonName</code>.
+	 * </p>
+	 * 
 	 * @return addonName
 	 */
 	public String getAddonName() {
@@ -103,9 +117,12 @@ public class AddAddonRequest extends Request<AddAddonResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>addonName</code>.</p>
-	 *
-	 * @param addonName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>addonName</code>.
+	 * </p>
+	 * 
+	 * @param addonName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setAddonName(String addonName) {
 		this.addonName = addonName;

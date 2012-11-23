@@ -26,28 +26,32 @@ import com.cloudcontrolled.api.response.ListSSHKeyResponse;
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#KeyGET"
  * >https://api.cloudcontrol.com/doc/#KeyGET</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}/key/")
 public class ListSSHKeyRequest extends Request<ListSSHKeyResponse> {
 	private static final long serialVersionUID = 814735078935654001L;
-	
+
 	@Required
 	@PathVariable("${user}")
 	private String userName;
 
 	/**
-	 * <p>Constructor for ListSSHKeyRequest.</p>
+	 * <p>
+	 * Constructor for ListSSHKeyRequest.
+	 * </p>
 	 */
-	public ListSSHKeyRequest(){
+	public ListSSHKeyRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>userName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>userName</code>.
+	 * </p>
+	 * 
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -55,9 +59,12 @@ public class ListSSHKeyRequest extends Request<ListSSHKeyResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>userName</code>.</p>
-	 *
-	 * @param userName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>userName</code>.
+	 * </p>
+	 * 
+	 * @param userName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;

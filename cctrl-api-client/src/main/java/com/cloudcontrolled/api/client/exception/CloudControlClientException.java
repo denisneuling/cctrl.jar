@@ -16,16 +16,36 @@
 package com.cloudcontrolled.api.client.exception;
 
 /**
+ * <p>
+ * CloudControlClientException class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class CloudControlClientException extends RuntimeException {
 	private static final long serialVersionUID = -1578931888585925712L;
 
+	/**
+	 * <p>
+	 * Constructor for CloudControlClientException.
+	 * </p>
+	 * 
+	 * @param message
+	 *            a {@link java.lang.String} object.
+	 */
 	public CloudControlClientException(String message) {
 		super(message);
 	}
 
+	/**
+	 * <p>
+	 * Constructor for CloudControlClientException.
+	 * </p>
+	 * 
+	 * @param th
+	 *            a {@link java.lang.Throwable} object.
+	 */
 	public CloudControlClientException(Throwable th) {
 		super(th);
 	}

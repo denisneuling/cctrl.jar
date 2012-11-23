@@ -22,10 +22,12 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * <p>ListAddonNormalizer class.</p>
- *
+ * <p>
+ * ListAddonNormalizer class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class ListAddonNormalizer extends JSONNormalizer {
 

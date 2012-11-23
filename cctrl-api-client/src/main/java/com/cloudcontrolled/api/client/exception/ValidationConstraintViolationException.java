@@ -20,8 +20,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * <p>
+ * ValidationConstraintViolationException class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class ValidationConstraintViolationException extends CloudControlClientException {
 	private static final long serialVersionUID = 8653296771499098292L;
@@ -29,23 +33,52 @@ public class ValidationConstraintViolationException extends CloudControlClientEx
 	private static String lineSeparator = System.getProperty("line.separator");
 	private List<ConstraintViolation> constraintViolations = new LinkedList<ConstraintViolation>();
 
+	/**
+	 * <p>
+	 * Constructor for ValidationConstraintViolationException.
+	 * </p>
+	 * 
+	 * @param th
+	 *            a {@link java.lang.Throwable} object.
+	 */
 	public ValidationConstraintViolationException(Throwable th) {
 		super(th);
 	}
 
+	/**
+	 * <p>
+	 * Constructor for ValidationConstraintViolationException.
+	 * </p>
+	 * 
+	 * @param violations
+	 *            a {@link java.util.List} object.
+	 */
 	public ValidationConstraintViolationException(List<ConstraintViolation> violations) {
 		super(inquireMessage(violations));
 		this.constraintViolations = violations;
 	}
 
+	/**
+	 * <p>
+	 * Constructor for ValidationConstraintViolationException.
+	 * </p>
+	 * 
+	 * @param pre
+	 *            a {@link java.lang.String} object.
+	 * @param violations
+	 *            a {@link java.util.List} object.
+	 */
 	public ValidationConstraintViolationException(String pre, List<ConstraintViolation> violations) {
 		super(concat(pre, inquireMessage(violations)));
 		this.constraintViolations = violations;
 	}
 
 	/**
+	 * <p>
+	 * Getter for the field <code>constraintViolations</code>.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link java.util.List} object.
 	 */
 	public List<ConstraintViolation> getConstraintViolations() {
 		return constraintViolations;

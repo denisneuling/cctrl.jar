@@ -23,13 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateCollaboratorResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppUserCREATE"
  * >https://api.cloudcontrol.com/doc/#AppUserCREATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/user/")
@@ -44,14 +44,18 @@ public class CreateCollaboratorRequest extends Request<CreateCollaboratorRespons
 	private String email;
 
 	/**
-	 * <p>Constructor for CreateCollaboratorRequest.</p>
+	 * <p>
+	 * Constructor for CreateCollaboratorRequest.
+	 * </p>
 	 */
 	public CreateCollaboratorRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -59,17 +63,22 @@ public class CreateCollaboratorRequest extends Request<CreateCollaboratorRespons
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>email</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>email</code>.
+	 * </p>
+	 * 
 	 * @return email
 	 */
 	public String getEmail() {
@@ -77,9 +86,12 @@ public class CreateCollaboratorRequest extends Request<CreateCollaboratorRespons
 	}
 
 	/**
-	 * <p>Setter for the field <code>email</code>.</p>
-	 *
-	 * @param email a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>email</code>.
+	 * </p>
+	 * 
+	 * @param email
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setEmail(String email) {
 		this.email = email;

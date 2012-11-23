@@ -24,9 +24,9 @@ import java.lang.annotation.Target;
 /**
  * The decorated <strong>field</strong> will be send inside of the
  * <strong>message body</strong> of the http request.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

@@ -28,26 +28,44 @@ import com.cloudcontrolled.api.annotation.PathVariable;
 import com.cloudcontrolled.api.request.Request;
 
 /**
+ * <p>
+ * PathUtil class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class PathUtil {
 
 	private static final String PATTERN = "\\$\\{(.*?)*\\}(.*?)";
 
 	/**
+	 * <p>
+	 * infixPotentialDefaults.
+	 * </p>
 	 * 
 	 * @param request
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
 	 */
 	public static <T> void infixPotentialDefaults(Request<T> request) {
 		infixPotentialDefaults(request, request.getClass(), true);
 	}
 
 	/**
+	 * <p>
+	 * infixPotentialDefaults.
+	 * </p>
 	 * 
 	 * @param request
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param targetClazz
+	 *            a {@link java.lang.Class} object.
 	 * @param infixPotentialValuesOfSuperClass
+	 *            a boolean.
+	 * @param <T>
+	 *            a T object.
 	 */
 	public static <T> void infixPotentialDefaults(Request<T> request, Class<?> targetClazz, boolean infixPotentialValuesOfSuperClass) {
 		Class<?> superClass = targetClazz.getSuperclass();
@@ -73,9 +91,15 @@ public class PathUtil {
 	}
 
 	/**
+	 * <p>
+	 * resolveResourcePath.
+	 * </p>
 	 * 
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link java.lang.String} object.
 	 */
 	public static <T> String resolveResourcePath(Request<T> request) {
 		Class<?> clazz = request.getClass();

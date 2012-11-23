@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.Addon;
 import com.cloudcontrolled.api.response.normalize.ListAddonNormalizer;
 
 /**
- * <p>ListAddonResponse class.</p>
- *
+ * <p>
+ * ListAddonResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ListAddonNormalizer.class)
 public class ListAddonResponse extends Response<ListAddonResponse> {
@@ -34,8 +36,10 @@ public class ListAddonResponse extends Response<ListAddonResponse> {
 	private Addon[] addons;
 
 	/**
-	 * <p>Getter for the field <code>addons</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>addons</code>.
+	 * </p>
+	 * 
 	 * @return an array of {@link com.cloudcontrolled.api.model.Addon} objects.
 	 */
 	public Addon[] getAddons() {
@@ -43,16 +47,22 @@ public class ListAddonResponse extends Response<ListAddonResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>addons</code>.</p>
-	 *
-	 * @param addons an array of {@link com.cloudcontrolled.api.model.Addon} objects.
+	 * <p>
+	 * Setter for the field <code>addons</code>.
+	 * </p>
+	 * 
+	 * @param addons
+	 *            an array of {@link com.cloudcontrolled.api.model.Addon}
+	 *            objects.
 	 */
 	public void setAddons(Addon[] addons) {
 		this.addons = addons;
 	}
 
 	/**
-	 * <p>Constructor for ListAddonResponse.</p>
+	 * <p>
+	 * Constructor for ListAddonResponse.
+	 * </p>
 	 */
 	public ListAddonResponse() {
 	}

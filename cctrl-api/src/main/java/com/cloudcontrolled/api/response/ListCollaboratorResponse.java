@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.User;
 import com.cloudcontrolled.api.response.normalize.ListCollaboratorNormalizer;
 
 /**
- * <p>ListCollaboratorResponse class.</p>
- *
+ * <p>
+ * ListCollaboratorResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ListCollaboratorNormalizer.class)
 public class ListCollaboratorResponse extends Response<ListCollaboratorResponse> {
@@ -34,14 +36,18 @@ public class ListCollaboratorResponse extends Response<ListCollaboratorResponse>
 	private User[] users;
 
 	/**
-	 * <p>Constructor for ListCollaboratorResponse.</p>
+	 * <p>
+	 * Constructor for ListCollaboratorResponse.
+	 * </p>
 	 */
 	public ListCollaboratorResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>users</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>users</code>.
+	 * </p>
+	 * 
 	 * @return an array of {@link com.cloudcontrolled.api.model.User} objects.
 	 */
 	public User[] getUsers() {
@@ -49,9 +55,13 @@ public class ListCollaboratorResponse extends Response<ListCollaboratorResponse>
 	}
 
 	/**
-	 * <p>Setter for the field <code>users</code>.</p>
-	 *
-	 * @param users an array of {@link com.cloudcontrolled.api.model.User} objects.
+	 * <p>
+	 * Setter for the field <code>users</code>.
+	 * </p>
+	 * 
+	 * @param users
+	 *            an array of {@link com.cloudcontrolled.api.model.User}
+	 *            objects.
 	 */
 	public void setUsers(User[] users) {
 		this.users = users;

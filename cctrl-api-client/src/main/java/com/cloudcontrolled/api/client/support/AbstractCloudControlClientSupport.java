@@ -30,17 +30,28 @@ import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
 
 /**
+ * <p>
+ * Abstract AbstractCloudControlClientSupport class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public abstract class AbstractCloudControlClientSupport {
 	protected final Logger log = Logger.getLogger(this.getClass());
 
 	/**
+	 * <p>
+	 * doGet.
+	 * </p>
 	 * 
 	 * @param webClient
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected <T> Response<T> doGet(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
@@ -59,10 +70,17 @@ public abstract class AbstractCloudControlClientSupport {
 	}
 
 	/**
+	 * <p>
+	 * doPost.
+	 * </p>
 	 * 
 	 * @param webClient
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected <T> Response<T> doPost(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
@@ -81,10 +99,17 @@ public abstract class AbstractCloudControlClientSupport {
 	}
 
 	/**
+	 * <p>
+	 * doPut.
+	 * </p>
 	 * 
 	 * @param webClient
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected <T> Response<T> doPut(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
@@ -103,10 +128,17 @@ public abstract class AbstractCloudControlClientSupport {
 	}
 
 	/**
+	 * <p>
+	 * doDelete.
+	 * </p>
 	 * 
 	 * @param webClient
+	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected <T> Response<T> doDelete(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
@@ -154,43 +186,77 @@ public abstract class AbstractCloudControlClientSupport {
 	}
 
 	/**
+	 * <p>
+	 * inquirePath.
+	 * </p>
 	 * 
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link java.lang.String} object.
 	 */
 	protected <T> String inquirePath(Request<T> request) {
 		return PathUtil.resolveResourcePath(request);
 	}
 
 	/**
+	 * <p>
+	 * deserialize.
+	 * </p>
 	 * 
 	 * @param response
+	 *            a {@link java.lang.String} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected abstract <T> Response<T> deserialize(String response, Request<T> request);
 
 	/**
+	 * <p>
+	 * deserialize.
+	 * </p>
 	 * 
 	 * @param inputStream
+	 *            a {@link java.io.InputStream} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected abstract <T> Response<T> deserialize(InputStream inputStream, Request<T> request);
 
 	/**
+	 * <p>
+	 * deserializeError.
+	 * </p>
 	 * 
 	 * @param inputStream
+	 *            a {@link java.io.InputStream} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected abstract <T> Response<T> deserializeError(InputStream inputStream, Request<T> request);
 
 	/**
+	 * <p>
+	 * deserializeError.
+	 * </p>
 	 * 
 	 * @param response
+	 *            a {@link java.lang.String} object.
 	 * @param request
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a {@link com.cloudcontrolled.api.response.Response} object.
 	 */
 	protected abstract <T> Response<T> deserializeError(String response, Request<T> request);
 

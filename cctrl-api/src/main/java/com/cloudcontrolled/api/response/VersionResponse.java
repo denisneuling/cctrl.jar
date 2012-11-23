@@ -20,10 +20,12 @@ import com.cloudcontrolled.api.model.Version;
 import com.cloudcontrolled.api.response.normalize.VersionNormalizer;
 
 /**
- * <p>VersionResponse class.</p>
- *
+ * <p>
+ * VersionResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(VersionNormalizer.class)
 public class VersionResponse extends Response<VersionResponse> {
@@ -32,14 +34,18 @@ public class VersionResponse extends Response<VersionResponse> {
 	private Version version;
 
 	/**
-	 * <p>Constructor for VersionResponse.</p>
+	 * <p>
+	 * Constructor for VersionResponse.
+	 * </p>
 	 */
 	public VersionResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>version</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>version</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.Version} object.
 	 */
 	public Version getVersion() {
@@ -47,9 +53,12 @@ public class VersionResponse extends Response<VersionResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>version</code>.</p>
-	 *
-	 * @param version a {@link com.cloudcontrolled.api.model.Version} object.
+	 * <p>
+	 * Setter for the field <code>version</code>.
+	 * </p>
+	 * 
+	 * @param version
+	 *            a {@link com.cloudcontrolled.api.model.Version} object.
 	 */
 	public void setVersion(Version version) {
 		this.version = version;

@@ -20,15 +20,27 @@ import com.cloudcontrolled.api.response.Response;
 import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
 /**
+ * <p>
+ * StandardizationUtil class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class StandardizationUtil {
 
 	/**
+	 * <p>
+	 * getJSONStandardizer.
+	 * </p>
 	 * 
 	 * @param response
-	 * @return
+	 *            a {@link com.cloudcontrolled.api.response.Response} object.
+	 * @param <T>
+	 *            a T object.
+	 * @return a
+	 *         {@link com.cloudcontrolled.api.response.normalize.JSONNormalizer}
+	 *         object.
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> JSONNormalizer getJSONStandardizer(Response<T> response) {

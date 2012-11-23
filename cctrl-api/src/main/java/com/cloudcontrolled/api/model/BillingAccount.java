@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The billing account object contains informations about the recipient of the
  * current invoices.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class BillingAccount extends AbstractModel {
 
@@ -43,14 +43,18 @@ public class BillingAccount extends AbstractModel {
 	private String firstname;
 
 	/**
-	 * <p>Constructor for BillingAccount.</p>
+	 * <p>
+	 * Constructor for BillingAccount.
+	 * </p>
 	 */
 	public BillingAccount() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>date_created</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>date_created</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getDate_created() {
@@ -58,17 +62,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>date_created</code>.</p>
-	 *
-	 * @param date_created a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>date_created</code>.
+	 * </p>
+	 * 
+	 * @param date_created
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDate_created(String date_created) {
 		this.date_created = date_created;
 	}
 
 	/**
-	 * <p>Getter for the field <code>country</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>country</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.Country} object.
 	 */
 	public Country getCountry() {
@@ -76,17 +85,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>country</code>.</p>
-	 *
-	 * @param country a {@link com.cloudcontrolled.api.model.Country} object.
+	 * <p>
+	 * Setter for the field <code>country</code>.
+	 * </p>
+	 * 
+	 * @param country
+	 *            a {@link com.cloudcontrolled.api.model.Country} object.
 	 */
 	public void setCountry(Country country) {
 		this.country = country;
 	}
 
 	/**
-	 * <p>Getter for the field <code>company</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>company</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getCompany() {
@@ -94,17 +108,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>company</code>.</p>
-	 *
-	 * @param company a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>company</code>.
+	 * </p>
+	 * 
+	 * @param company
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setCompany(String company) {
 		this.company = company;
 	}
 
 	/**
-	 * <p>Getter for the field <code>email</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>email</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getEmail() {
@@ -112,17 +131,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>email</code>.</p>
-	 *
-	 * @param email a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>email</code>.
+	 * </p>
+	 * 
+	 * @param email
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
 	/**
-	 * <p>Getter for the field <code>address_line_2</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>address_line_2</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getAddress_line_2() {
@@ -130,17 +154,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>address_line_2</code>.</p>
-	 *
-	 * @param address_line_2 a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>address_line_2</code>.
+	 * </p>
+	 * 
+	 * @param address_line_2
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setAddress_line_2(String address_line_2) {
 		this.address_line_2 = address_line_2;
 	}
 
 	/**
-	 * <p>Getter for the field <code>address_line_1</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>address_line_1</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getAddress_line_1() {
@@ -148,17 +177,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>address_line_1</code>.</p>
-	 *
-	 * @param address_line_1 a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>address_line_1</code>.
+	 * </p>
+	 * 
+	 * @param address_line_1
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setAddress_line_1(String address_line_1) {
 		this.address_line_1 = address_line_1;
 	}
 
 	/**
-	 * <p>Getter for the field <code>city</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>city</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getCity() {
@@ -166,17 +200,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>city</code>.</p>
-	 *
-	 * @param city a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>city</code>.
+	 * </p>
+	 * 
+	 * @param city
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setCity(String city) {
 		this.city = city;
 	}
 
 	/**
-	 * <p>Getter for the field <code>support_plan</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>support_plan</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.SupportPlan} object.
 	 */
 	public SupportPlan getSupport_plan() {
@@ -184,17 +223,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>support_plan</code>.</p>
-	 *
-	 * @param support_plan a {@link com.cloudcontrolled.api.model.SupportPlan} object.
+	 * <p>
+	 * Setter for the field <code>support_plan</code>.
+	 * </p>
+	 * 
+	 * @param support_plan
+	 *            a {@link com.cloudcontrolled.api.model.SupportPlan} object.
 	 */
 	public void setSupport_plan(SupportPlan support_plan) {
 		this.support_plan = support_plan;
 	}
 
 	/**
-	 * <p>Getter for the field <code>name</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>name</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getName() {
@@ -202,17 +246,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>name</code>.</p>
-	 *
-	 * @param name a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>name</code>.
+	 * </p>
+	 * 
+	 * @param name
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * <p>Getter for the field <code>lastname</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>lastname</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getLastname() {
@@ -220,17 +269,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>lastname</code>.</p>
-	 *
-	 * @param lastname a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>lastname</code>.
+	 * </p>
+	 * 
+	 * @param lastname
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
 
 	/**
-	 * <p>Getter for the field <code>salutation</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>salutation</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getSalutation() {
@@ -238,17 +292,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>salutation</code>.</p>
-	 *
-	 * @param salutation a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>salutation</code>.
+	 * </p>
+	 * 
+	 * @param salutation
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setSalutation(String salutation) {
 		this.salutation = salutation;
 	}
 
 	/**
-	 * <p>Getter for the field <code>tax_number</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>tax_number</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getTax_number() {
@@ -256,17 +315,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>tax_number</code>.</p>
-	 *
-	 * @param tax_number a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>tax_number</code>.
+	 * </p>
+	 * 
+	 * @param tax_number
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setTax_number(String tax_number) {
 		this.tax_number = tax_number;
 	}
 
 	/**
-	 * <p>Getter for the field <code>date_modified</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>date_modified</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getDate_modified() {
@@ -274,17 +338,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>date_modified</code>.</p>
-	 *
-	 * @param date_modified a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>date_modified</code>.
+	 * </p>
+	 * 
+	 * @param date_modified
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDate_modified(String date_modified) {
 		this.date_modified = date_modified;
 	}
 
 	/**
-	 * <p>Getter for the field <code>user</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>user</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.User} object.
 	 */
 	public User getUser() {
@@ -292,17 +361,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>user</code>.</p>
-	 *
-	 * @param user a {@link com.cloudcontrolled.api.model.User} object.
+	 * <p>
+	 * Setter for the field <code>user</code>.
+	 * </p>
+	 * 
+	 * @param user
+	 *            a {@link com.cloudcontrolled.api.model.User} object.
 	 */
 	public void setUser(User user) {
 		this.user = user;
 	}
 
 	/**
-	 * <p>Getter for the field <code>postal_code</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>postal_code</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getPostal_code() {
@@ -310,17 +384,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>postal_code</code>.</p>
-	 *
-	 * @param postal_code a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>postal_code</code>.
+	 * </p>
+	 * 
+	 * @param postal_code
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setPostal_code(String postal_code) {
 		this.postal_code = postal_code;
 	}
 
 	/**
-	 * <p>Getter for the field <code>title</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>title</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getTitle() {
@@ -328,17 +407,22 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>title</code>.</p>
-	 *
-	 * @param title a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>title</code>.
+	 * </p>
+	 * 
+	 * @param title
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
 	/**
-	 * <p>Getter for the field <code>firstname</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>firstname</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getFirstname() {
@@ -346,9 +430,12 @@ public class BillingAccount extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>firstname</code>.</p>
-	 *
-	 * @param firstname a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>firstname</code>.
+	 * </p>
+	 * 
+	 * @param firstname
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setFirstname(String firstname) {
 		this.firstname = firstname;

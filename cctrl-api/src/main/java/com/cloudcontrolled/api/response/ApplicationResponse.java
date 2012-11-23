@@ -20,10 +20,12 @@ import com.cloudcontrolled.api.model.Application;
 import com.cloudcontrolled.api.response.normalize.ApplicationNormalizer;
 
 /**
- * <p>ApplicationResponse class.</p>
- *
+ * <p>
+ * ApplicationResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ApplicationNormalizer.class)
 public class ApplicationResponse extends Response<ApplicationResponse> {
@@ -32,14 +34,18 @@ public class ApplicationResponse extends Response<ApplicationResponse> {
 	private Application application;
 
 	/**
-	 * <p>Constructor for ApplicationResponse.</p>
+	 * <p>
+	 * Constructor for ApplicationResponse.
+	 * </p>
 	 */
 	public ApplicationResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>application</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>application</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.Application} object.
 	 */
 	public Application getApplication() {
@@ -47,9 +53,12 @@ public class ApplicationResponse extends Response<ApplicationResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>application</code>.</p>
-	 *
-	 * @param application a {@link com.cloudcontrolled.api.model.Application} object.
+	 * <p>
+	 * Setter for the field <code>application</code>.
+	 * </p>
+	 * 
+	 * @param application
+	 *            a {@link com.cloudcontrolled.api.model.Application} object.
 	 */
 	public void setApplication(Application application) {
 		this.application = application;

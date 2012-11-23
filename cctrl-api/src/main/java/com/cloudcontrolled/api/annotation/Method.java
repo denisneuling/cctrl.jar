@@ -25,11 +25,12 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.request.Request;
 
 /**
- * The decorated <strong>{@link com.cloudcontrolled.api.request.Request} type</strong> will be send via the
- * chosen <strong>{@link com.cloudcontrolled.api.common.HttpMethod}</strong>.
- *
+ * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}
+ * type</strong> will be send via the chosen <strong>
+ * {@link com.cloudcontrolled.api.common.HttpMethod}</strong>.
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The support plan object contains pricing informations about the plan you had
  * chosen before.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class SupportPlan extends AbstractModel {
 
@@ -28,14 +28,18 @@ public class SupportPlan extends AbstractModel {
 	private double thirty_days_price = 0.0;
 
 	/**
-	 * <p>Constructor for SupportPlan.</p>
+	 * <p>
+	 * Constructor for SupportPlan.
+	 * </p>
 	 */
 	public SupportPlan() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>name</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>name</code>.
+	 * </p>
+	 * 
 	 * @return name the name of the concerning support plan
 	 */
 	public String getName() {
@@ -43,17 +47,22 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>name</code>.</p>
-	 *
-	 * @param name the name to set
+	 * <p>
+	 * Setter for the field <code>name</code>.
+	 * </p>
+	 * 
+	 * @param name
+	 *            the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * <p>getThirtyDaysPrice.</p>
-	 *
+	 * <p>
+	 * getThirtyDaysPrice.
+	 * </p>
+	 * 
 	 * @return thirtyDaysPrice the price of 30 days for that support plan
 	 */
 	public double getThirtyDaysPrice() {
@@ -61,9 +70,12 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
-	 * <p>setThirtyDaysPrice.</p>
-	 *
-	 * @param thirty_days_price the price of 30 days support to set
+	 * <p>
+	 * setThirtyDaysPrice.
+	 * </p>
+	 * 
+	 * @param thirty_days_price
+	 *            the price of 30 days support to set
 	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
 		this.thirty_days_price = thirty_days_price;

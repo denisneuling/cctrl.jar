@@ -16,49 +16,82 @@
 package com.cloudcontrolled.api.client.auth;
 
 /**
+ * <p>
+ * Credentials class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class Credentials {
 
 	private String userName;
 	private String password;
 
+	/**
+	 * <p>
+	 * Constructor for Credentials.
+	 * </p>
+	 */
 	public Credentials() {
 	}
 
+	/**
+	 * <p>
+	 * Constructor for Credentials.
+	 * </p>
+	 * 
+	 * @param userName
+	 *            a {@link java.lang.String} object.
+	 * @param password
+	 *            a {@link java.lang.String} object.
+	 */
 	public Credentials(String userName, String password) {
 		this.userName = userName;
 		this.password = password;
 	}
 
 	/**
+	 * <p>
+	 * Getter for the field <code>userName</code>.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link java.lang.String} object.
 	 */
 	public String getUserName() {
 		return userName;
 	}
 
 	/**
+	 * <p>
+	 * Setter for the field <code>userName</code>.
+	 * </p>
 	 * 
 	 * @param userName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
 	/**
+	 * <p>
+	 * Getter for the field <code>password</code>.
+	 * </p>
 	 * 
-	 * @return
+	 * @return a {@link java.lang.String} object.
 	 */
 	public String getPassword() {
 		return password;
 	}
 
 	/**
+	 * <p>
+	 * Setter for the field <code>password</code>.
+	 * </p>
 	 * 
 	 * @param password
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setPassword(String password) {
 		this.password = password;

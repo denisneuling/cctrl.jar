@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.Application;
 import com.cloudcontrolled.api.response.normalize.ListApplicationNormalizer;
 
 /**
- * <p>ListApplicationResponse class.</p>
- *
+ * <p>
+ * ListApplicationResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ListApplicationNormalizer.class)
 public class ListApplicationResponse extends Response<ListApplicationResponse> {
@@ -34,24 +36,33 @@ public class ListApplicationResponse extends Response<ListApplicationResponse> {
 	private Application[] applications;
 
 	/**
-	 * <p>Constructor for ListApplicationResponse.</p>
+	 * <p>
+	 * Constructor for ListApplicationResponse.
+	 * </p>
 	 */
 	public ListApplicationResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applications</code>.</p>
-	 *
-	 * @return an array of {@link com.cloudcontrolled.api.model.Application} objects.
+	 * <p>
+	 * Getter for the field <code>applications</code>.
+	 * </p>
+	 * 
+	 * @return an array of {@link com.cloudcontrolled.api.model.Application}
+	 *         objects.
 	 */
 	public Application[] getApplications() {
 		return applications;
 	}
 
 	/**
-	 * <p>Setter for the field <code>applications</code>.</p>
-	 *
-	 * @param applications an array of {@link com.cloudcontrolled.api.model.Application} objects.
+	 * <p>
+	 * Setter for the field <code>applications</code>.
+	 * </p>
+	 * 
+	 * @param applications
+	 *            an array of {@link com.cloudcontrolled.api.model.Application}
+	 *            objects.
 	 */
 	public void setApplications(Application[] applications) {
 		this.applications = applications;

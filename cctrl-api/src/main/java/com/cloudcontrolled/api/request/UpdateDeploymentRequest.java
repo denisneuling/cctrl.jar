@@ -25,13 +25,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.UpdateDeploymentResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentUPDATE"
  * >https://api.cloudcontrol.com/doc/#DeploymentUPDATE</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.PUT)
 @Path("/app/${app}/deployment/${dep}/")
@@ -53,7 +53,7 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 
 	@Required
 	private int min;
-	
+
 	@Required
 	private int max;
 
@@ -63,14 +63,18 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	private String stack;
 
 	/**
-	 * <p>Constructor for UpdateDeploymentRequest.</p>
+	 * <p>
+	 * Constructor for UpdateDeploymentRequest.
+	 * </p>
 	 */
 	public UpdateDeploymentRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -78,17 +82,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deploymentName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -96,17 +105,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deploymentName</code>.</p>
-	 *
-	 * @param deploymentName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>version</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>version</code>.
+	 * </p>
+	 * 
 	 * @return version
 	 */
 	public String getVersion() {
@@ -114,17 +128,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>version</code>.</p>
-	 *
-	 * @param version a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>version</code>.
+	 * </p>
+	 * 
+	 * @param version
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setVersion(String version) {
 		this.version = version;
 	}
 
 	/**
-	 * <p>Getter for the field <code>min</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>min</code>.
+	 * </p>
+	 * 
 	 * @return min
 	 */
 	public int getMin() {
@@ -132,17 +151,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>min</code>.</p>
-	 *
-	 * @param min a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>min</code>.
+	 * </p>
+	 * 
+	 * @param min
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setMin(int min) {
 		this.min = min;
 	}
 
 	/**
-	 * <p>Getter for the field <code>max</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>max</code>.
+	 * </p>
+	 * 
 	 * @return max
 	 */
 	public int getMax() {
@@ -150,17 +174,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>max</code>.</p>
-	 *
-	 * @param max a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>max</code>.
+	 * </p>
+	 * 
+	 * @param max
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setMax(int max) {
 		this.max = max;
 	}
 
 	/**
-	 * <p>Getter for the field <code>billingAccount</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>billingAccount</code>.
+	 * </p>
+	 * 
 	 * @return billingAccount
 	 */
 	public String getBillingAccount() {
@@ -168,17 +197,22 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>billingAccount</code>.</p>
-	 *
-	 * @param billingAccount a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>billingAccount</code>.
+	 * </p>
+	 * 
+	 * @param billingAccount
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setBillingAccount(String billingAccount) {
 		this.billingAccount = billingAccount;
 	}
 
 	/**
-	 * <p>Getter for the field <code>stack</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>stack</code>.
+	 * </p>
+	 * 
 	 * @return stack
 	 */
 	public String getStack() {
@@ -186,9 +220,12 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>stack</code>.</p>
-	 *
-	 * @param stack a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>stack</code>.
+	 * </p>
+	 * 
+	 * @param stack
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setStack(String stack) {
 		this.stack = stack;

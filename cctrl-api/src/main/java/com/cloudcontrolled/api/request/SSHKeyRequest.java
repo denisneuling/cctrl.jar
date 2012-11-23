@@ -26,32 +26,36 @@ import com.cloudcontrolled.api.response.SSHKeyResponse;
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#KeyGET"
  * >https://api.cloudcontrol.com/doc/#KeyGET</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}/key/${keyId}")
 public class SSHKeyRequest extends Request<SSHKeyResponse> {
 	private static final long serialVersionUID = 7539533508111223863L;
-	
+
 	@Required
 	@PathVariable("${user}")
 	private String userName;
-	
+
 	@Required
 	@PathVariable("${keyId}")
 	private String sshKeyId;
-	
+
 	/**
-	 * <p>Constructor for SSHKeyRequest.</p>
+	 * <p>
+	 * Constructor for SSHKeyRequest.
+	 * </p>
 	 */
-	public SSHKeyRequest(){
+	public SSHKeyRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>userName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>userName</code>.
+	 * </p>
+	 * 
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -59,17 +63,22 @@ public class SSHKeyRequest extends Request<SSHKeyResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>userName</code>.</p>
-	 *
-	 * @param userName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>userName</code>.
+	 * </p>
+	 * 
+	 * @param userName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>sshKeyId</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>sshKeyId</code>.
+	 * </p>
+	 * 
 	 * @return sshKeyId
 	 */
 	public String getSshKeyId() {
@@ -77,9 +86,12 @@ public class SSHKeyRequest extends Request<SSHKeyResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>sshKeyId</code>.</p>
-	 *
-	 * @param sshKeyId a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>sshKeyId</code>.
+	 * </p>
+	 * 
+	 * @param sshKeyId
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setSshKeyId(String sshKeyId) {
 		this.sshKeyId = sshKeyId;

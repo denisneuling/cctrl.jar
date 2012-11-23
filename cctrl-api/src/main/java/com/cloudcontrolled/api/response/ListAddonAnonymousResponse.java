@@ -22,10 +22,12 @@ import com.cloudcontrolled.api.model.AddonAnonymous;
 import com.cloudcontrolled.api.response.normalize.ListAddonNormalizer;
 
 /**
- * <p>ListAddonAnonymousResponse class.</p>
- *
+ * <p>
+ * ListAddonAnonymousResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(ListAddonNormalizer.class)
 public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousResponse> {
@@ -34,24 +36,33 @@ public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousRespo
 	private AddonAnonymous[] addons;
 
 	/**
-	 * <p>Constructor for ListAddonAnonymousResponse.</p>
+	 * <p>
+	 * Constructor for ListAddonAnonymousResponse.
+	 * </p>
 	 */
 	public ListAddonAnonymousResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>addons</code>.</p>
-	 *
-	 * @return an array of {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.
+	 * <p>
+	 * Getter for the field <code>addons</code>.
+	 * </p>
+	 * 
+	 * @return an array of {@link com.cloudcontrolled.api.model.AddonAnonymous}
+	 *         objects.
 	 */
 	public AddonAnonymous[] getAddons() {
 		return addons;
 	}
 
 	/**
-	 * <p>Setter for the field <code>addons</code>.</p>
-	 *
-	 * @param addons an array of {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.
+	 * <p>
+	 * Setter for the field <code>addons</code>.
+	 * </p>
+	 * 
+	 * @param addons
+	 *            an array of
+	 *            {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.
 	 */
 	public void setAddons(AddonAnonymous[] addons) {
 		this.addons = addons;

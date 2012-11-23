@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.model;
  * The user object contains informations about requested users. For example
  * users which have access to your application / deployment or user accounts you
  * own.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class User extends AbstractModel {
 
@@ -32,14 +32,18 @@ public class User extends AbstractModel {
 	private String last_name;
 
 	/**
-	 * <p>Constructor for User.</p>
+	 * <p>
+	 * Constructor for User.
+	 * </p>
 	 */
 	public User() {
 	}
 
 	/**
-	 * <p>getFirstName.</p>
-	 *
+	 * <p>
+	 * getFirstName.
+	 * </p>
+	 * 
 	 * @return preName the prename of the concerning user
 	 */
 	public String getFirstName() {
@@ -47,17 +51,22 @@ public class User extends AbstractModel {
 	}
 
 	/**
-	 * <p>setFirstName.</p>
-	 *
-	 * @param first_name the prename to set
+	 * <p>
+	 * setFirstName.
+	 * </p>
+	 * 
+	 * @param first_name
+	 *            the prename to set
 	 */
 	public void setFirstName(String first_name) {
 		this.first_name = first_name;
 	}
 
 	/**
-	 * <p>Getter for the field <code>username</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>username</code>.
+	 * </p>
+	 * 
 	 * @return username the username of the concerning user
 	 */
 	public String getUsername() {
@@ -65,35 +74,46 @@ public class User extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>username</code>.</p>
-	 *
-	 * @param username the username to set
+	 * <p>
+	 * Setter for the field <code>username</code>.
+	 * </p>
+	 * 
+	 * @param username
+	 *            the username to set
 	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
 	/**
-	 * <p>isActive.</p>
-	 *
-	 * @return active the boolean value which specifies whether the user is active
+	 * <p>
+	 * isActive.
+	 * </p>
+	 * 
+	 * @return active the boolean value which specifies whether the user is
+	 *         active
 	 */
 	public boolean isActive() {
 		return is_active;
 	}
 
 	/**
-	 * <p>setActive.</p>
-	 *
-	 * @param is_active the boolean value to set
+	 * <p>
+	 * setActive.
+	 * </p>
+	 * 
+	 * @param is_active
+	 *            the boolean value to set
 	 */
 	public void setActive(boolean is_active) {
 		this.is_active = is_active;
 	}
 
 	/**
-	 * <p>Getter for the field <code>email</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>email</code>.
+	 * </p>
+	 * 
 	 * @return emailAddress the eamil address of the user
 	 */
 	public String getEmail() {
@@ -101,17 +121,22 @@ public class User extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>email</code>.</p>
-	 *
-	 * @param email the email address to set
+	 * <p>
+	 * Setter for the field <code>email</code>.
+	 * </p>
+	 * 
+	 * @param email
+	 *            the email address to set
 	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
 	/**
-	 * <p>getLastName.</p>
-	 *
+	 * <p>
+	 * getLastName.
+	 * </p>
+	 * 
 	 * @return surName the surname of the concerning user
 	 */
 	public String getLastName() {
@@ -119,9 +144,12 @@ public class User extends AbstractModel {
 	}
 
 	/**
-	 * <p>setLastName.</p>
-	 *
-	 * @param last_name the surname to set
+	 * <p>
+	 * setLastName.
+	 * </p>
+	 * 
+	 * @param last_name
+	 *            the surname to set
 	 */
 	public void setLastName(String last_name) {
 		this.last_name = last_name;

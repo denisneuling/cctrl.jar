@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.LogResponse;
 
 /**
- *
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#LogREAD"
  * >https://api.cloudcontrol.com/doc/#LogREAD</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/log/${type}/")
@@ -52,14 +52,18 @@ public class LogRequest extends Request<LogResponse> {
 	private String logType;
 
 	/**
-	 * <p>Constructor for LogRequest.</p>
+	 * <p>
+	 * Constructor for LogRequest.
+	 * </p>
 	 */
 	public LogRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -67,17 +71,22 @@ public class LogRequest extends Request<LogResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deploymentName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -85,17 +94,22 @@ public class LogRequest extends Request<LogResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deploymentName</code>.</p>
-	 *
-	 * @param deploymentName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deploymentName</code>.
+	 * </p>
+	 * 
+	 * @param deploymentName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * <p>Getter for the field <code>logType</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>logType</code>.
+	 * </p>
+	 * 
 	 * @return logType
 	 */
 	public String getLogType() {
@@ -103,9 +117,12 @@ public class LogRequest extends Request<LogResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>logType</code>.</p>
-	 *
-	 * @param logType a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>logType</code>.
+	 * </p>
+	 * 
+	 * @param logType
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setLogType(String logType) {
 		this.logType = logType;

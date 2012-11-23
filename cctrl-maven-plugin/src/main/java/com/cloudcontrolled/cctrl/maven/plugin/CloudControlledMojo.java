@@ -24,10 +24,12 @@ import org.apache.maven.plugin.logging.Log;
 import org.eclipse.jgit.storage.file.FileRepository;
 
 /**
- * <p>Abstract CloudControlledMojo class.</p>
- *
+ * <p>
+ * Abstract CloudControlledMojo class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public abstract class CloudControlledMojo<T> extends AbstractMojo {
 
@@ -59,8 +61,10 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	protected String commitId;
 
 	/**
-	 * <p>Getter for the field <code>application</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>application</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getApplication() {
@@ -68,17 +72,22 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>Setter for the field <code>application</code>.</p>
-	 *
-	 * @param application a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>application</code>.
+	 * </p>
+	 * 
+	 * @param application
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplication(String application) {
 		this.application = application;
 	}
 
 	/**
-	 * <p>Getter for the field <code>deployment</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>deployment</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getDeployment() {
@@ -86,17 +95,22 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>Setter for the field <code>deployment</code>.</p>
-	 *
-	 * @param deployment a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>deployment</code>.
+	 * </p>
+	 * 
+	 * @param deployment
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setDeployment(String deployment) {
 		this.deployment = deployment;
 	}
 
 	/**
-	 * <p>Getter for the field <code>commitId</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>commitId</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getCommitId() {
@@ -104,9 +118,12 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>Setter for the field <code>commitId</code>.</p>
-	 *
-	 * @param commitId a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>commitId</code>.
+	 * </p>
+	 * 
+	 * @param commitId
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setCommitId(String commitId) {
 		this.commitId = commitId;
@@ -125,8 +142,10 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>Getter for the field <code>baseDir</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>baseDir</code>.
+	 * </p>
+	 * 
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getBaseDir() {
@@ -134,18 +153,26 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>Setter for the field <code>baseDir</code>.</p>
-	 *
-	 * @param baseDir a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>baseDir</code>.
+	 * </p>
+	 * 
+	 * @param baseDir
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setBaseDir(String baseDir) {
 		this.baseDir = baseDir;
 	}
 
 	/**
-	 * <p>copyPropertiesfromAnother.</p>
-	 *
-	 * @param ccmojo a {@link com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo} object.
+	 * <p>
+	 * copyPropertiesfromAnother.
+	 * </p>
+	 * 
+	 * @param ccmojo
+	 *            a
+	 *            {@link com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo}
+	 *            object.
 	 */
 	public void copyPropertiesfromAnother(CloudControlledMojo<?> ccmojo) {
 		this.setApplication(ccmojo.getApplication());
@@ -157,9 +184,12 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>getRepository.</p>
-	 *
-	 * @throws java.io.IOException if any.
+	 * <p>
+	 * getRepository.
+	 * </p>
+	 * 
+	 * @throws java.io.IOException
+	 *             if any.
 	 * @return a {@link org.eclipse.jgit.storage.file.FileRepository} object.
 	 */
 	public FileRepository getRepository() throws IOException {
@@ -168,9 +198,12 @@ public abstract class CloudControlledMojo<T> extends AbstractMojo {
 	}
 
 	/**
-	 * <p>retrieveBranch.</p>
-	 *
-	 * @throws org.apache.maven.plugin.MojoExecutionException if any.
+	 * <p>
+	 * retrieveBranch.
+	 * </p>
+	 * 
+	 * @throws org.apache.maven.plugin.MojoExecutionException
+	 *             if any.
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String retrieveBranch() throws MojoExecutionException {

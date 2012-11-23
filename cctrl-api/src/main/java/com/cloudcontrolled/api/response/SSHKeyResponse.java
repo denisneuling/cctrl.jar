@@ -20,10 +20,12 @@ import com.cloudcontrolled.api.model.SSHKey;
 import com.cloudcontrolled.api.response.normalize.SSHKeyNormalizer;
 
 /**
- * <p>SSHKeyResponse class.</p>
- *
+ * <p>
+ * SSHKeyResponse class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Normalized(SSHKeyNormalizer.class)
 public class SSHKeyResponse extends Response<SSHKeyResponse> {
@@ -32,14 +34,18 @@ public class SSHKeyResponse extends Response<SSHKeyResponse> {
 	private SSHKey sshKey;
 
 	/**
-	 * <p>Constructor for SSHKeyResponse.</p>
+	 * <p>
+	 * Constructor for SSHKeyResponse.
+	 * </p>
 	 */
-	public SSHKeyResponse(){
+	public SSHKeyResponse() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>sshKey</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>sshKey</code>.
+	 * </p>
+	 * 
 	 * @return a {@link com.cloudcontrolled.api.model.SSHKey} object.
 	 */
 	public SSHKey getSshKey() {
@@ -47,9 +53,12 @@ public class SSHKeyResponse extends Response<SSHKeyResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>sshKey</code>.</p>
-	 *
-	 * @param sshKey a {@link com.cloudcontrolled.api.model.SSHKey} object.
+	 * <p>
+	 * Setter for the field <code>sshKey</code>.
+	 * </p>
+	 * 
+	 * @param sshKey
+	 *            a {@link com.cloudcontrolled.api.model.SSHKey} object.
 	 */
 	public void setSshKey(SSHKey sshKey) {
 		this.sshKey = sshKey;
@@ -58,6 +67,6 @@ public class SSHKeyResponse extends Response<SSHKeyResponse> {
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {
-		return (sshKey!=null?"SSHKeyResponse [sshKey=" + sshKey + "]":super.toString());
+		return (sshKey != null ? "SSHKeyResponse [sshKey=" + sshKey + "]" : super.toString());
 	}
 }

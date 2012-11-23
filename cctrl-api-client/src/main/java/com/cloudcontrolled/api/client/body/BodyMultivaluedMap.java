@@ -22,8 +22,12 @@ import java.util.List;
 import javax.ws.rs.core.MultivaluedMap;
 
 /**
+ * <p>
+ * BodyMultivaluedMap class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class BodyMultivaluedMap extends HashMap<String, List<String>> implements MultivaluedMap<String, String> {
 	private static final long serialVersionUID = -4545725304226984837L;
@@ -34,6 +38,7 @@ public class BodyMultivaluedMap extends HashMap<String, List<String>> implements
 	 * @see javax.ws.rs.core.MultivaluedMap#putSingle(java.lang.Object,
 	 * java.lang.Object)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void putSingle(String key, String value) {
 		this.add(key, value);
@@ -45,6 +50,7 @@ public class BodyMultivaluedMap extends HashMap<String, List<String>> implements
 	 * @see javax.ws.rs.core.MultivaluedMap#add(java.lang.Object,
 	 * java.lang.Object)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void add(String key, String value) {
 		List<String> values = this.get(key);
@@ -59,6 +65,7 @@ public class BodyMultivaluedMap extends HashMap<String, List<String>> implements
 	 * 
 	 * @see javax.ws.rs.core.MultivaluedMap#getFirst(java.lang.Object)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String getFirst(String key) {
 		return this.get(key).iterator().next();

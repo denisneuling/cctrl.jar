@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The country object contains the country code and the name of the concerning
  * country.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class Country extends AbstractModel {
 
@@ -29,14 +29,18 @@ public class Country extends AbstractModel {
 	private boolean is_eu;
 
 	/**
-	 * <p>Constructor for Country.</p>
+	 * <p>
+	 * Constructor for Country.
+	 * </p>
 	 */
 	public Country() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>name</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>name</code>.
+	 * </p>
+	 * 
 	 * @return name the name of the country
 	 */
 	public String getName() {
@@ -44,17 +48,22 @@ public class Country extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>name</code>.</p>
-	 *
-	 * @param name the name to set
+	 * <p>
+	 * Setter for the field <code>name</code>.
+	 * </p>
+	 * 
+	 * @param name
+	 *            the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * <p>Getter for the field <code>code</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>code</code>.
+	 * </p>
+	 * 
 	 * @return code the country code
 	 */
 	public String getCode() {
@@ -62,27 +71,37 @@ public class Country extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>code</code>.</p>
-	 *
-	 * @param code the country code to set
+	 * <p>
+	 * Setter for the field <code>code</code>.
+	 * </p>
+	 * 
+	 * @param code
+	 *            the country code to set
 	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
 	/**
-	 * <p>isIs_eu.</p>
-	 *
-	 * @return isEU the boolean value which specifies if the country is whithin the EU
+	 * <p>
+	 * isIs_eu.
+	 * </p>
+	 * 
+	 * @return isEU the boolean value which specifies if the country is whithin
+	 *         the EU
 	 */
 	public boolean isIs_eu() {
 		return is_eu;
 	}
 
 	/**
-	 * <p>Setter for the field <code>is_eu</code>.</p>
-	 *
-	 * @param is_eu the boolean value which specifies whether the country is whithin the EU to set
+	 * <p>
+	 * Setter for the field <code>is_eu</code>.
+	 * </p>
+	 * 
+	 * @param is_eu
+	 *            the boolean value which specifies whether the country is
+	 *            whithin the EU to set
 	 */
 	public void setIs_eu(boolean is_eu) {
 		this.is_eu = is_eu;

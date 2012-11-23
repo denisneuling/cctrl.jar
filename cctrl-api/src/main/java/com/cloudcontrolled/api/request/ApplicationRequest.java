@@ -23,14 +23,14 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ApplicationResponse;
 
 /**
- *
- *
+ * 
+ * 
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppREAD"
  * >https://api.cloudcontrol.com/doc/#AppREAD</a>
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/")
@@ -42,14 +42,18 @@ public class ApplicationRequest extends Request<ApplicationResponse> {
 	private String applicationName;
 
 	/**
-	 * <p>Constructor for ApplicationRequest.</p>
+	 * <p>
+	 * Constructor for ApplicationRequest.
+	 * </p>
 	 */
 	public ApplicationRequest() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>applicationName</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -57,9 +61,12 @@ public class ApplicationRequest extends Request<ApplicationResponse> {
 	}
 
 	/**
-	 * <p>Setter for the field <code>applicationName</code>.</p>
-	 *
-	 * @param applicationName a {@link java.lang.String} object.
+	 * <p>
+	 * Setter for the field <code>applicationName</code>.
+	 * </p>
+	 * 
+	 * @param applicationName
+	 *            a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;

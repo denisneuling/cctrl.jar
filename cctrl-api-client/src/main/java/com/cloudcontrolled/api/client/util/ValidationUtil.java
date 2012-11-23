@@ -25,17 +25,28 @@ import com.cloudcontrolled.api.client.exception.ValidationConstraintViolationExc
 import com.cloudcontrolled.api.request.Request;
 
 /**
+ * <p>
+ * ValidationUtil class.
+ * </p>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
+ * 
  */
 public class ValidationUtil {
 
 	private static final String preMessage = "Request breaks constraints.";
 
 	/**
+	 * <p>
+	 * validate.
+	 * </p>
 	 * 
 	 * @param request
-	 * @throws ValidationConstraintViolationException
+	 *            a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @throws com.cloudcontrolled.api.client.exception.ValidationConstraintViolationException
+	 *             if any.
+	 * @param <T>
+	 *            a T object.
 	 */
 	public static <T> void validate(Request<T> request) throws ValidationConstraintViolationException {
 		if (request != null) {

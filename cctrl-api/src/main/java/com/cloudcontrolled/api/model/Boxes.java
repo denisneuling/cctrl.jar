@@ -16,10 +16,12 @@
 package com.cloudcontrolled.api.model;
 
 /**
- * <p>Boxes class.</p>
- *
+ * <p>
+ * Boxes class.
+ * </p>
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class Boxes extends AbstractModel {
 

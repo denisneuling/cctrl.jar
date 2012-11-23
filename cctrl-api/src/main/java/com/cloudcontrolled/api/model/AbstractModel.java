@@ -16,7 +16,7 @@
 package com.cloudcontrolled.api.model;
 
 /**
- * Superclass of each response model.
+ * Superclass of each wrapped response model.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
  *

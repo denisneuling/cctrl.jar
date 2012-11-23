@@ -69,11 +69,6 @@ public class SupportPlan extends AbstractModel {
 		this.thirty_days_price = thirty_days_price;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

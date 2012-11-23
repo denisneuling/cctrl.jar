@@ -338,11 +338,6 @@ public class Deployment extends AbstractModel {
 		this.billing_account = billing_account;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

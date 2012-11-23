@@ -18,23 +18,27 @@ package com.cloudcontrolled.api.model;
 /**
  * The stack object contains the name of the software stack which is associated
  * to your deployment.
- *
+ * 
  * @author Denis Neuling (denisneuling@gmail.com)
- *
+ * 
  */
 public class Stack extends AbstractModel {
 
 	private String name;
 
 	/**
-	 * <p>Constructor for Stack.</p>
+	 * <p>
+	 * Constructor for Stack.
+	 * </p>
 	 */
 	public Stack() {
 	}
 
 	/**
-	 * <p>Getter for the field <code>name</code>.</p>
-	 *
+	 * <p>
+	 * Getter for the field <code>name</code>.
+	 * </p>
+	 * 
 	 * @return name the name of the concerning stack
 	 */
 	public String getName() {
@@ -42,19 +46,17 @@ public class Stack extends AbstractModel {
 	}
 
 	/**
-	 * <p>Setter for the field <code>name</code>.</p>
-	 *
-	 * @param name the name to set
+	 * <p>
+	 * Setter for the field <code>name</code>.
+	 * </p>
+	 * 
+	 * @param name
+	 *            the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

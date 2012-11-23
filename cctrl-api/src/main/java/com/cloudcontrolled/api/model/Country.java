@@ -88,11 +88,6 @@ public class Country extends AbstractModel {
 		this.is_eu = is_eu;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

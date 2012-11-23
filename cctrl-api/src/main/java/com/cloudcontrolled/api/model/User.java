@@ -127,11 +127,6 @@ public class User extends AbstractModel {
 		this.last_name = last_name;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

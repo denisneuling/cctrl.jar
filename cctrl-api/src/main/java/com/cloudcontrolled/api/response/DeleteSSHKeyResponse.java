@@ -54,10 +54,6 @@ public class DeleteSSHKeyResponse extends Response<DeleteSSHKeyResponse> {
 		this.message = message;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.response.Response#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

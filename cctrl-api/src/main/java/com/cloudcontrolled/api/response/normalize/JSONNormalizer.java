@@ -24,7 +24,7 @@ package com.cloudcontrolled.api.response.normalize;
 public class JSONNormalizer {
 
 	/**
-	 * <p>normalize.</p>
+	 * <p>normalize and map the <small>(json)</small> response.</p>
 	 *
 	 * @param jsonResponse a {@link java.lang.String} object.
 	 * @throws java.lang.Exception if any.

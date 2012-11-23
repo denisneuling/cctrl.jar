@@ -51,10 +51,11 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	@Body
 	private String version;
 
-	// if null we have to retrieve them
-	// from the api before firing the put request
-	private String min;
-	private String max;
+	@Required
+	private int min;
+	
+	@Required
+	private int max;
 
 	// haaaeee?
 	private String billingAccount;
@@ -126,7 +127,7 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	 *
 	 * @return min
 	 */
-	public String getMin() {
+	public int getMin() {
 		return min;
 	}
 
@@ -135,7 +136,7 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	 *
 	 * @param min a {@link java.lang.String} object.
 	 */
-	public void setMin(String min) {
+	public void setMin(int min) {
 		this.min = min;
 	}
 
@@ -144,7 +145,7 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	 *
 	 * @return max
 	 */
-	public String getMax() {
+	public int getMax() {
 		return max;
 	}
 
@@ -153,7 +154,7 @@ public class UpdateDeploymentRequest extends Request<UpdateDeploymentResponse> {
 	 *
 	 * @param max a {@link java.lang.String} object.
 	 */
-	public void setMax(String max) {
+	public void setMax(int max) {
 		this.max = max;
 	}
 

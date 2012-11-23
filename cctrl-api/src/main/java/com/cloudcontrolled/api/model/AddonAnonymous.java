@@ -91,11 +91,6 @@ public class AddonAnonymous extends AbstractModel {
 		this.options = options;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

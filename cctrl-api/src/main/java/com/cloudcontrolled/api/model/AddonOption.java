@@ -88,11 +88,6 @@ public class AddonOption extends AbstractModel {
 		this.price_is_per_box = price_is_per_box;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

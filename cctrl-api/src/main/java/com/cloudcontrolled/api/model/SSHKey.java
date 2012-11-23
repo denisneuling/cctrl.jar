@@ -69,11 +69,6 @@ public class SSHKey extends AbstractModel {
 		this.key_id = keyId;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

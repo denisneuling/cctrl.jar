@@ -22,11 +22,12 @@ import com.cloudcontrolled.cctrl.maven.plugin.CloudControlSupport;
 import com.cloudcontrolled.cctrl.maven.plugin.CloudControlledMojo;
 
 /**
- * 
+ * <p>CloudControlledHelp class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  * @phase cctrl
  * @goal help
+ *
  */
 public class CloudControlledHelp extends CloudControlledMojo<CloudControlledHelp> {
 
@@ -35,6 +36,7 @@ public class CloudControlledHelp extends CloudControlledMojo<CloudControlledHelp
 	 * 
 	 * @see org.apache.maven.plugin.AbstractMojo#execute()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		String content = "\n" + "Please add the following plugin configuration to your build section of your pom.xml\n" + "\n" + "\t" + "<project>\n" + "\t\t" + "[...]\n" + "\t\t\t" + "<build>\n" + "\t\t\t\t" + "<plugins>\n" + "\t\t\t\t" + "[...]\n" + "\t\t\t\t\t" + "<plugin>\n" + "\t\t\t\t\t\t"

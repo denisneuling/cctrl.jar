@@ -28,13 +28,6 @@ import org.json.JSONObject;
  */
 public class VersionNormalizer extends JSONNormalizer {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
-	 * .lang.String)
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {

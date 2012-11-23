@@ -53,11 +53,6 @@ public enum LogType {
 		this.name = type;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Enum#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

@@ -23,11 +23,12 @@ import com.cloudcontrolled.cctrl.maven.plugin.deploy.CloudcontrolledDeploy;
 import com.cloudcontrolled.cctrl.maven.plugin.push.CloudcontrolledPush;
 
 /**
- * 
+ * <p>CloudControlledRelease class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  * @phase cctrl
  * @goal release
+ *
  */
 public class CloudControlledRelease extends CloudControlledMojo<CloudControlledRelease> {
 
@@ -36,6 +37,7 @@ public class CloudControlledRelease extends CloudControlledMojo<CloudControlledR
 	 * 
 	 * @see org.apache.maven.plugin.AbstractMojo#execute()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		String deploymentQualifier = application + (deployment != null ? ":" + deployment + (commitId != null ? ":" + commitId : "") : "");

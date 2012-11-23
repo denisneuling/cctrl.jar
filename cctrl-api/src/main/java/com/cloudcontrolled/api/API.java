@@ -23,10 +23,9 @@ import java.util.List;
 import java.util.PropertyResourceBundle;
 
 /**
- * <p>API class.</p>
+ * <p>API support class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- *
  */
 public class API {
 

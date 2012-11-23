@@ -69,11 +69,6 @@ public class Version extends AbstractModel {
 		this.cctrl = cctrl;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

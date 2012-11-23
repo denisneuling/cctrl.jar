@@ -51,10 +51,6 @@ public class ListSSHKeyResponse extends Response<ListSSHKeyResponse> {
 		this.sshKeys = sshKeys;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * @see com.cloudcontrolled.api.response.Response#toString()
-	 */
 	/** {@inheritDoc} */
 	@Override
 	public String toString() {

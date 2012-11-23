@@ -19,7 +19,7 @@ package com.cloudcontrolled.api.model;
  * Superclass of each response model.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public abstract class AbstractModel {
 

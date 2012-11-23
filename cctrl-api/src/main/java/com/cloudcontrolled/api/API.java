@@ -26,7 +26,7 @@ import java.util.PropertyResourceBundle;
  * <p>API class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class API {
 

@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * messages of your installed deployment.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Log extends AbstractModel {
 

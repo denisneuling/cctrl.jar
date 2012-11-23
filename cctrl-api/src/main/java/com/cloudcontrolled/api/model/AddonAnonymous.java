@@ -23,7 +23,7 @@ import java.util.Arrays;
  * use for your application.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class AddonAnonymous extends AbstractModel {
 

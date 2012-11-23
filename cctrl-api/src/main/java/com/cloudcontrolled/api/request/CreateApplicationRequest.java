@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.CreateApplicationResponse;
  * >https://api.cloudcontrol.com/doc/#AppCREATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/app/")

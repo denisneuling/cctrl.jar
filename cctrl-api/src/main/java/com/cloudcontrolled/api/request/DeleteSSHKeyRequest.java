@@ -28,7 +28,7 @@ import com.cloudcontrolled.api.response.DeleteSSHKeyResponse;
  * >https://api.cloudcontrol.com/doc/#KeyDELETE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/user/${user}/key/${key}/")

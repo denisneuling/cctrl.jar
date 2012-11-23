@@ -28,7 +28,7 @@ import com.cloudcontrolled.api.request.Request;
  * defined url path.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

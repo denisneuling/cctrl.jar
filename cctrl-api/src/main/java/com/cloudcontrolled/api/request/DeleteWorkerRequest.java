@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.DeleteWorkerResponse;
  * >https://api.cloudcontrol.com/doc/#WorkerDELETE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/worker/${workerId}")

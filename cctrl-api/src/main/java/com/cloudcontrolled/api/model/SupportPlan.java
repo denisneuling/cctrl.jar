@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * chosen before.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class SupportPlan extends AbstractModel {
 

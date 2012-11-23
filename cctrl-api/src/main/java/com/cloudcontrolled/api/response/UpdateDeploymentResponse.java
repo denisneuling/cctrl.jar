@@ -23,7 +23,7 @@ import com.cloudcontrolled.api.response.normalize.DeploymentNormalizer;
  * <p>UpdateDeploymentResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(DeploymentNormalizer.class)
 public class UpdateDeploymentResponse extends Response<UpdateDeploymentResponse> {

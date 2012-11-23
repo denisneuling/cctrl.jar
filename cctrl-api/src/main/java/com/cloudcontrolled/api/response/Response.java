@@ -23,7 +23,7 @@ import java.io.Serializable;
  *
  * @author Denis Neuling (denisneuling@gmail.com)
  * @param <T>
- * @version $Id: $Id
+ *
  */
 public abstract class Response<T> implements Serializable {
 	private static final long serialVersionUID = 60689416775607883L;

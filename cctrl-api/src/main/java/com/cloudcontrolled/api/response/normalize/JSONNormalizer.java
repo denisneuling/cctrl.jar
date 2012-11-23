@@ -19,7 +19,7 @@ package com.cloudcontrolled.api.response.normalize;
  * <p>JSONNormalizer class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class JSONNormalizer {
 

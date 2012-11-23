@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.normalize.ListSSHKeyNormalizer;
  * <p>ListSSHKeyResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(ListSSHKeyNormalizer.class)
 public class ListSSHKeyResponse extends Response<ListSSHKeyResponse> {

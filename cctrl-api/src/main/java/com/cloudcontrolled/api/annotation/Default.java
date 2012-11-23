@@ -26,7 +26,7 @@ import java.lang.annotation.Target;
  * <strong>value</strong> in case it was not set.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

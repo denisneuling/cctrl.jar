@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.response.DeleteCollaboratorResponse;
  * >https://api.cloudcontrol.com/doc/#AppUserDELETE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/user/${user}/")

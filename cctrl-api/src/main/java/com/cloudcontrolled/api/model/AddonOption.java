@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * ID</small> of the add-on and some informations about the pricing.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class AddonOption extends AbstractModel {
 

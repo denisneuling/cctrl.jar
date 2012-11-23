@@ -25,7 +25,7 @@ import org.json.JSONObject;
  * <p>ListUserNormalizer class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class ListUserNormalizer extends JSONNormalizer {
 

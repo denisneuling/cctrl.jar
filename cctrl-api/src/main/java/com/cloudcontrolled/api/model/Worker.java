@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * / or programs which are connected to your deployment.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Worker extends AbstractModel {
 

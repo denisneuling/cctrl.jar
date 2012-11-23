@@ -32,7 +32,7 @@ import com.cloudcontrolled.api.response.AmendAddonResponse;
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonUPDATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.PUT)
 @Path("/app/${app}/deployment/${dep}/addon/${amendFrom}/")

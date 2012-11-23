@@ -26,7 +26,7 @@ import java.lang.annotation.Target;
  * <strong>message body</strong> of the http request.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

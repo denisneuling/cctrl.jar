@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.request.Request;
  * chosen <strong>{@link com.cloudcontrolled.api.common.HttpMethod}</strong>.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

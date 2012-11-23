@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.normalize.ListWorkerNormalizer;
  * <p>ListWorkerResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(ListWorkerNormalizer.class)
 public class ListWorkerResponse extends Response<ListWorkerResponse> {

@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.DeleteDeploymentResponse;
  * >https://api.cloudcontrol.com/doc/#DeploymentDELETE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/")

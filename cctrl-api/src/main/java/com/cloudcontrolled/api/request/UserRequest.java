@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.response.UserResponse;
  * >https://api.cloudcontrol.com/doc/#UserREAD</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}")

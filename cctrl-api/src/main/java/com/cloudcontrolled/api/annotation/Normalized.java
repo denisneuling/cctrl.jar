@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
  * defined <strong>{@link com.cloudcontrolled.api.response.normalize.JSONNormalizer}</strong>.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

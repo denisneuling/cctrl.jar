@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.response.CreateSSHKeyResponse;
  * >https://api.cloudcontrol.com/doc/#KeyCREATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/user/${user}/key/")

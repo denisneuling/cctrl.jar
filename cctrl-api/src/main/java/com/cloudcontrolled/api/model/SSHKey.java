@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * for an user.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class SSHKey extends AbstractModel {
 

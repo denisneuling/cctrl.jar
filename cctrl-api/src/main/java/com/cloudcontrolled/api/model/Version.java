@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * to access the cloudCOntrol API.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Version extends AbstractModel {
 

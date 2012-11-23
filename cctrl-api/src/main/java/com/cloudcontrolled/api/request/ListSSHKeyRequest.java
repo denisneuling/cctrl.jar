@@ -28,7 +28,7 @@ import com.cloudcontrolled.api.response.ListSSHKeyResponse;
  * >https://api.cloudcontrol.com/doc/#KeyGET</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}/key/")

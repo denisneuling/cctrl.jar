@@ -24,7 +24,7 @@ import com.cloudcontrolled.api.response.VersionResponse;
  * <p>VersionRequest class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/.meta/version/")

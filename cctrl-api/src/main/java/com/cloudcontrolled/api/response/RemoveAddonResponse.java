@@ -22,7 +22,7 @@ import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
  * <p>RemoveAddonResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(DeleteNormalizer.class)
 public class RemoveAddonResponse extends Response<RemoveAddonResponse> {

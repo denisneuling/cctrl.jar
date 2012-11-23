@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.response.CreateUserResponse;
  * >https://api.cloudcontrol.com/doc/#AnonymousUserCREATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/user/")

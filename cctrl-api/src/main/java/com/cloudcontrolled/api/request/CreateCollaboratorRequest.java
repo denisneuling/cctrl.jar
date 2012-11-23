@@ -29,7 +29,7 @@ import com.cloudcontrolled.api.response.CreateCollaboratorResponse;
  * >https://api.cloudcontrol.com/doc/#AppUserCREATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/user/")

@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.normalize.LogNormalizer;
  * <p>LogResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(LogNormalizer.class)
 public class LogResponse extends Response<LogResponse> {

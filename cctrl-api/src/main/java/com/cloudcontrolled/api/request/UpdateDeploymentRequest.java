@@ -31,7 +31,7 @@ import com.cloudcontrolled.api.response.UpdateDeploymentResponse;
  * >https://api.cloudcontrol.com/doc/#DeploymentUPDATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.PUT)
 @Path("/app/${app}/deployment/${dep}/")

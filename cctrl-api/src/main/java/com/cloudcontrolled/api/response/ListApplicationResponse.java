@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.normalize.ListApplicationNormalizer;
  * <p>ListApplicationResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(ListApplicationNormalizer.class)
 public class ListApplicationResponse extends Response<ListApplicationResponse> {

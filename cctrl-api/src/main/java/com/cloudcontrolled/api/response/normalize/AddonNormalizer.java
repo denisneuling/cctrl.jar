@@ -24,7 +24,7 @@ import org.json.JSONObject;
  * <p>AddonNormalizer class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class AddonNormalizer extends JSONNormalizer {
 

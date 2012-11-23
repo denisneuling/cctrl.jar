@@ -23,7 +23,7 @@ import java.util.Arrays;
  * manage the application or a list of the currently installed deployments.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Application extends AbstractModel {
 

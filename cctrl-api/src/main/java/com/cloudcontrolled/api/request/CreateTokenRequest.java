@@ -28,7 +28,7 @@ import com.cloudcontrolled.api.response.CreateTokenResponse;
  * >https://api.cloudcontrol.com/doc/#TokenCREATE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/token/")

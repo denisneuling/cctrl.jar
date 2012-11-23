@@ -21,7 +21,7 @@ import com.cloudcontrolled.api.annotation.Normalized;
  * <p>CreateTokenResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized
 public class CreateTokenResponse extends Response<CreateTokenResponse> {

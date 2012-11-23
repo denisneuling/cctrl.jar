@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.AddonResponse;
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonREAD</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/addon/${name}/")

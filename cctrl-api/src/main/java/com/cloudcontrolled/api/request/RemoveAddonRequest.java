@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.RemoveAddonResponse;
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/addon/${name}/")

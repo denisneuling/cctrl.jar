@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * to your deployment.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Stack extends AbstractModel {
 

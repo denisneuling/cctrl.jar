@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * country.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Country extends AbstractModel {
 

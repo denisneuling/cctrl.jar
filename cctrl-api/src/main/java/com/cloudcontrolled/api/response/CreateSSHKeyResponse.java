@@ -23,7 +23,7 @@ import com.cloudcontrolled.api.response.normalize.SSHKeyNormalizer;
  * <p>CreateSSHKeyResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(SSHKeyNormalizer.class)
 public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {

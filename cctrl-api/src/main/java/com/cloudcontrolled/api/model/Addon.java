@@ -28,7 +28,7 @@ import java.util.HashMap;
  * concerning addon.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Addon extends AbstractModel {
 

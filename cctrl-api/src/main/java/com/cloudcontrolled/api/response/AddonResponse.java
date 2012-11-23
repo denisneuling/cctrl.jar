@@ -23,7 +23,7 @@ import com.cloudcontrolled.api.response.normalize.AddonNormalizer;
  * <p>AddonResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(AddonNormalizer.class)
 public class AddonResponse extends Response<AddonResponse> {

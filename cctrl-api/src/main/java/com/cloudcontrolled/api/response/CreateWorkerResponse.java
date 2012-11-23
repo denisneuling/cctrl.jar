@@ -23,7 +23,7 @@ import com.cloudcontrolled.api.response.normalize.WorkerNormalizer;
  * <p>CreateWorkerResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(WorkerNormalizer.class)
 public class CreateWorkerResponse extends Response<CreateWorkerResponse> {

@@ -21,7 +21,7 @@ package com.cloudcontrolled.api.model;
  * It also contains the amount of free to use boxes you still own.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class BilledBoxes extends AbstractModel {
 

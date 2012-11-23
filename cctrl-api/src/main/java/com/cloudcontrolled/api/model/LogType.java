@@ -28,7 +28,7 @@ package com.cloudcontrolled.api.model;
  * </ul>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public enum LogType {
 

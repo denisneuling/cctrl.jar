@@ -20,7 +20,7 @@ package com.cloudcontrolled.api.model;
  * produced.
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 public class Type extends AbstractModel {
 

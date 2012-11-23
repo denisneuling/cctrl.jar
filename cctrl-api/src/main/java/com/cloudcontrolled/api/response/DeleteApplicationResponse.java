@@ -22,7 +22,7 @@ import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
  * <p>DeleteApplicationResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(DeleteNormalizer.class)
 public class DeleteApplicationResponse extends Response<DeleteApplicationResponse> {

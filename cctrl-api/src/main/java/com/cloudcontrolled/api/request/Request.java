@@ -26,7 +26,7 @@ import java.io.Serializable;
  *
  * @author Denis Neuling (denisneuling@gmail.com)
  * @param <Response>
- * @version $Id: $Id
+ *
  */
 public abstract class Request<Response> implements Serializable {
 	private static final long serialVersionUID = -7249502306037443380L;

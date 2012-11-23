@@ -27,7 +27,7 @@ import com.cloudcontrolled.api.response.ListAddonAnonymousResponse;
  * >https://api.cloudcontrol.com/doc/#AnonymousAddonREAD</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/addon/")

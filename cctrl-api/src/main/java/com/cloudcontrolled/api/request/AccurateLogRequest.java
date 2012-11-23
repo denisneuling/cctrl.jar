@@ -30,7 +30,7 @@ import com.cloudcontrolled.api.response.LogResponse;
  * >https://api.cloudcontrol.com/doc/#LogREAD</a>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/log/${type}/?timestamp=${unix}")

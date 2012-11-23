@@ -25,7 +25,7 @@ import com.cloudcontrolled.api.response.normalize.ListAddonNormalizer;
  * <p>ListAddonAnonymousResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
- * @version $Id: $Id
+ *
  */
 @Normalized(ListAddonNormalizer.class)
 public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousResponse> {

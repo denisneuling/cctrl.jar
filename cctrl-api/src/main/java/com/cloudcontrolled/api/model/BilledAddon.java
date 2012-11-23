@@ -19,8 +19,9 @@ package com.cloudcontrolled.api.model;
  * The billed add-on model contains informations about the usage of the
  * concerning addon and which price you have to offer since the addon was added
  * to your deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class BilledAddon extends AbstractModel {
 
@@ -29,10 +30,15 @@ public class BilledAddon extends AbstractModel {
 	private String until; // unix timestamp
 	private String addon; // addon name
 
+	/**
+	 * <p>Constructor for BilledAddon.</p>
+	 */
 	public BilledAddon() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>costs</code>.</p>
+	 *
 	 * @return costs the costs of the billed addon
 	 */
 	public double getCosts() {
@@ -40,6 +46,8 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>costs</code>.</p>
+	 *
 	 * @param costs the costs to set
 	 */
 	public void setCosts(double costs) {
@@ -47,6 +55,8 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>hours</code>.</p>
+	 *
 	 * @return hours the hours which were billed
 	 */
 	public double getHours() {
@@ -54,6 +64,8 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>hours</code>.</p>
+	 *
 	 * @param hours the hours to set
 	 */
 	public void setHours(double hours) {
@@ -61,13 +73,17 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
-	 * @return until the datetime when the addon was started to be billed 
+	 * <p>Getter for the field <code>until</code>.</p>
+	 *
+	 * @return until the datetime when the addon was started to be billed
 	 */
 	public String getUntil() {
 		return until;
 	}
 
 	/**
+	 * <p>Setter for the field <code>until</code>.</p>
+	 *
 	 * @param until the date to set
 	 */
 	public void setUntil(String until) {
@@ -75,6 +91,8 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>addon</code>.</p>
+	 *
 	 * @return the addon to be billed
 	 */
 	public String getAddon() {
@@ -82,6 +100,8 @@ public class BilledAddon extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>addon</code>.</p>
+	 *
 	 * @param addon the addon to set
 	 */
 	public void setAddon(String addon) {
@@ -93,6 +113,7 @@ public class BilledAddon extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "BilledAddon [costs=" + costs + ", hours=" + hours + ", until=" + until + ", addon=" + addon + "]";

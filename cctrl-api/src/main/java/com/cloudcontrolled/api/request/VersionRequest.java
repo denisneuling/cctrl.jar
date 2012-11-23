@@ -21,14 +21,19 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.VersionResponse;
 
 /**
- * 
+ * <p>VersionRequest class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.GET)
 @Path("/.meta/version/")
 public class VersionRequest extends Request<VersionResponse> {
 	private static final long serialVersionUID = -5622950652271480020L;
 
+	/**
+	 * <p>Constructor for VersionRequest.</p>
+	 */
 	public VersionRequest() {
 	}
 }

@@ -22,9 +22,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * 
+ * <p>ListCollaboratorNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 public class ListCollaboratorNormalizer extends JSONNormalizer {
 
@@ -35,6 +36,7 @@ public class ListCollaboratorNormalizer extends JSONNormalizer {
 	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
 	 * .lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		if (jsonResponse.equals("Not Implemented")) {

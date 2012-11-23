@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeploymentResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentREAD"
  * >https://api.cloudcontrol.com/doc/#DeploymentREAD</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/")
@@ -45,11 +46,15 @@ public class DeploymentRequest extends Request<DeploymentResponse> {
 	@PathVariable("${dep}")
 	private String deploymentName;
 
+	/**
+	 * <p>Constructor for DeploymentRequest.</p>
+	 */
 	public DeploymentRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -57,15 +62,17 @@ public class DeploymentRequest extends Request<DeploymentResponse> {
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>deploymentName</code>.</p>
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -73,8 +80,9 @@ public class DeploymentRequest extends Request<DeploymentResponse> {
 	}
 
 	/**
-	 * 
-	 * @param deploymentName
+	 * <p>Setter for the field <code>deploymentName</code>.</p>
+	 *
+	 * @param deploymentName a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;

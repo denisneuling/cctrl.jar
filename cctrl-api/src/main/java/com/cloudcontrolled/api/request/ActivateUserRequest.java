@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ActivateUserResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE"
  * >https://api.cloudcontrol.com/doc/#AnonymousUserUPDATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.PUT)
 @Path("/user/${user}")
@@ -44,11 +45,15 @@ public class ActivateUserRequest extends Request<ActivateUserResponse> {
 	@Body("activation_code")
 	private String activationCode;
 
+	/**
+	 * <p>Constructor for ActivateUserRequest.</p>
+	 */
 	public ActivateUserRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -56,15 +61,17 @@ public class ActivateUserRequest extends Request<ActivateUserResponse> {
 	}
 
 	/**
-	 * 
-	 * @param userName
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>activationCode</code>.</p>
+	 *
 	 * @return activationCode
 	 */
 	public String getActivationCode() {
@@ -72,8 +79,9 @@ public class ActivateUserRequest extends Request<ActivateUserResponse> {
 	}
 
 	/**
-	 * 
-	 * @param activationCode
+	 * <p>Setter for the field <code>activationCode</code>.</p>
+	 *
+	 * @param activationCode a {@link java.lang.String} object.
 	 */
 	public void setActivationCode(String activationCode) {
 		this.activationCode = activationCode;

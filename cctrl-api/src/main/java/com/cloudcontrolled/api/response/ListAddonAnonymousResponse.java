@@ -22,9 +22,10 @@ import com.cloudcontrolled.api.model.AddonAnonymous;
 import com.cloudcontrolled.api.response.normalize.ListAddonNormalizer;
 
 /**
- * 
+ * <p>ListAddonAnonymousResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized(ListAddonNormalizer.class)
 public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousResponse> {
@@ -32,17 +33,31 @@ public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousRespo
 
 	private AddonAnonymous[] addons;
 
+	/**
+	 * <p>Constructor for ListAddonAnonymousResponse.</p>
+	 */
 	public ListAddonAnonymousResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>addons</code>.</p>
+	 *
+	 * @return an array of {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.
+	 */
 	public AddonAnonymous[] getAddons() {
 		return addons;
 	}
 
+	/**
+	 * <p>Setter for the field <code>addons</code>.</p>
+	 *
+	 * @param addons an array of {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.
+	 */
 	public void setAddons(AddonAnonymous[] addons) {
 		this.addons = addons;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (addons != null ? "ListAddonAnonymousResponse [addons=" + Arrays.toString(addons) + "]" : super.toString());

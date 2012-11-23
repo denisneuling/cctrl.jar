@@ -18,19 +18,24 @@ package com.cloudcontrolled.api.model;
 /**
  * The SSHKey object defines the resource 'public ssh key' which is registered
  * for an user.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class SSHKey extends AbstractModel {
 
 	private String key_id;
 	private String key;
 
+	/**
+	 * <p>Constructor for SSHKey.</p>
+	 */
 	public SSHKey() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>key</code>.</p>
+	 *
 	 * @return key the sshKey
 	 */
 	public String getKey() {
@@ -38,7 +43,8 @@ public class SSHKey extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>Setter for the field <code>key</code>.</p>
+	 *
 	 * @param key the sshKey to set
 	 */
 	public void setKey(String key) {
@@ -46,7 +52,8 @@ public class SSHKey extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>getKeyId.</p>
+	 *
 	 * @return keyId the ssh key id
 	 */
 	public String getKeyId() {
@@ -54,7 +61,8 @@ public class SSHKey extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>setKeyId.</p>
+	 *
 	 * @param keyId the ssh key id to set
 	 */
 	public void setKeyId(String keyId) {
@@ -66,6 +74,7 @@ public class SSHKey extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "SSHKey [keyId=" + key_id + ", key=" + key + "]";

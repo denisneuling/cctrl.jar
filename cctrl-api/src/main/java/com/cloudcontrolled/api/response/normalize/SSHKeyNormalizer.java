@@ -21,8 +21,10 @@ import java.util.Map;
 import org.json.JSONObject;
 
 /**
- * 
+ * <p>SSHKeyNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class SSHKeyNormalizer extends JSONNormalizer {
 
@@ -33,6 +35,7 @@ public class SSHKeyNormalizer extends JSONNormalizer {
 	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
 	 * .lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		JSONObject body = new JSONObject(jsonResponse);

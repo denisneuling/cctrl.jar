@@ -19,8 +19,9 @@ package com.cloudcontrolled.api.model;
  * The billed boxed object contains informations about the amount of hours and
  * boxes you used whithin the last invoice period of the concerning deployment.
  * It also contains the amount of free to use boxes you still own.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class BilledBoxes extends AbstractModel {
 
@@ -29,10 +30,15 @@ public class BilledBoxes extends AbstractModel {
 	private String until; // unix timestamp
 	private double boxes = 0.0;
 
+	/**
+	 * <p>Constructor for BilledBoxes.</p>
+	 */
 	public BilledBoxes() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>costs</code>.</p>
+	 *
 	 * @return costs the costs of the billed boxes
 	 */
 	public double getCosts() {
@@ -40,6 +46,8 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>costs</code>.</p>
+	 *
 	 * @param costs the costs to set
 	 */
 	public void setCosts(double costs) {
@@ -47,6 +55,8 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>getFreeBoxes.</p>
+	 *
 	 * @return free the free boxes
 	 */
 	public double getFreeBoxes() {
@@ -54,6 +64,8 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>setFreeBoxes.</p>
+	 *
 	 * @param free_boxes the free boxes to set
 	 */
 	public void setFreeBoxes(double free_boxes) {
@@ -61,6 +73,8 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>until</code>.</p>
+	 *
 	 * @return until the datetime when the boxes were started to be billed
 	 */
 	public String getUntil() {
@@ -68,6 +82,8 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>until</code>.</p>
+	 *
 	 * @param until the date to set
 	 */
 	public void setUntil(String until) {
@@ -75,13 +91,18 @@ public class BilledBoxes extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>boxes</code>.</p>
+	 *
 	 * @returnm boxes the boxes to be billed
+	 * @return a double.
 	 */
 	public double getBoxes() {
 		return boxes;
 	}
 
 	/**
+	 * <p>Setter for the field <code>boxes</code>.</p>
+	 *
 	 * @param boxes the boxes to set
 	 */
 	public void setBoxes(double boxes) {
@@ -93,6 +114,7 @@ public class BilledBoxes extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "BilledBoxes [costs=" + costs + ", freeBoxes=" + free_boxes + ", until=" + until + ", boxes=" + boxes + "]";

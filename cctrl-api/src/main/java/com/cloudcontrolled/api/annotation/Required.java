@@ -24,8 +24,9 @@ import java.lang.annotation.Target;
 /**
  * The decorated <strong>field</strong> was marked as required for the
  * concerning request.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

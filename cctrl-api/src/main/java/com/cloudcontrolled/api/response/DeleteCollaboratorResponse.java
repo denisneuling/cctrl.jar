@@ -19,9 +19,10 @@ import com.cloudcontrolled.api.annotation.Normalized;
 import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
 
 /**
- * 
+ * <p>DeleteCollaboratorResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized(DeleteNormalizer.class)
 public class DeleteCollaboratorResponse extends Response<DeleteCollaboratorResponse> {
@@ -29,17 +30,31 @@ public class DeleteCollaboratorResponse extends Response<DeleteCollaboratorRespo
 
 	private String message;
 
+	/**
+	 * <p>Constructor for DeleteCollaboratorResponse.</p>
+	 */
 	public DeleteCollaboratorResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>message</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessage() {
 		return message;
 	}
 
+	/**
+	 * <p>Setter for the field <code>message</code>.</p>
+	 *
+	 * @param message a {@link java.lang.String} object.
+	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (message != null && !message.isEmpty() ? "DeleteCollaboratorResponse [message=" + message + "]" : super.toString());

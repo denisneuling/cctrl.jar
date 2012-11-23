@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ListAddonResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentAddonREAD"
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonREAD</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/addon/")
@@ -45,11 +46,15 @@ public class ListAddonRequest extends Request<ListAddonResponse> {
 	@PathVariable("${dep}")
 	private String deploymentName;
 
+	/**
+	 * <p>Constructor for ListAddonRequest.</p>
+	 */
 	public ListAddonRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -57,15 +62,17 @@ public class ListAddonRequest extends Request<ListAddonResponse> {
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>deploymentName</code>.</p>
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -73,8 +80,9 @@ public class ListAddonRequest extends Request<ListAddonResponse> {
 	}
 
 	/**
-	 * 
-	 * @param deploymentName
+	 * <p>Setter for the field <code>deploymentName</code>.</p>
+	 *
+	 * @param deploymentName a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;

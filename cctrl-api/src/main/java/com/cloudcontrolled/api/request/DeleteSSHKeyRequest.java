@@ -26,8 +26,9 @@ import com.cloudcontrolled.api.response.DeleteSSHKeyResponse;
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#KeyDELETE"
  * >https://api.cloudcontrol.com/doc/#KeyDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.DELETE)
 @Path("/user/${user}/key/${key}/")
@@ -42,11 +43,15 @@ public class DeleteSSHKeyRequest extends Request<DeleteSSHKeyResponse> {
 	@PathVariable("${key}")
 	private String sshKeyId;
 	
+	/**
+	 * <p>Constructor for DeleteSSHKeyRequest.</p>
+	 */
 	public DeleteSSHKeyRequest(){
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -54,15 +59,17 @@ public class DeleteSSHKeyRequest extends Request<DeleteSSHKeyResponse> {
 	}
 
 	/**
-	 * 
-	 * @param userName
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>sshKeyId</code>.</p>
+	 *
 	 * @return sshKeyId
 	 */
 	public String getSshKeyId() {
@@ -70,7 +77,8 @@ public class DeleteSSHKeyRequest extends Request<DeleteSSHKeyResponse> {
 	}
 
 	/**
-	 * 
+	 * <p>Setter for the field <code>sshKeyId</code>.</p>
+	 *
 	 * @param sshKeyId sshKeyId
 	 */
 	public void setSshKeyId(String sshKeyId) {

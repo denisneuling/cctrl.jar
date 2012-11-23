@@ -20,9 +20,10 @@ import com.cloudcontrolled.api.model.Application;
 import com.cloudcontrolled.api.response.normalize.ApplicationNormalizer;
 
 /**
- * 
+ * <p>ApplicationResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized(ApplicationNormalizer.class)
 public class ApplicationResponse extends Response<ApplicationResponse> {
@@ -30,17 +31,31 @@ public class ApplicationResponse extends Response<ApplicationResponse> {
 
 	private Application application;
 
+	/**
+	 * <p>Constructor for ApplicationResponse.</p>
+	 */
 	public ApplicationResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>application</code>.</p>
+	 *
+	 * @return a {@link com.cloudcontrolled.api.model.Application} object.
+	 */
 	public Application getApplication() {
 		return application;
 	}
 
+	/**
+	 * <p>Setter for the field <code>application</code>.</p>
+	 *
+	 * @param application a {@link com.cloudcontrolled.api.model.Application} object.
+	 */
 	public void setApplication(Application application) {
 		this.application = application;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (application != null ? "ApplicationResponse [application=" + application + "]" : super.toString());

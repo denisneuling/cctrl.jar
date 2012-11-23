@@ -21,9 +21,10 @@ import java.util.Map;
 import org.json.JSONObject;
 
 /**
- * 
+ * <p>VersionNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 public class VersionNormalizer extends JSONNormalizer {
 
@@ -34,6 +35,7 @@ public class VersionNormalizer extends JSONNormalizer {
 	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
 	 * .lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		JSONObject body = new JSONObject(jsonResponse);

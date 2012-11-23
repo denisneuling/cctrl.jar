@@ -23,12 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteUserResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#UserDELETE"
  * >https://api.cloudcontrol.com/doc/#UserDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.DELETE)
 @Path("/user/${user}")
@@ -39,11 +40,15 @@ public class DeleteUserRequest extends Request<DeleteUserResponse> {
 	@PathVariable("${user}")
 	private String userName;
 
+	/**
+	 * <p>Constructor for DeleteUserRequest.</p>
+	 */
 	public DeleteUserRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -51,8 +56,9 @@ public class DeleteUserRequest extends Request<DeleteUserResponse> {
 	}
 
 	/**
-	 * 
-	 * @param userName
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;

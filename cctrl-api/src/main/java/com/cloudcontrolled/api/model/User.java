@@ -19,8 +19,9 @@ package com.cloudcontrolled.api.model;
  * The user object contains informations about requested users. For example
  * users which have access to your application / deployment or user accounts you
  * own.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class User extends AbstractModel {
 
@@ -30,10 +31,15 @@ public class User extends AbstractModel {
 	private String email;
 	private String last_name;
 
+	/**
+	 * <p>Constructor for User.</p>
+	 */
 	public User() {
 	}
 
 	/**
+	 * <p>getFirstName.</p>
+	 *
 	 * @return preName the prename of the concerning user
 	 */
 	public String getFirstName() {
@@ -41,6 +47,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>setFirstName.</p>
+	 *
 	 * @param first_name the prename to set
 	 */
 	public void setFirstName(String first_name) {
@@ -48,6 +56,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>username</code>.</p>
+	 *
 	 * @return username the username of the concerning user
 	 */
 	public String getUsername() {
@@ -55,6 +65,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>username</code>.</p>
+	 *
 	 * @param username the username to set
 	 */
 	public void setUsername(String username) {
@@ -62,6 +74,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>isActive.</p>
+	 *
 	 * @return active the boolean value which specifies whether the user is active
 	 */
 	public boolean isActive() {
@@ -69,6 +83,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>setActive.</p>
+	 *
 	 * @param is_active the boolean value to set
 	 */
 	public void setActive(boolean is_active) {
@@ -76,6 +92,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>email</code>.</p>
+	 *
 	 * @return emailAddress the eamil address of the user
 	 */
 	public String getEmail() {
@@ -83,6 +101,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>email</code>.</p>
+	 *
 	 * @param email the email address to set
 	 */
 	public void setEmail(String email) {
@@ -90,6 +110,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>getLastName.</p>
+	 *
 	 * @return surName the surname of the concerning user
 	 */
 	public String getLastName() {
@@ -97,6 +119,8 @@ public class User extends AbstractModel {
 	}
 
 	/**
+	 * <p>setLastName.</p>
+	 *
 	 * @param last_name the surname to set
 	 */
 	public void setLastName(String last_name) {
@@ -108,6 +132,7 @@ public class User extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "User [firstName=" + first_name + ", username=" + username + ", isActive=" + is_active + ", email=" + email + ", lastName=" + last_name + "]";

@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateApplicationResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppCREATE"
  * >https://api.cloudcontrol.com/doc/#AppCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.POST)
 @Path("/app/")
@@ -50,11 +51,15 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	@Default("git")
 	private String repositoryType;
 
+	/**
+	 * <p>Constructor for CreateApplicationRequest.</p>
+	 */
 	public CreateApplicationRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -62,15 +67,17 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
 	 * @return type
 	 */
 	public String getType() {
@@ -78,15 +85,17 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	}
 
 	/**
-	 * 
-	 * @param type
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
 	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 	
 	/**
-	 * 
+	 * <p>Getter for the field <code>repositoryType</code>.</p>
+	 *
 	 * @return repositoryType
 	 */
 	public String getRepositoryType() {
@@ -94,8 +103,9 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	}
 
 	/**
-	 * 
-	 * @param repositoryType
+	 * <p>Setter for the field <code>repositoryType</code>.</p>
+	 *
+	 * @param repositoryType a {@link java.lang.String} object.
 	 */
 	public void setRepositoryType(String repositoryType) {
 		this.repositoryType = repositoryType;

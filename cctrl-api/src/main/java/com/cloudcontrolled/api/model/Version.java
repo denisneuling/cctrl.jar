@@ -18,18 +18,24 @@ package com.cloudcontrolled.api.model;
 /**
  * The version object contains informations about the latest available software
  * to access the cloudCOntrol API.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class Version extends AbstractModel {
 
 	private String pycclib;
 	private String cctrl;
 
+	/**
+	 * <p>Constructor for Version.</p>
+	 */
 	public Version() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>pycclib</code>.</p>
+	 *
 	 * @return pycclib the latest pycclib release version
 	 */
 	public String getPycclib() {
@@ -37,6 +43,8 @@ public class Version extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>pycclib</code>.</p>
+	 *
 	 * @param pycclib the latest pycclib release version
 	 */
 	public void setPycclib(String pycclib) {
@@ -44,13 +52,17 @@ public class Version extends AbstractModel {
 	}
 
 	/**
-	 * @return cctrl the latest cctrl release version 
+	 * <p>Getter for the field <code>cctrl</code>.</p>
+	 *
+	 * @return cctrl the latest cctrl release version
 	 */
 	public String getCctrl() {
 		return cctrl;
 	}
 
 	/**
+	 * <p>Setter for the field <code>cctrl</code>.</p>
+	 *
 	 * @param cctrl the latest cctrl release version to set
 	 */
 	public void setCctrl(String cctrl) {
@@ -62,6 +74,7 @@ public class Version extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Version [pycclib=" + pycclib + ", cctrl=" + cctrl + "]";

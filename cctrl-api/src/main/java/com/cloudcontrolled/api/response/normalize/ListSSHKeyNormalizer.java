@@ -22,8 +22,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * 
+ * <p>ListSSHKeyNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class ListSSHKeyNormalizer extends JSONNormalizer {
 
@@ -34,6 +36,7 @@ public class ListSSHKeyNormalizer extends JSONNormalizer {
 	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
 	 * .lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		JSONArray array = new JSONArray(jsonResponse);

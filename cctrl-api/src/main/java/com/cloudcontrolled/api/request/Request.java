@@ -19,14 +19,14 @@ import java.io.Serializable;
 
 /**
  * Abstract request class which binds the concerning response to it.
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#top"
  * >https://api.cloudcontrol.com/doc/#top</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  * @param <Response>
+ * @version $Id: $Id
  */
 public abstract class Request<Response> implements Serializable {
 	private static final long serialVersionUID = -7249502306037443380L;

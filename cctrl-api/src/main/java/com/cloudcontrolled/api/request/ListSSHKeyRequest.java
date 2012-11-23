@@ -26,8 +26,9 @@ import com.cloudcontrolled.api.response.ListSSHKeyResponse;
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#KeyGET"
  * >https://api.cloudcontrol.com/doc/#KeyGET</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}/key/")
@@ -38,11 +39,15 @@ public class ListSSHKeyRequest extends Request<ListSSHKeyResponse> {
 	@PathVariable("${user}")
 	private String userName;
 
+	/**
+	 * <p>Constructor for ListSSHKeyRequest.</p>
+	 */
 	public ListSSHKeyRequest(){
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -50,8 +55,9 @@ public class ListSSHKeyRequest extends Request<ListSSHKeyResponse> {
 	}
 
 	/**
-	 * 
-	 * @param userName
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;

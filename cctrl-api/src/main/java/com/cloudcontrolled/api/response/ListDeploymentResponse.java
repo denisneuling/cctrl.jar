@@ -22,9 +22,10 @@ import com.cloudcontrolled.api.model.Deployment;
 import com.cloudcontrolled.api.response.normalize.ListDeploymentNormalizer;
 
 /**
- * 
+ * <p>ListDeploymentResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized(ListDeploymentNormalizer.class)
 public class ListDeploymentResponse extends Response<ListDeploymentResponse> {
@@ -32,17 +33,31 @@ public class ListDeploymentResponse extends Response<ListDeploymentResponse> {
 
 	private Deployment[] deployments;
 
+	/**
+	 * <p>Constructor for ListDeploymentResponse.</p>
+	 */
 	public ListDeploymentResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>deployments</code>.</p>
+	 *
+	 * @return an array of {@link com.cloudcontrolled.api.model.Deployment} objects.
+	 */
 	public Deployment[] getDeployments() {
 		return deployments;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deployments</code>.</p>
+	 *
+	 * @param deployments an array of {@link com.cloudcontrolled.api.model.Deployment} objects.
+	 */
 	public void setDeployments(Deployment[] deployments) {
 		this.deployments = deployments;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (deployments != null ? "ListDeploymentResponse [deployments=" + Arrays.toString(deployments) + "]" : super.toString());

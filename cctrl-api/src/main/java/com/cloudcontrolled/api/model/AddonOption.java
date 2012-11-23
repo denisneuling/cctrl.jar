@@ -18,8 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The add-on options object contains the unique name <small>or as you want the
  * ID</small> of the add-on and some informations about the pricing.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class AddonOption extends AbstractModel {
 
@@ -27,11 +28,15 @@ public class AddonOption extends AbstractModel {
 	private double thirty_days_price;
 	private boolean price_is_per_box;
 
+	/**
+	 * <p>Constructor for AddonOption.</p>
+	 */
 	public AddonOption() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
 	 * @return name the name of the add-on options
 	 */
 	public String getName() {
@@ -39,7 +44,8 @@ public class AddonOption extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
 	 * @param name the name to set of the concerning add-on option
 	 */
 	public void setName(String name) {
@@ -47,7 +53,8 @@ public class AddonOption extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>getThirtyDaysPrice.</p>
+	 *
 	 * @return thirtyDaysPrice the thrity days price of the concerning add-on option
 	 */
 	public double getThirtyDaysPrice() {
@@ -55,7 +62,8 @@ public class AddonOption extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>setThirtyDaysPrice.</p>
+	 *
 	 * @param thirty_days_price the thrity days price of the concerning add-on option to set
 	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
@@ -63,7 +71,8 @@ public class AddonOption extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>isPricePerBox.</p>
+	 *
 	 * @return pricePerBox the boolean value which specifies whether the price is per box
 	 */
 	public boolean isPricePerBox() {
@@ -71,7 +80,8 @@ public class AddonOption extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>setPricePerBox.</p>
+	 *
 	 * @param price_is_per_box set the boolean value whether the price is per box
 	 */
 	public void setPricePerBox(boolean price_is_per_box) {
@@ -83,6 +93,7 @@ public class AddonOption extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "AddonOption [name=" + name + ", thirtyDaysPrice=" + thirty_days_price + ", priceIsPerBox=" + price_is_per_box + "]";

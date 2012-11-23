@@ -18,9 +18,10 @@ package com.cloudcontrolled.api.response;
 import com.cloudcontrolled.api.annotation.Normalized;
 
 /**
- * 
+ * <p>CreateTokenResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized
 public class CreateTokenResponse extends Response<CreateTokenResponse> {
@@ -28,17 +29,31 @@ public class CreateTokenResponse extends Response<CreateTokenResponse> {
 
 	private String token;
 
+	/**
+	 * <p>Constructor for CreateTokenResponse.</p>
+	 */
 	public CreateTokenResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return token;
 	}
 
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (token != null ? "CreateTokenResponse [token=" + token + "]" : super.toString());

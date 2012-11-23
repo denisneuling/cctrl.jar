@@ -20,8 +20,10 @@ import com.cloudcontrolled.api.model.SSHKey;
 import com.cloudcontrolled.api.response.normalize.SSHKeyNormalizer;
 
 /**
+ * <p>CreateSSHKeyResponse class.</p>
  *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Normalized(SSHKeyNormalizer.class)
 public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
@@ -29,10 +31,20 @@ public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
 
 	private SSHKey sshKey;
 
+	/**
+	 * <p>Getter for the field <code>sshKey</code>.</p>
+	 *
+	 * @return a {@link com.cloudcontrolled.api.model.SSHKey} object.
+	 */
 	public SSHKey getSshKey() {
 		return sshKey;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sshKey</code>.</p>
+	 *
+	 * @param sshKey a {@link com.cloudcontrolled.api.model.SSHKey} object.
+	 */
 	public void setSshKey(SSHKey sshKey) {
 		this.sshKey = sshKey;
 	}
@@ -41,6 +53,7 @@ public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
 	 * (non-Javadoc)
 	 * @see com.cloudcontrolled.api.response.Response#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (sshKey!=null?"CreateSSHKeyResponse [sshKey=" + sshKey + "]":super.toString());

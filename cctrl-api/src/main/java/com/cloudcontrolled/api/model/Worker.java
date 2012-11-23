@@ -18,8 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The worker object contains informations about your heavy working scripts and
  * / or programs which are connected to your deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class Worker extends AbstractModel {
 
@@ -29,10 +30,15 @@ public class Worker extends AbstractModel {
 	private String command;
 	private int size;
 
+	/**
+	 * <p>Constructor for Worker.</p>
+	 */
 	public Worker() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>wrk_id</code>.</p>
+	 *
 	 * @return workerId the id of the concerning worker
 	 */
 	public String getWrk_id() {
@@ -40,6 +46,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>wrk_id</code>.</p>
+	 *
 	 * @param wrk_id the worker id to set
 	 */
 	public void setWrk_id(String wrk_id) {
@@ -47,6 +55,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>date_created</code>.</p>
+	 *
 	 * @return created the datetime when the worker was created
 	 */
 	public String getDate_created() {
@@ -54,6 +64,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>date_created</code>.</p>
+	 *
 	 * @param date_created the datetime to set
 	 */
 	public void setDate_created(String date_created) {
@@ -61,6 +73,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>params</code>.</p>
+	 *
 	 * @return parameters the parameters of the worker start command
 	 */
 	public String getParams() {
@@ -68,6 +82,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>params</code>.</p>
+	 *
 	 * @param params the parameters to set
 	 */
 	public void setParams(String params) {
@@ -75,6 +91,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>command</code>.</p>
+	 *
 	 * @return command the command how the worker was started
 	 */
 	public String getCommand() {
@@ -82,6 +100,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>command</code>.</p>
+	 *
 	 * @param command the command to set
 	 */
 	public void setCommand(String command) {
@@ -89,6 +109,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>size</code>.</p>
+	 *
 	 * @return size the amount of memory which the worker can use
 	 */
 	public int getSize() {
@@ -96,6 +118,8 @@ public class Worker extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>size</code>.</p>
+	 *
 	 * @param size the amount of memory to set
 	 */
 	public void setSize(int size) {
@@ -107,6 +131,7 @@ public class Worker extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Worker [date_created=" + date_created + ", wrk_id=" + wrk_id + ", params=" + params + ", command=" + command + ", size=" + size + "]";

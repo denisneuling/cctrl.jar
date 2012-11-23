@@ -26,10 +26,11 @@ import com.cloudcontrolled.api.response.Response;
 import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
 
 /**
- * The decorated <strong>{@link Response} type</strong> will be built via the
- * defined <strong>{@link JSONNormalizer}</strong>.
- * 
+ * The decorated <strong>{@link com.cloudcontrolled.api.response.Response} type</strong> will be built via the
+ * defined <strong>{@link com.cloudcontrolled.api.response.normalize.JSONNormalizer}</strong>.
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

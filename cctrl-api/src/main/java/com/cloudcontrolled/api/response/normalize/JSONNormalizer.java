@@ -16,17 +16,19 @@
 package com.cloudcontrolled.api.response.normalize;
 
 /**
- * 
+ * <p>JSONNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 public class JSONNormalizer {
 
 	/**
-	 * 
-	 * @param jsonResponse
-	 * @return
-	 * @throws Exception
+	 * <p>normalize.</p>
+	 *
+	 * @param jsonResponse a {@link java.lang.String} object.
+	 * @throws java.lang.Exception if any.
+	 * @return a {@link java.lang.String} object.
 	 */
 	public String normalize(String jsonResponse) throws Exception {
 		return jsonResponse;

@@ -22,8 +22,10 @@ import com.cloudcontrolled.api.model.SSHKey;
 import com.cloudcontrolled.api.response.normalize.ListSSHKeyNormalizer;
 
 /**
- * 
+ * <p>ListSSHKeyResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Normalized(ListSSHKeyNormalizer.class)
 public class ListSSHKeyResponse extends Response<ListSSHKeyResponse> {
@@ -31,10 +33,20 @@ public class ListSSHKeyResponse extends Response<ListSSHKeyResponse> {
 
 	private SSHKey[] sshKeys;
 
+	/**
+	 * <p>Getter for the field <code>sshKeys</code>.</p>
+	 *
+	 * @return an array of {@link com.cloudcontrolled.api.model.SSHKey} objects.
+	 */
 	public SSHKey[] getSshKeys() {
 		return sshKeys;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sshKeys</code>.</p>
+	 *
+	 * @param sshKeys an array of {@link com.cloudcontrolled.api.model.SSHKey} objects.
+	 */
 	public void setSshKeys(SSHKey[] sshKeys) {
 		this.sshKeys = sshKeys;
 	}
@@ -43,6 +55,7 @@ public class ListSSHKeyResponse extends Response<ListSSHKeyResponse> {
 	 * (non-Javadoc)
 	 * @see com.cloudcontrolled.api.response.Response#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (sshKeys!=null?"ListSSHKeyResponse [sshKeys=" + Arrays.toString(sshKeys) + "]":super.toString());

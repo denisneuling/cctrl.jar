@@ -18,18 +18,24 @@ package com.cloudcontrolled.api.model;
 /**
  * The support plan object contains pricing informations about the plan you had
  * chosen before.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class SupportPlan extends AbstractModel {
 
 	private String name;
 	private double thirty_days_price = 0.0;
 
+	/**
+	 * <p>Constructor for SupportPlan.</p>
+	 */
 	public SupportPlan() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
 	 * @return name the name of the concerning support plan
 	 */
 	public String getName() {
@@ -37,6 +43,8 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
@@ -44,6 +52,8 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
+	 * <p>getThirtyDaysPrice.</p>
+	 *
 	 * @return thirtyDaysPrice the price of 30 days for that support plan
 	 */
 	public double getThirtyDaysPrice() {
@@ -51,7 +61,8 @@ public class SupportPlan extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>setThirtyDaysPrice.</p>
+	 *
 	 * @param thirty_days_price the price of 30 days support to set
 	 */
 	public void setThirtyDaysPrice(double thirty_days_price) {
@@ -63,6 +74,7 @@ public class SupportPlan extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "SupportPlan [name=" + name + ", thirtyDaysPrice=" + thirty_days_price + "]";

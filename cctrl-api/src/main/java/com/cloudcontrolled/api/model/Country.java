@@ -18,8 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The country object contains the country code and the name of the concerning
  * country.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class Country extends AbstractModel {
 
@@ -27,11 +28,15 @@ public class Country extends AbstractModel {
 	private String code;
 	private boolean is_eu;
 
+	/**
+	 * <p>Constructor for Country.</p>
+	 */
 	public Country() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
 	 * @return name the name of the country
 	 */
 	public String getName() {
@@ -39,6 +44,8 @@ public class Country extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
@@ -46,6 +53,8 @@ public class Country extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
 	 * @return code the country code
 	 */
 	public String getCode() {
@@ -53,6 +62,8 @@ public class Country extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
 	 * @param code the country code to set
 	 */
 	public void setCode(String code) {
@@ -60,6 +71,8 @@ public class Country extends AbstractModel {
 	}
 
 	/**
+	 * <p>isIs_eu.</p>
+	 *
 	 * @return isEU the boolean value which specifies if the country is whithin the EU
 	 */
 	public boolean isIs_eu() {
@@ -67,7 +80,9 @@ public class Country extends AbstractModel {
 	}
 
 	/**
-	 * @param is_eu the boolean value which specifies whether the country is whithin the EU to set 
+	 * <p>Setter for the field <code>is_eu</code>.</p>
+	 *
+	 * @param is_eu the boolean value which specifies whether the country is whithin the EU to set
 	 */
 	public void setIs_eu(boolean is_eu) {
 		this.is_eu = is_eu;
@@ -78,6 +93,7 @@ public class Country extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Country [name=" + name + ", code=" + code + ", is_eu=" + is_eu + "]";

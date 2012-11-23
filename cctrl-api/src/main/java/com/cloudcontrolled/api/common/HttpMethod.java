@@ -17,8 +17,9 @@ package com.cloudcontrolled.api.common;
 
 /**
  * Enum which holds the HTTP method to use.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public enum HttpMethod {
 

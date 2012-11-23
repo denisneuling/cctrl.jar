@@ -23,12 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ListCollaboratorResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppUserREAD"
  * >https://api.cloudcontrol.com/doc/#AppUserREAD</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/user/")
@@ -39,11 +40,15 @@ public class ListCollaboratorRequest extends Request<ListCollaboratorResponse> {
 	@PathVariable("${app}")
 	private String applicationName;
 
+	/**
+	 * <p>Constructor for ListCollaboratorRequest.</p>
+	 */
 	public ListCollaboratorRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -51,8 +56,9 @@ public class ListCollaboratorRequest extends Request<ListCollaboratorResponse> {
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;

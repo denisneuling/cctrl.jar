@@ -18,8 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The log object contains the timestamp, the type and the content of your log
  * messages of your installed deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class Log extends AbstractModel {
 
@@ -27,10 +28,15 @@ public class Log extends AbstractModel {
 	private String type;
 	private String message;
 
+	/**
+	 * <p>Constructor for Log.</p>
+	 */
 	public Log() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>time</code>.</p>
+	 *
 	 * @return dateTime the datetime when the log entry was produced
 	 */
 	public long getTime() {
@@ -38,6 +44,8 @@ public class Log extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>time</code>.</p>
+	 *
 	 * @param time the time to set
 	 */
 	public void setTime(long time) {
@@ -45,6 +53,8 @@ public class Log extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>message</code>.</p>
+	 *
 	 * @return message the message of the log entry
 	 */
 	public String getMessage() {
@@ -52,6 +62,8 @@ public class Log extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>message</code>.</p>
+	 *
 	 * @param message the message to set
 	 */
 	public void setMessage(String message) {
@@ -59,6 +71,8 @@ public class Log extends AbstractModel {
 	}
 
 	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
 	 * @return type the type of the log entry
 	 */
 	public String getType() {
@@ -66,6 +80,8 @@ public class Log extends AbstractModel {
 	}
 
 	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
 	 * @param type the type to set
 	 */
 	public void setType(String type) {
@@ -77,6 +93,7 @@ public class Log extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Log [time=" + time + ", type=" + type + ", message=" + message + "]";

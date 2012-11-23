@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.RemoveAddonResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE"
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/addon/${name}/")
@@ -49,11 +50,15 @@ public class RemoveAddonRequest extends Request<RemoveAddonResponse> {
 	@PathVariable("${name}")
 	private String addonName;
 
+	/**
+	 * <p>Constructor for RemoveAddonRequest.</p>
+	 */
 	public RemoveAddonRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -61,15 +66,17 @@ public class RemoveAddonRequest extends Request<RemoveAddonResponse> {
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>deploymentName</code>.</p>
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -77,15 +84,17 @@ public class RemoveAddonRequest extends Request<RemoveAddonResponse> {
 	}
 
 	/**
-	 * 
-	 * @param deploymentName
+	 * <p>Setter for the field <code>deploymentName</code>.</p>
+	 *
+	 * @param deploymentName a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>addonName</code>.</p>
+	 *
 	 * @return addonName
 	 */
 	public String getAddonName() {
@@ -93,8 +102,9 @@ public class RemoveAddonRequest extends Request<RemoveAddonResponse> {
 	}
 
 	/**
-	 * 
-	 * @param addonName
+	 * <p>Setter for the field <code>addonName</code>.</p>
+	 *
+	 * @param addonName a {@link java.lang.String} object.
 	 */
 	public void setAddonName(String addonName) {
 		this.addonName = addonName;

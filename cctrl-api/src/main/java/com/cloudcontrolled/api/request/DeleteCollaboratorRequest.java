@@ -23,12 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteCollaboratorResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppUserDELETE"
  * >https://api.cloudcontrol.com/doc/#AppUserDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/user/${user}/")
@@ -43,11 +44,15 @@ public class DeleteCollaboratorRequest extends Request<DeleteCollaboratorRespons
 	@PathVariable("${user}")
 	private String userName;
 
+	/**
+	 * <p>Constructor for DeleteCollaboratorRequest.</p>
+	 */
 	public DeleteCollaboratorRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -55,15 +60,17 @@ public class DeleteCollaboratorRequest extends Request<DeleteCollaboratorRespons
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -71,8 +78,9 @@ public class DeleteCollaboratorRequest extends Request<DeleteCollaboratorRespons
 	}
 
 	/**
-	 * 
-	 * @param userName
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;

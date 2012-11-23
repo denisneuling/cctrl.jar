@@ -21,9 +21,10 @@ import java.util.Map;
 import org.json.JSONObject;
 
 /**
- * 
+ * <p>DeleteNormalizer class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 public class DeleteNormalizer extends JSONNormalizer {
 
@@ -34,6 +35,7 @@ public class DeleteNormalizer extends JSONNormalizer {
 	 * com.cloudcontrolled.api.response.normalize.JSONNormalizer#normalize(java
 	 * .lang.String)
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String normalize(String jsonResponse) throws Exception {
 		Map<String, String> layout = new HashMap<String, String>();

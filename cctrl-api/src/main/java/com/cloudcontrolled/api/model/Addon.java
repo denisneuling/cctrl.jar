@@ -26,18 +26,24 @@ import java.util.HashMap;
  * If you add a <strong>datasource</strong> the settings map contains at least
  * your <strong>credentials</strong> and the unified resource locator of the
  * concerning addon.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 public class Addon extends AbstractModel {
 
 	private AddonOption addon_option;
 	private HashMap<String, String> settings;
 
+	/**
+	 * <p>Constructor for Addon.</p>
+	 */
 	public Addon() {
 	}
 
 	/**
+	 * <p>Getter for the field <code>settings</code>.</p>
+	 *
 	 * @return settings the settings map which contains all you need to use the
 	 *         addon.
 	 */
@@ -46,7 +52,8 @@ public class Addon extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>Setter for the field <code>settings</code>.</p>
+	 *
 	 * @param settings the settings to set
 	 */
 	public void setSettings(HashMap<String, String> settings) {
@@ -54,7 +61,8 @@ public class Addon extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>getAddonOption.</p>
+	 *
 	 * @return addonOption the addon options of the concerning add-on
 	 */
 	public AddonOption getAddonOption() {
@@ -62,7 +70,8 @@ public class Addon extends AbstractModel {
 	}
 
 	/**
-	 * 
+	 * <p>setAddonOption.</p>
+	 *
 	 * @param addon_option the addon options to set
 	 */
 	public void setAddonOption(AddonOption addon_option) {
@@ -74,6 +83,7 @@ public class Addon extends AbstractModel {
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Addon [settings=" + settings + ", addonOption=" + addon_option + "]";

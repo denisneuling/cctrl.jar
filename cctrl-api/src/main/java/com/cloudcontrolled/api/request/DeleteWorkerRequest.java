@@ -24,12 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteWorkerResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#WorkerDELETE"
  * >https://api.cloudcontrol.com/doc/#WorkerDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ * @version $Id: $Id
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/worker/${workerId}")
@@ -49,11 +50,15 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	@PathVariable("${workerId}")
 	private String workerId;
 
+	/**
+	 * <p>Constructor for DeleteWorkerRequest.</p>
+	 */
 	public DeleteWorkerRequest() {
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>applicationName</code>.</p>
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -61,15 +66,17 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	}
 
 	/**
-	 * 
-	 * @param applicationName
+	 * <p>Setter for the field <code>applicationName</code>.</p>
+	 *
+	 * @param applicationName a {@link java.lang.String} object.
 	 */
 	public void setApplicationName(String applicationName) {
 		this.applicationName = applicationName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>deploymentName</code>.</p>
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -77,15 +84,17 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	}
 
 	/**
-	 * 
-	 * @param deploymentName
+	 * <p>Setter for the field <code>deploymentName</code>.</p>
+	 *
+	 * @param deploymentName a {@link java.lang.String} object.
 	 */
 	public void setDeploymentName(String deploymentName) {
 		this.deploymentName = deploymentName;
 	}
 
 	/**
-	 * 
+	 * <p>Getter for the field <code>workerId</code>.</p>
+	 *
 	 * @return workerId
 	 */
 	public String getWorkerId() {
@@ -93,8 +102,9 @@ public class DeleteWorkerRequest extends Request<DeleteWorkerResponse> {
 	}
 
 	/**
-	 * 
-	 * @param workerId
+	 * <p>Setter for the field <code>workerId</code>.</p>
+	 *
+	 * @param workerId a {@link java.lang.String} object.
 	 */
 	public void setWorkerId(String workerId) {
 		this.workerId = workerId;

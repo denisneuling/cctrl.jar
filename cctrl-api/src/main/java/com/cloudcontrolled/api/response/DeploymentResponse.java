@@ -20,9 +20,10 @@ import com.cloudcontrolled.api.model.Deployment;
 import com.cloudcontrolled.api.response.normalize.DeploymentNormalizer;
 
 /**
- * 
+ * <p>DeploymentResponse class.</p>
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ * @version $Id: $Id
  */
 @Normalized(DeploymentNormalizer.class)
 public class DeploymentResponse extends Response<DeploymentResponse> {
@@ -30,17 +31,31 @@ public class DeploymentResponse extends Response<DeploymentResponse> {
 
 	private Deployment deployment;
 
+	/**
+	 * <p>Constructor for DeploymentResponse.</p>
+	 */
 	public DeploymentResponse() {
 	}
 
+	/**
+	 * <p>Getter for the field <code>deployment</code>.</p>
+	 *
+	 * @return a {@link com.cloudcontrolled.api.model.Deployment} object.
+	 */
 	public Deployment getDeployment() {
 		return deployment;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deployment</code>.</p>
+	 *
+	 * @param deployment a {@link com.cloudcontrolled.api.model.Deployment} object.
+	 */
 	public void setDeployment(Deployment deployment) {
 		this.deployment = deployment;
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return (deployment != null ? "DeploymentResponse [deployment=" + deployment + "]" : super.toString());

@@ -76,6 +76,7 @@
 		<gpg.plugin.version>1.2</gpg.plugin.version>
 		<javadoc.plugin.version>2.7</javadoc.plugin.version>
 		<jdk.version>1.6</jdk.version>
+		<encoding>UTF-8</encoding>
 	</properties>
 
 
@@ -95,7 +96,7 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>2.3.2</version>
 					<configuration>
-						<encoding>UTF-8</encoding>
+						<encoding>${encoding}</encoding>
 						<source>${jdk.version}</source>
 						<target>${jdk.version}</target>
 					</configuration>
@@ -105,7 +106,7 @@
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>2.4.3</version>
 					<configuration>
-						<encoding>UTF-8</encoding>
+						<encoding>${encoding}</encoding>
 					</configuration>
 				</plugin>
 				<plugin>

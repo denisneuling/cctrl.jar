@@ -64,7 +64,7 @@ and fetch it from maven central by using mvn
 
 		private Credentials credentials = new Credentials(cctrlEmail, cctrlPassword);
 
-		private String applicatioName = "myapp";
+		private String applicationName = "myapp";
 		private String deploymentName = "mydeployment";
 
 		public Deployment deploy(){

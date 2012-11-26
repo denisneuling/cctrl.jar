@@ -111,6 +111,3 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
   Chained invocation of cctrl:push and cctrl:deploy.
 
 
-* cctrl:help
-
-  Simple help how to define the plugin configuration at the project object model.

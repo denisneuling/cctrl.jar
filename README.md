@@ -1,6 +1,6 @@
 # cctrl.jar
 
-Maven Project, which contains the Java [cloudcontrol PaaS](https://www.cloudcontrol.com/) API adapter and tools.
+Maven parent project, which contains the Java [cloudcontrol PaaS](https://www.cloudcontrol.com/) API adapter modules and tools.
 
 ### Requirements
 ---
@@ -21,7 +21,7 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 ### How to setup this project?
 ---
 
-1. Clone the parent project [cctrl.jar](https://github.com/denisneuling/cctrl.jar.git)
+1. Clone the [cctrl.jar](https://github.com/denisneuling/cctrl.jar.git) project
 
         $ git clone https://github.com/denisneuling/cctrl.jar.git
 
@@ -33,6 +33,9 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 
         $ mvn install # fetch all dependencies and build the project
 
-### What does the project contain?
+### Which modules does this project contain?
 ---
-TODO
+
+* [cctrl-api](https://github.com/denisneuling/cctrl.jar/tree/master/cctrl-api/README.md)
+* [cctrl-api-client](https://github.com/denisneuling/cctrl.jar/tree/master/cctrl-api-client/README.md)
+* [cctrl-maven-plugin](https://github.com/denisneuling/cctrl.jar/tree/master/cctrl-maven-plugin/README.md)

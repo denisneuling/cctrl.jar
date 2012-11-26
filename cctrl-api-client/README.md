@@ -30,7 +30,55 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 
         $ mvn install # fetch all dependencies and build the project
 
-### How to use cctrl-api-client?
+### How to extend your awesome implementation by cctrl-api-client?
 ---
 
-TODO
+Just add the following xml snippet to your project object model's dependencies
+
+``` xml
+	<dependency>
+	    <groupId>com.cloudcontrolled</groupId>
+	    <artifactId>cctrl-api-client</artifactId>
+	    <version>0.1</version>
+	</dependency>
+```
+
+and fetch it from maven central by using mvn
+
+### How to use the cctrl-api-client whithin your project?
+---
+
+``` java
+
+	import com.cloudcontrolled.api.client.CloudControlClient;
+	import com.cloudcontrolled.api.client.auth.Credentials;
+	import com.cloudcontrolled.api.request.DeploymentRequest;
+	import com.cloudcontrolled.api.response.DeploymentResponse;
+	import com.cloudcontrolled.api.model.Deployment;
+
+
+	public class CloudControlDeploymentCapable{
+		
+		private String cctrlEmail = "contact@company.com";
+		private String cctrlPassword = "secr3tP4ssW0rd";
+
+		private Credentials credentials = new Credentials(cctrlEmail, cctrlPassword);
+
+		private String applicatioName = "myapp";
+		private String deploymentName = "mydeployment";
+
+		public Deployment deploy(){
+
+			CloudControlClient client = new CloudControlClient(credentials);
+			
+			DeploymentRequest request = new DeploymentRequest();
+			request.setApplicationName(applicationName);
+			request.setDeploymentName(deploymentName);
+
+			DeploymentResponse response = client.send(request);
+			return response.getDeployment();
+		}
+
+	}
+
+```

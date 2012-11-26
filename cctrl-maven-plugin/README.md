@@ -17,7 +17,6 @@ Descriptions can be found here:
 
 For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/index.html)
 
-
 ### How to setup this project?
 ---
 
@@ -47,7 +46,7 @@ For Maven: [Building a Project with Maven](http://maven.apache.org/run-maven/ind
 				<plugin>
 					<groupId>com.cloudcontrolled</groupId>
 					<artifactId>cctrl-maven-plugin</artifactId>
-					<version>0.0.1-SNAPSHOT</version>
+					<version>0.1</version>
 					<configuration>
 						<application>awesomeapp</application>
 						<!-- optional <deployment>deployment</deployment> -->

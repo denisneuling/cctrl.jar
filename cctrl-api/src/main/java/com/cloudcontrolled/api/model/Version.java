@@ -86,4 +86,35 @@ public class Version extends AbstractModel {
 	public String toString() {
 		return "Version [pycclib=" + pycclib + ", cctrl=" + cctrl + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((cctrl == null) ? 0 : cctrl.hashCode());
+		result = prime * result + ((pycclib == null) ? 0 : pycclib.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Version other = (Version) obj;
+		if (cctrl == null) {
+			if (other.cctrl != null)
+				return false;
+		} else if (!cctrl.equals(other.cctrl))
+			return false;
+		if (pycclib == null) {
+			if (other.pycclib != null)
+				return false;
+		} else if (!pycclib.equals(other.pycclib))
+			return false;
+		return true;
+	}
 }

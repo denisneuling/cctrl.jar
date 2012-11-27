@@ -428,4 +428,47 @@ public class Deployment extends AbstractModel {
 		return "Deployment [name=" + name + ", depId=" + dep_id + ", maxBoxes=" + max_boxes + ", minBoxes=" + min_boxes + ", dateCreated=" + date_created + ", staticFiles=" + static_files + ", stack=" + stack + ", billedAddons=" + Arrays.toString(billed_addons) + ", billedBoxes=" + billed_boxes
 				+ ", state=" + state + ", defaultSubdomain=" + default_subdomain + ", default=" + is_default + ", branch=" + branch + ", version=" + version + ", dateModified=" + date_modified + ", billingAccount=" + billing_account + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((date_created == null) ? 0 : date_created.hashCode());
+		result = prime * result + ((dep_id == null) ? 0 : dep_id.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((stack == null) ? 0 : stack.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Deployment other = (Deployment) obj;
+		if (date_created == null) {
+			if (other.date_created != null)
+				return false;
+		} else if (!date_created.equals(other.date_created))
+			return false;
+		if (dep_id == null) {
+			if (other.dep_id != null)
+				return false;
+		} else if (!dep_id.equals(other.dep_id))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (stack == null) {
+			if (other.stack != null)
+				return false;
+		} else if (!stack.equals(other.stack))
+			return false;
+		return true;
+	}
 }

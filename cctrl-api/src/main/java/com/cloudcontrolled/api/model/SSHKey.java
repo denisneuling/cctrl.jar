@@ -86,4 +86,29 @@ public class SSHKey extends AbstractModel {
 	public String toString() {
 		return "SSHKey [keyId=" + key_id + ", key=" + key + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((key_id == null) ? 0 : key_id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SSHKey other = (SSHKey) obj;
+		if (key_id == null) {
+			if (other.key_id != null)
+				return false;
+		} else if (!key_id.equals(other.key_id))
+			return false;
+		return true;
+	}
 }

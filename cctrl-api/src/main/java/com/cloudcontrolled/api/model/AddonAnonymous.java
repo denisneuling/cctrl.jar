@@ -114,4 +114,35 @@ public class AddonAnonymous extends AbstractModel {
 	public String toString() {
 		return "AddonAnonymous [name=" + name + ", stage=" + stage + ", options=" + (options != null ? Arrays.toString(options) : "[]") + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((stage == null) ? 0 : stage.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		AddonAnonymous other = (AddonAnonymous) obj;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (stage == null) {
+			if (other.stage != null)
+				return false;
+		} else if (!stage.equals(other.stage))
+			return false;
+		return true;
+	}
 }

@@ -95,4 +95,29 @@ public class Addon extends AbstractModel {
 	public String toString() {
 		return "Addon [settings=" + settings + ", addonOption=" + addon_option + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((addon_option == null) ? 0 : addon_option.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Addon other = (Addon) obj;
+		if (addon_option == null) {
+			if (other.addon_option != null)
+				return false;
+		} else if (!addon_option.equals(other.addon_option))
+			return false;
+		return true;
+	}
 }

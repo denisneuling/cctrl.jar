@@ -158,4 +158,35 @@ public class Worker extends AbstractModel {
 	public String toString() {
 		return "Worker [date_created=" + date_created + ", wrk_id=" + wrk_id + ", params=" + params + ", command=" + command + ", size=" + size + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((date_created == null) ? 0 : date_created.hashCode());
+		result = prime * result + ((wrk_id == null) ? 0 : wrk_id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Worker other = (Worker) obj;
+		if (date_created == null) {
+			if (other.date_created != null)
+				return false;
+		} else if (!date_created.equals(other.date_created))
+			return false;
+		if (wrk_id == null) {
+			if (other.wrk_id != null)
+				return false;
+		} else if (!wrk_id.equals(other.wrk_id))
+			return false;
+		return true;
+	}
 }

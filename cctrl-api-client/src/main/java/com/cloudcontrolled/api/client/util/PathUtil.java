@@ -46,31 +46,22 @@ public class PathUtil {
 	 * 
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
-	 * @param <T>
-	 *            a T object.
-	 */
-	public static <T> void infixPotentialDefaults(Request<T> request) {
-		infixPotentialDefaults(request, request.getClass(), true);
-	}
-
-	/**
-	 * <p>
-	 * infixPotentialDefaults.
-	 * </p>
-	 * 
-	 * @param request
-	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param targetClazz
-	 *            a {@link java.lang.Class} object.
+	 *            a {@link java.lang.Class} object. If <code>null</code> it will
+	 *            be set to the requests class.
 	 * @param infixPotentialValuesOfSuperClass
 	 *            a boolean.
 	 * @param <T>
 	 *            a T object.
 	 */
-	public static <T> void infixPotentialDefaults(Request<T> request, Class<?> targetClazz, boolean infixPotentialValuesOfSuperClass) {
+	public static <T> void infixPotentialPathDefaults(Request<T> request, Class<?> targetClazz) {
+		if (targetClazz == null) {
+			targetClazz = request.getClass();
+		}
+
 		Class<?> superClass = targetClazz.getSuperclass();
-		if (infixPotentialValuesOfSuperClass && superClass != null && superClass.equals(Request.class)) {
-			infixPotentialDefaults(request, superClass, infixPotentialValuesOfSuperClass);
+		if (superClass != null && superClass.equals(Request.class)) {
+			infixPotentialPathDefaults(request, superClass);
 		}
 
 		Field[] declaredFields = targetClazz.getDeclaredFields();

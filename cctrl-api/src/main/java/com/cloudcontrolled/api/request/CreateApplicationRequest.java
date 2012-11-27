@@ -39,7 +39,6 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 
 	@Required
 	@Body("name")
-	// @PathVariable("${app}")
 	private String applicationName;
 
 	@Required

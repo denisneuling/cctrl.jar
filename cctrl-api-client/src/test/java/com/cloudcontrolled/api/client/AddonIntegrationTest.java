@@ -15,11 +15,9 @@
  */
 package com.cloudcontrolled.api.client;
 
-import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.cloudcontrolled.api.client.auth.Credentials;
 import com.cloudcontrolled.api.model.AddonAnonymous;
 import com.cloudcontrolled.api.request.AddAddonRequest;
 import com.cloudcontrolled.api.request.AddonRequest;
@@ -39,24 +37,12 @@ import com.cloudcontrolled.api.response.RemoveAddonResponse;
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Ignore
-public class AddonIntegrationTest {
+public class AddonIntegrationTest extends AbstractIntegrationTest {
 
 	private String application = "zj";
 	private String deployment = "default";
 	private String addonName = "mysqlsdev.free";
 	private String addonAmendTo = "mysqlsdev.512mb";
-
-	private Credentials credentials;
-	private CloudControlClient client;
-
-	private String cctrl_email = System.getenv("CCTRL_EMAIL");
-	private String cctrl_password = System.getenv("CCTRL_PASSWORD");
-
-	@Before
-	public void setUp() {
-		credentials = new Credentials(cctrl_email, cctrl_password);
-		client = new CloudControlClient(credentials);
-	}
 
 	@Test
 	public void testListAddonsAnonymous() {

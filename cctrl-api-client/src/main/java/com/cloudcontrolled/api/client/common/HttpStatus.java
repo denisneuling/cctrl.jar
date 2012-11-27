@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. 
  */
-package com.cloudcontrolled.api.client.util;
+package com.cloudcontrolled.api.client.common;
 
 /**
  * Hypertext Transfer Protocol (HTTP) Status Code Registry

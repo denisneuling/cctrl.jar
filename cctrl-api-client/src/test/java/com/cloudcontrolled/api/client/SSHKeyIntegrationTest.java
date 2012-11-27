@@ -15,11 +15,9 @@
  */
 package com.cloudcontrolled.api.client;
 
-import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.cloudcontrolled.api.client.auth.Credentials;
 import com.cloudcontrolled.api.request.CreateSSHKeyRequest;
 import com.cloudcontrolled.api.request.DeleteSSHKeyRequest;
 import com.cloudcontrolled.api.request.ListSSHKeyRequest;
@@ -34,21 +32,9 @@ import com.cloudcontrolled.api.response.SSHKeyResponse;
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Ignore
-public class SSHKeyIntegrationTest {
+public class SSHKeyIntegrationTest  extends AbstractIntegrationTest  {
 
 	private String user = "fakeuser";
-
-	private Credentials credentials;
-	private CloudControlClient client;
-
-	private String cctrl_email = System.getenv("CCTRL_EMAIL");
-	private String cctrl_password = System.getenv("CCTRL_PASSWORD");
-
-	@Before
-	public void setUp() {
-		credentials = new Credentials(cctrl_email, cctrl_password);
-		client = new CloudControlClient(credentials);
-	}
 
 	@Test
 	public void testListSSHKeys() {

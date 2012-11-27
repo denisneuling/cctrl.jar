@@ -18,14 +18,14 @@ package com.cloudcontrolled.api.client;
 import org.apache.cxf.jaxrs.client.WebClient;
 
 import com.cloudcontrolled.api.client.auth.Credentials;
+import com.cloudcontrolled.api.client.common.HttpStatus;
 import com.cloudcontrolled.api.client.exception.AuthorizationException;
 import com.cloudcontrolled.api.client.exception.CommunicationErrorException;
 import com.cloudcontrolled.api.client.exception.ValidationConstraintViolationException;
 import com.cloudcontrolled.api.client.support.CloudControlClientSupport;
 import com.cloudcontrolled.api.client.util.HttpMethodUtil;
-import com.cloudcontrolled.api.client.util.HttpStatus;
 import com.cloudcontrolled.api.client.util.PathUtil;
-import com.cloudcontrolled.api.client.util.ValidationUtil;
+import com.cloudcontrolled.api.client.util.RequestUtil;
 import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.request.CreateTokenRequest;
 import com.cloudcontrolled.api.request.Request;
@@ -108,8 +108,8 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 		if (request == null) {
 			throw new CommunicationErrorException("Request cannot be null.");
 		}
-		PathUtil.infixPotentialDefaults(request);
-		ValidationUtil.validate(request);
+		PathUtil.infixPotentialPathDefaults(request, request.getClass());
+		RequestUtil.validate(request);
 
 		T response;
 		try {

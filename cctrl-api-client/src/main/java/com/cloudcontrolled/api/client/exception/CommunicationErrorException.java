@@ -15,7 +15,7 @@
  */
 package com.cloudcontrolled.api.client.exception;
 
-import com.cloudcontrolled.api.client.util.HttpStatus;
+import com.cloudcontrolled.api.client.common.HttpStatus;
 
 /**
  * <p>
@@ -58,7 +58,7 @@ public class CommunicationErrorException extends CloudControlClientException {
 	 * </p>
 	 * 
 	 * @param httpStatus
-	 *            a {@link com.cloudcontrolled.api.client.util.HttpStatus}
+	 *            a {@link com.cloudcontrolled.api.client.common.HttpStatus}
 	 *            object.
 	 * @param message
 	 *            a {@link java.lang.String} object.
@@ -73,7 +73,7 @@ public class CommunicationErrorException extends CloudControlClientException {
 	 * </p>
 	 * 
 	 * @param httpStatus
-	 *            a {@link com.cloudcontrolled.api.client.util.HttpStatus}
+	 *            a {@link com.cloudcontrolled.api.client.common.HttpStatus}
 	 *            object.
 	 */
 	public CommunicationErrorException(HttpStatus httpStatus) {

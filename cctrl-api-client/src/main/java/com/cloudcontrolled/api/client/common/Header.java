@@ -1,4 +1,4 @@
-package com.cloudcontrolled.api.client.util;
+package com.cloudcontrolled.api.client.common;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -65,7 +65,7 @@ public class Header {
 	 * getInstance.
 	 * </p>
 	 * 
-	 * @return a {@link com.cloudcontrolled.api.client.util.Header} object.
+	 * @return a {@link com.cloudcontrolled.api.client.common.Header} object.
 	 */
 	public static Header getInstance() {
 		if (INSTANCE == null) {

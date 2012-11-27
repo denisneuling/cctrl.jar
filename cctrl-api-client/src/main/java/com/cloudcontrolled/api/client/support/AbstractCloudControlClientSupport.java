@@ -20,11 +20,11 @@ import java.io.InputStream;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.apache.log4j.Logger;
 
+import com.cloudcontrolled.api.client.common.HttpStatus;
+import com.cloudcontrolled.api.client.common.Timer;
 import com.cloudcontrolled.api.client.exception.AuthorizationException;
-import com.cloudcontrolled.api.client.util.HttpStatus;
 import com.cloudcontrolled.api.client.util.PathUtil;
 import com.cloudcontrolled.api.client.util.RequestUtil;
-import com.cloudcontrolled.api.client.util.Timer;
 import com.cloudcontrolled.api.request.CreateTokenRequest;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;
@@ -55,6 +55,13 @@ public abstract class AbstractCloudControlClientSupport {
 	 */
 	protected <T> Response<T> doGet(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
+		webClient = RequestUtil.resolveAndSetQueryPart(request, webClient);
+		// webClient.query(name, values)
+		// webClient.query("", RequestUtil.resolveQueryPart(request));
+		// webClient = webClient.replaceQueryParam("a",
+		// RequestUtil.resolveQueryPart(request));
+		// webClient =
+		// webClient.replaceQuery(RequestUtil.resolveQueryPart(request));
 
 		Timer timer = Timer.tic();
 		javax.ws.rs.core.Response cxfResponse = webClient.get();
@@ -84,6 +91,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 */
 	protected <T> Response<T> doPost(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
+		webClient = RequestUtil.resolveAndSetQueryPart(request, webClient);
 
 		Timer timer = Timer.tic();
 		javax.ws.rs.core.Response cxfResponse = webClient.post(RequestUtil.getBodyAsMultiValuedMap(request));
@@ -113,6 +121,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 */
 	protected <T> Response<T> doPut(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
+		webClient = RequestUtil.resolveAndSetQueryPart(request, webClient);
 
 		Timer timer = Timer.tic();
 		javax.ws.rs.core.Response cxfResponse = webClient.put(RequestUtil.getBodyAsMultiValuedMap(request));
@@ -142,6 +151,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 */
 	protected <T> Response<T> doDelete(WebClient webClient, Request<T> request) {
 		webClient = webClient.path(inquirePath(request));
+		webClient = RequestUtil.resolveAndSetQueryPart(request, webClient);
 
 		Timer timer = Timer.tic();
 		javax.ws.rs.core.Response cxfResponse = webClient.delete();

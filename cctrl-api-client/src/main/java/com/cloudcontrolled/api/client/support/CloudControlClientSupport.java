@@ -29,10 +29,10 @@ import org.apache.cxf.transport.http.HTTPConduit;
 import org.apache.cxf.transports.http.configuration.HTTPClientPolicy;
 
 import com.cloudcontrolled.api.client.auth.TokenStore;
+import com.cloudcontrolled.api.client.common.Header;
 import com.cloudcontrolled.api.client.exception.SerializationException;
 import com.cloudcontrolled.api.client.json.JsonDeserializer;
 import com.cloudcontrolled.api.client.security.DumbX509TrustManager;
-import com.cloudcontrolled.api.client.util.Header;
 import com.cloudcontrolled.api.client.util.RequestUtil;
 import com.cloudcontrolled.api.request.Request;
 import com.cloudcontrolled.api.response.Response;

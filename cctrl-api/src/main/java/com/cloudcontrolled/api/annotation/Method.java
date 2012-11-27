@@ -22,7 +22,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import com.cloudcontrolled.api.common.HttpMethod;
-import com.cloudcontrolled.api.request.Request;
 
 /**
  * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}

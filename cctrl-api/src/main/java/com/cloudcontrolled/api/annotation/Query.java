@@ -22,21 +22,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}
- * type</strong> is mapped onto the defined url path.
+ * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}'s
+ * property</strong> defines a query fragment which will be part of the URI.
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
-public @interface Path {
+@Target(value = ElementType.FIELD)
+public @interface Query {
 
-	/**
-	 * Defines the url path.
-	 * 
-	 * @return url path.
-	 */
-	String value();
+	String value() default "";
 }

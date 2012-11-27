@@ -19,6 +19,7 @@ import com.cloudcontrolled.api.annotation.Default;
 import com.cloudcontrolled.api.annotation.Method;
 import com.cloudcontrolled.api.annotation.Path;
 import com.cloudcontrolled.api.annotation.PathVariable;
+import com.cloudcontrolled.api.annotation.Query;
 import com.cloudcontrolled.api.annotation.Required;
 import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.LogResponse;
@@ -50,6 +51,9 @@ public class LogRequest extends Request<LogResponse> {
 	@Default("error")
 	@PathVariable("${type}")
 	private String logType;
+	
+	@Query("timestamp")
+	private String unixTime;
 
 	/**
 	 * <p>
@@ -126,5 +130,28 @@ public class LogRequest extends Request<LogResponse> {
 	 */
 	public void setLogType(String logType) {
 		this.logType = logType;
+	}
+	
+	/**
+	 * <p>
+	 * Getter for the field <code>unixTime</code>.
+	 * </p>
+	 * 
+	 * @return unixTime
+	 */
+	public String getUnixTime() {
+		return unixTime;
+	}
+
+	/**
+	 * <p>
+	 * Setter for the field <code>unixTime</code>.
+	 * </p>
+	 * 
+	 * @param unixTime
+	 *            a {@link java.lang.String} object.
+	 */
+	public void setUnixTime(String unixTime) {
+		this.unixTime = unixTime;
 	}
 }

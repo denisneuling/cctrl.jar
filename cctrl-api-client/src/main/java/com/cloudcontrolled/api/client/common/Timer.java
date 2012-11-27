@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License. 
  */
-package com.cloudcontrolled.api.client.util;
+package com.cloudcontrolled.api.client.common;
 
 import java.util.Date;
 
@@ -35,7 +35,7 @@ public class Timer {
 	 * tic.
 	 * </p>
 	 * 
-	 * @return a {@link com.cloudcontrolled.api.client.util.Timer} object.
+	 * @return a {@link com.cloudcontrolled.api.client.common.Timer} object.
 	 */
 	public static Timer tic() {
 		Timer timer = new Timer();

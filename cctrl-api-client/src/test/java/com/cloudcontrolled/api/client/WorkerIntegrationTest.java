@@ -15,11 +15,9 @@
  */
 package com.cloudcontrolled.api.client;
 
-import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.cloudcontrolled.api.client.auth.Credentials;
 import com.cloudcontrolled.api.model.Worker;
 import com.cloudcontrolled.api.request.CreateWorkerRequest;
 import com.cloudcontrolled.api.request.DeleteWorkerRequest;
@@ -33,30 +31,11 @@ import com.cloudcontrolled.api.response.ListWorkerResponse;
  * @author Denis Neuling (denisneuling@gmail.com)
  */
 @Ignore
-public class WorkerIntegrationTest {
+public class WorkerIntegrationTest  extends AbstractIntegrationTest {
 
-	private String application = "zj";
+	private String application = "djenkinsn";
 	private String deployment = "default";
 	private String worker = "worker.long";
-
-	private Credentials credentials;
-	private CloudControlClient client;
-
-	private String cctrl_email = System.getenv("CCTRL_EMAIL");
-	private String cctrl_password = System.getenv("CCTRL_PASSWORD");
-
-	@Before
-	public void setUp() {
-		credentials = new Credentials(cctrl_email, cctrl_password);
-		client = new CloudControlClient(credentials);
-	}
-
-	@Test
-	public void testCreate10() {
-		for (int i = 0; i < 10; i++) {
-			testCreateWorker();
-		}
-	}
 
 	@Test
 	public void testCreateWorker() {

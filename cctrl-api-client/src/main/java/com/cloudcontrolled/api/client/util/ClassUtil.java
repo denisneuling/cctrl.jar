@@ -119,12 +119,15 @@ public class ClassUtil {
 	 *            a T object.
 	 * @return a T object.
 	 */
+	@SuppressWarnings("unchecked")
 	public static <T> T getValueOf(Field field, Object reference, Class<?> referenceClazz, Class<T> valueType) {
 		try {
 			field.setAccessible(true);
-			@SuppressWarnings("unchecked")
-			T toReturn = (T) field.get(reference);
-			return toReturn;
+			Object toReturn = (T) field.get(reference);
+			if(String.class.isInstance(valueType.getClass()) && !String.class.isInstance(toReturn.getClass())){
+				toReturn = toReturn.toString();
+			}
+			return (T) toReturn;
 		} catch (Exception e) {
 			return null;
 		}

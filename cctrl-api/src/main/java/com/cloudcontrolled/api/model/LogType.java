@@ -16,7 +16,7 @@
 package com.cloudcontrolled.api.model;
 
 /**
- * There are three log types in which the deployments log is separated. You
+ * There are several log types in which the deployments log is separated. You
  * might chose between:
  * <ul>
  * <li><strong>access</strong> <small>for an overview about the activity of your
@@ -25,6 +25,8 @@ package com.cloudcontrolled.api.model;
  * goes through STDOUT or STDERR</small></li>
  * <li><strong>worker</strong> <small>for an overview about the activity of your
  * workers belonging to your deployment</small></li>
+ * <li><strong>deploy</strong> <small>for an overview about the activity while
+ * the deployment is installing</small></li>
  * </ul>
  * 
  * @author Denis Neuling (denisneuling@gmail.com)
@@ -45,7 +47,13 @@ public enum LogType {
 	/**
 	 * Access logs, which were produces by accessing the concerning deployment.
 	 */
-	ACCESS("access");
+	ACCESS("access"),
+
+	/**
+	 * Deploy logs, which were produces by installing a new version of the
+	 * concerning deployment.
+	 */
+	DEPLOY("deploy");
 
 	private String name;
 

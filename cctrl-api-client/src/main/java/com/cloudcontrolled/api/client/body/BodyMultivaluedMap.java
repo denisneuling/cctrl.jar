@@ -25,9 +25,9 @@ import javax.ws.rs.core.MultivaluedMap;
  * <p>
  * BodyMultivaluedMap class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class BodyMultivaluedMap extends HashMap<String, List<String>> implements MultivaluedMap<String, String> {
 	private static final long serialVersionUID = -4545725304226984837L;

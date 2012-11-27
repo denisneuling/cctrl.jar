@@ -26,8 +26,9 @@ import java.util.PropertyResourceBundle;
  * <p>
  * API support class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ *
  */
 public class API {
 
@@ -39,7 +40,7 @@ public class API {
 	 * <p>
 	 * complementaryPyCcLib.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.util.List} object.
 	 * @throws java.io.IOException
 	 *             if any.

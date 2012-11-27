@@ -21,13 +21,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.ListApplicationResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppRead"
  * >https://api.cloudcontrol.com/doc/#AppRead</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/app/")

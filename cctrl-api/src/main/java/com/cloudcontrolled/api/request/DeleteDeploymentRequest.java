@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteDeploymentResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentDELETE"
  * >https://api.cloudcontrol.com/doc/#DeploymentDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/deployment/${dep}/")
@@ -58,7 +58,7 @@ public class DeleteDeploymentRequest extends Request<DeleteDeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -69,7 +69,7 @@ public class DeleteDeploymentRequest extends Request<DeleteDeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -81,7 +81,7 @@ public class DeleteDeploymentRequest extends Request<DeleteDeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -92,7 +92,7 @@ public class DeleteDeploymentRequest extends Request<DeleteDeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param deploymentName
 	 *            a {@link java.lang.String} object.
 	 */

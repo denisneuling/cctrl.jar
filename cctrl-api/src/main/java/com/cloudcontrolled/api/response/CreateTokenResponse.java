@@ -21,9 +21,9 @@ import com.cloudcontrolled.api.annotation.Normalized;
  * <p>
  * CreateTokenResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized
 public class CreateTokenResponse extends Response<CreateTokenResponse> {
@@ -43,7 +43,7 @@ public class CreateTokenResponse extends Response<CreateTokenResponse> {
 	 * <p>
 	 * Getter for the field <code>token</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getToken() {
@@ -54,7 +54,7 @@ public class CreateTokenResponse extends Response<CreateTokenResponse> {
 	 * <p>
 	 * Setter for the field <code>token</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param token
 	 *            a {@link java.lang.String} object.
 	 */

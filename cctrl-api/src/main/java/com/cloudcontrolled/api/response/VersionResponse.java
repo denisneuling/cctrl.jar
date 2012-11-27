@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.VersionNormalizer;
  * <p>
  * VersionResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(VersionNormalizer.class)
 public class VersionResponse extends Response<VersionResponse> {
@@ -45,7 +45,7 @@ public class VersionResponse extends Response<VersionResponse> {
 	 * <p>
 	 * Getter for the field <code>version</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.Version} object.
 	 */
 	public Version getVersion() {
@@ -56,7 +56,7 @@ public class VersionResponse extends Response<VersionResponse> {
 	 * <p>
 	 * Setter for the field <code>version</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param version
 	 *            a {@link com.cloudcontrolled.api.model.Version} object.
 	 */

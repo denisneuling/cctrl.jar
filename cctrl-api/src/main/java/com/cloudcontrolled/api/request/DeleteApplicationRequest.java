@@ -23,13 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.DeleteApplicationResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppDELETE"
  * >https://api.cloudcontrol.com/doc/#AppDELETE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.DELETE)
 @Path("/app/${app}/")
@@ -52,7 +52,7 @@ public class DeleteApplicationRequest extends Request<DeleteApplicationResponse>
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -63,7 +63,7 @@ public class DeleteApplicationRequest extends Request<DeleteApplicationResponse>
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */

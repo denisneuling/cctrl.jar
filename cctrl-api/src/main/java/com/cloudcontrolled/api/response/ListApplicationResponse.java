@@ -25,9 +25,9 @@ import com.cloudcontrolled.api.response.normalize.ListApplicationNormalizer;
  * <p>
  * ListApplicationResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(ListApplicationNormalizer.class)
 public class ListApplicationResponse extends Response<ListApplicationResponse> {
@@ -47,7 +47,7 @@ public class ListApplicationResponse extends Response<ListApplicationResponse> {
 	 * <p>
 	 * Getter for the field <code>applications</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link com.cloudcontrolled.api.model.Application}
 	 *         objects.
 	 */
@@ -59,7 +59,7 @@ public class ListApplicationResponse extends Response<ListApplicationResponse> {
 	 * <p>
 	 * Setter for the field <code>applications</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applications
 	 *            an array of {@link com.cloudcontrolled.api.model.Application}
 	 *            objects.

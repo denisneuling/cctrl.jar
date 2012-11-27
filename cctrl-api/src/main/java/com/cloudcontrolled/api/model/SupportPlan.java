@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The support plan object contains pricing informations about the plan you had
  * chosen before.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class SupportPlan extends AbstractModel {
 
@@ -39,7 +39,7 @@ public class SupportPlan extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return name the name of the concerning support plan
 	 */
 	public String getName() {
@@ -50,7 +50,7 @@ public class SupportPlan extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the name to set
 	 */
@@ -62,7 +62,7 @@ public class SupportPlan extends AbstractModel {
 	 * <p>
 	 * getThirtyDaysPrice.
 	 * </p>
-	 * 
+	 *
 	 * @return thirtyDaysPrice the price of 30 days for that support plan
 	 */
 	public double getThirtyDaysPrice() {
@@ -73,7 +73,7 @@ public class SupportPlan extends AbstractModel {
 	 * <p>
 	 * setThirtyDaysPrice.
 	 * </p>
-	 * 
+	 *
 	 * @param thirty_days_price
 	 *            the price of 30 days support to set
 	 */

@@ -27,9 +27,9 @@ import com.cloudcontrolled.api.response.CreateSSHKeyResponse;
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#KeyCREATE"
  * >https://api.cloudcontrol.com/doc/#KeyCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/user/${user}/key/")
@@ -56,7 +56,7 @@ public class CreateSSHKeyRequest extends Request<CreateSSHKeyResponse> {
 	 * <p>
 	 * Getter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getUserName() {
@@ -67,7 +67,7 @@ public class CreateSSHKeyRequest extends Request<CreateSSHKeyResponse> {
 	 * <p>
 	 * Setter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param userName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -79,7 +79,7 @@ public class CreateSSHKeyRequest extends Request<CreateSSHKeyResponse> {
 	 * <p>
 	 * Getter for the field <code>sshKey</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getSshKey() {
@@ -90,7 +90,7 @@ public class CreateSSHKeyRequest extends Request<CreateSSHKeyResponse> {
 	 * <p>
 	 * Setter for the field <code>sshKey</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param sshKey
 	 *            a {@link java.lang.String} object.
 	 */

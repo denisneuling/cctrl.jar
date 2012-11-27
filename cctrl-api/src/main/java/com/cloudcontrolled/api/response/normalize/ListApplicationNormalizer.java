@@ -25,9 +25,9 @@ import org.json.JSONObject;
  * <p>
  * ListApplicationNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class ListApplicationNormalizer extends JSONNormalizer {
 

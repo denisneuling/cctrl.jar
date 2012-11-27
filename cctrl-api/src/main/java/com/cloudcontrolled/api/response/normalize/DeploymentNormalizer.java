@@ -24,9 +24,9 @@ import org.json.JSONObject;
  * <p>
  * DeploymentNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class DeploymentNormalizer extends JSONNormalizer {
 

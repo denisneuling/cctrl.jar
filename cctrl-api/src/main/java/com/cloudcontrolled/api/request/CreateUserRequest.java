@@ -23,13 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateUserResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AnonymousUserCREATE"
  * >https://api.cloudcontrol.com/doc/#AnonymousUserCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/user/")
@@ -60,7 +60,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Getter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -71,7 +71,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Setter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param userName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -83,7 +83,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Getter for the field <code>email</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return email
 	 */
 	public String getEmail() {
@@ -94,7 +94,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Setter for the field <code>email</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param email
 	 *            a {@link java.lang.String} object.
 	 */
@@ -106,7 +106,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Getter for the field <code>password</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return password
 	 */
 	public String getPassword() {
@@ -117,7 +117,7 @@ public class CreateUserRequest extends Request<CreateUserResponse> {
 	 * <p>
 	 * Setter for the field <code>password</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param password
 	 *            a {@link java.lang.String} object.
 	 */

@@ -21,9 +21,9 @@ import java.util.Arrays;
  * The deployment object contains information of your currently installed branch
  * of your application. It also provides a raw overview of used resources
  * concerning to that deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class Deployment extends AbstractModel {
 
@@ -56,7 +56,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return name the name of the deployment
 	 */
 	public String getName() {
@@ -67,7 +67,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the name to set
 	 */
@@ -79,7 +79,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getDepId.
 	 * </p>
-	 * 
+	 *
 	 * @return deploymentId the deployment id
 	 */
 	public String getDepId() {
@@ -90,7 +90,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setDepId.
 	 * </p>
-	 * 
+	 *
 	 * @param dep_id
 	 *            the deployment id to set
 	 */
@@ -102,7 +102,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getMaxBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @return maxBoxes the maximum boxes of the deployment
 	 */
 	public int getMaxBoxes() {
@@ -113,7 +113,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setMaxBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @param max_boxes
 	 *            the max boxes to set
 	 */
@@ -125,7 +125,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getMinBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @return minBoxes the min boxes of the concerning deployment
 	 */
 	public int getMinBoxes() {
@@ -136,7 +136,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setMinBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @param min_boxes
 	 *            the min boxes to set
 	 */
@@ -148,7 +148,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getDateCreated.
 	 * </p>
-	 * 
+	 *
 	 * @return created the datetime when the deployment was created
 	 */
 	public String getDateCreated() {
@@ -159,7 +159,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setDateCreated.
 	 * </p>
-	 * 
+	 *
 	 * @param date_created
 	 *            the date_created to set
 	 */
@@ -171,7 +171,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getStaticFiles.
 	 * </p>
-	 * 
+	 *
 	 * @return path the path of static files
 	 */
 	public String getStaticFiles() {
@@ -182,7 +182,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setStaticFiles.
 	 * </p>
-	 * 
+	 *
 	 * @param static_files
 	 *            the path of static files to set
 	 */
@@ -194,7 +194,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>stack</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return stack the stack which belongs to the deployment
 	 */
 	public Stack getStack() {
@@ -205,7 +205,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>stack</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param stack
 	 *            the stack to set
 	 */
@@ -217,7 +217,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getBilledAddons.
 	 * </p>
-	 * 
+	 *
 	 * @return billedAddons the billed add-ons of the concerning deployment
 	 */
 	public BilledAddon[] getBilledAddons() {
@@ -228,7 +228,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setBilledAddons.
 	 * </p>
-	 * 
+	 *
 	 * @param billed_addons
 	 *            the billed add-ons to set
 	 */
@@ -240,7 +240,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getBilledBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @return billedBoxes the billedBoxes of the deployment
 	 */
 	public BilledBoxes getBilledBoxes() {
@@ -251,7 +251,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setBilledBoxes.
 	 * </p>
-	 * 
+	 *
 	 * @param billed_boxes
 	 *            the billed boxes to set
 	 */
@@ -263,7 +263,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>state</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return state the state of the deployment
 	 */
 	public String getState() {
@@ -274,7 +274,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>state</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param state
 	 *            the state to set
 	 */
@@ -286,7 +286,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getDefaultSubdomain.
 	 * </p>
-	 * 
+	 *
 	 * @return domain the default subdomain on which the deployment is reachable
 	 *         by default
 	 */
@@ -298,7 +298,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setDefaultSubdomain.
 	 * </p>
-	 * 
+	 *
 	 * @param default_subdomain
 	 *            the default subdoman to set
 	 */
@@ -310,7 +310,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * isDefault.
 	 * </p>
-	 * 
+	 *
 	 * @return isDefault the boolean value which specifies whether the
 	 *         deployment is the default one
 	 */
@@ -322,7 +322,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setDefault.
 	 * </p>
-	 * 
+	 *
 	 * @param is_default
 	 *            the boolean value to set
 	 */
@@ -334,7 +334,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>branch</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return branch the scm branch of the deployment
 	 */
 	public String getBranch() {
@@ -345,7 +345,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>branch</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param branch
 	 *            the branch to set
 	 */
@@ -357,7 +357,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>version</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return version the version or commit id of the deployment
 	 */
 	public String getVersion() {
@@ -368,7 +368,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>version</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param version
 	 *            the version to set
 	 */
@@ -380,7 +380,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getDateModified.
 	 * </p>
-	 * 
+	 *
 	 * @return modified the datetime when the deployment was modified at least
 	 */
 	public String getDateModified() {
@@ -391,7 +391,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setDateModified.
 	 * </p>
-	 * 
+	 *
 	 * @param date_modified
 	 *            the date modified to set
 	 */
@@ -403,7 +403,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * getBillingAccount.
 	 * </p>
-	 * 
+	 *
 	 * @return billingAccount the concerning billing accoun of that deployment
 	 */
 	public BillingAccount getBillingAccount() {
@@ -414,7 +414,7 @@ public class Deployment extends AbstractModel {
 	 * <p>
 	 * setBillingAccount.
 	 * </p>
-	 * 
+	 *
 	 * @param billing_account
 	 *            the billing account to set
 	 */

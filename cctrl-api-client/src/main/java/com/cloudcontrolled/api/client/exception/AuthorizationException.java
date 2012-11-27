@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.client.exception;
  * <p>
  * AuthorizationException class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class AuthorizationException extends CloudControlClientException {
 	private static final long serialVersionUID = -2005842973892589494L;
@@ -30,7 +30,7 @@ public class AuthorizationException extends CloudControlClientException {
 	 * <p>
 	 * Constructor for AuthorizationException.
 	 * </p>
-	 * 
+	 *
 	 * @param message
 	 *            a {@link java.lang.String} object.
 	 */
@@ -42,7 +42,7 @@ public class AuthorizationException extends CloudControlClientException {
 	 * <p>
 	 * Constructor for AuthorizationException.
 	 * </p>
-	 * 
+	 *
 	 * @param th
 	 *            a {@link java.lang.Throwable} object.
 	 */

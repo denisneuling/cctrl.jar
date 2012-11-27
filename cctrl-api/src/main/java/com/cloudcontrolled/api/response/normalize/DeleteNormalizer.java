@@ -24,9 +24,9 @@ import org.json.JSONObject;
  * <p>
  * DeleteNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class DeleteNormalizer extends JSONNormalizer {
 

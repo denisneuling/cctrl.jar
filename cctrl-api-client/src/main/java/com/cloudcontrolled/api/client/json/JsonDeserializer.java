@@ -28,9 +28,9 @@ import com.google.gson.JsonSyntaxException;
  * <p>
  * JsonDeserializer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class JsonDeserializer {
 
@@ -67,7 +67,7 @@ public class JsonDeserializer {
 	 * <p>
 	 * fromJSON.
 	 * </p>
-	 * 
+	 *
 	 * @param response
 	 *            a {@link java.lang.String} object.
 	 * @param target

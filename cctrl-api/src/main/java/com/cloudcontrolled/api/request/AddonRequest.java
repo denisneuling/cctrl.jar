@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.AddonResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentAddonREAD"
  * >https://api.cloudcontrol.com/doc/#DeploymentAddonREAD</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/app/${app}/deployment/${dep}/addon/${name}/")
@@ -62,7 +62,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -73,7 +73,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -85,7 +85,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Getter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -96,7 +96,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Setter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param deploymentName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -108,7 +108,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Getter for the field <code>addonName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return addonName
 	 */
 	public String getAddonName() {
@@ -119,7 +119,7 @@ public class AddonRequest extends Request<AddonResponse> {
 	 * <p>
 	 * Setter for the field <code>addonName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param addonName
 	 *            a {@link java.lang.String} object.
 	 */

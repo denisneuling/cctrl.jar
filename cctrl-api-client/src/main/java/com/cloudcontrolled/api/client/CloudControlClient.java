@@ -36,9 +36,9 @@ import com.cloudcontrolled.api.response.Response;
  * <p>
  * CloudControlClient class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class CloudControlClient extends CloudControlClientSupport implements ICloudControlClient {
 
@@ -52,7 +52,7 @@ public class CloudControlClient extends CloudControlClientSupport implements ICl
 	 * <p>
 	 * Constructor for CloudControlClient.
 	 * </p>
-	 * 
+	 *
 	 * @param credentials
 	 *            a {@link com.cloudcontrolled.api.client.auth.Credentials}
 	 *            object.

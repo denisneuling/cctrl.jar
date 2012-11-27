@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The stack object contains the name of the software stack which is associated
  * to your deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class Stack extends AbstractModel {
 
@@ -38,7 +38,7 @@ public class Stack extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return name the name of the concerning stack
 	 */
 	public String getName() {
@@ -49,7 +49,7 @@ public class Stack extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the name to set
 	 */

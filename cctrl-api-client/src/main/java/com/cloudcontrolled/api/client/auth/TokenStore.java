@@ -4,9 +4,9 @@ package com.cloudcontrolled.api.client.auth;
  * <p>
  * TokenStore class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class TokenStore {
 
@@ -24,7 +24,7 @@ public class TokenStore {
 	 * <p>
 	 * Getter for the field <code>token</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getToken() {
@@ -35,7 +35,7 @@ public class TokenStore {
 	 * <p>
 	 * Setter for the field <code>token</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param token
 	 *            a {@link java.lang.String} object.
 	 */

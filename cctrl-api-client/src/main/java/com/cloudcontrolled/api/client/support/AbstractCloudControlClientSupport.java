@@ -33,9 +33,9 @@ import com.cloudcontrolled.api.response.Response;
  * <p>
  * Abstract AbstractCloudControlClientSupport class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public abstract class AbstractCloudControlClientSupport {
 	protected final Logger log = Logger.getLogger(this.getClass());
@@ -44,7 +44,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * doGet.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
@@ -80,7 +80,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * doPost.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
@@ -110,7 +110,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * doPut.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
@@ -140,7 +140,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * doDelete.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param request
@@ -199,7 +199,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * inquirePath.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param <T>
@@ -214,7 +214,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * deserialize.
 	 * </p>
-	 * 
+	 *
 	 * @param response
 	 *            a {@link java.lang.String} object.
 	 * @param request
@@ -229,7 +229,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * deserialize.
 	 * </p>
-	 * 
+	 *
 	 * @param inputStream
 	 *            a {@link java.io.InputStream} object.
 	 * @param request
@@ -244,7 +244,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * deserializeError.
 	 * </p>
-	 * 
+	 *
 	 * @param inputStream
 	 *            a {@link java.io.InputStream} object.
 	 * @param request
@@ -259,7 +259,7 @@ public abstract class AbstractCloudControlClientSupport {
 	 * <p>
 	 * deserializeError.
 	 * </p>
-	 * 
+	 *
 	 * @param response
 	 *            a {@link java.lang.String} object.
 	 * @param request

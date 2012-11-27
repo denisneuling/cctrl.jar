@@ -21,9 +21,9 @@ import com.cloudcontrolled.api.request.Request;
  * <p>
  * ICloudControlClient interface.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public interface ICloudControlClient {
 
@@ -31,7 +31,7 @@ public interface ICloudControlClient {
 	 * <p>
 	 * send.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @return response

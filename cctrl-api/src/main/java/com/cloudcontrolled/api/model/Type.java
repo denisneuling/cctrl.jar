@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The type object contains the name of the language in which your software was
  * produced.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class Type extends AbstractModel {
 
@@ -38,7 +38,7 @@ public class Type extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return name the name to get.
 	 */
 	public String getName() {
@@ -49,7 +49,7 @@ public class Type extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the name to set.
 	 */

@@ -26,9 +26,9 @@ import com.sun.net.ssl.internal.ssl.X509ExtendedTrustManager;
  * <p>
  * DumbX509TrustManager class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class DumbX509TrustManager extends X509ExtendedTrustManager implements TrustManager {
 
@@ -63,7 +63,7 @@ public class DumbX509TrustManager extends X509ExtendedTrustManager implements Tr
 	 * <p>
 	 * getAcceptedIssuers.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link java.security.cert.X509Certificate} objects.
 	 */
 	public X509Certificate[] getAcceptedIssuers() {

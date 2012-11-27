@@ -25,9 +25,9 @@ import com.cloudcontrolled.api.response.normalize.ListCollaboratorNormalizer;
  * <p>
  * ListCollaboratorResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(ListCollaboratorNormalizer.class)
 public class ListCollaboratorResponse extends Response<ListCollaboratorResponse> {
@@ -47,7 +47,7 @@ public class ListCollaboratorResponse extends Response<ListCollaboratorResponse>
 	 * <p>
 	 * Getter for the field <code>users</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link com.cloudcontrolled.api.model.User} objects.
 	 */
 	public User[] getUsers() {
@@ -58,7 +58,7 @@ public class ListCollaboratorResponse extends Response<ListCollaboratorResponse>
 	 * <p>
 	 * Setter for the field <code>users</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param users
 	 *            an array of {@link com.cloudcontrolled.api.model.User}
 	 *            objects.

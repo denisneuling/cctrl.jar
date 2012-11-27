@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateDeploymentResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#DeploymentCREATE"
  * >https://api.cloudcontrol.com/doc/#DeploymentCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/")
@@ -61,7 +61,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -72,7 +72,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -84,7 +84,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -95,7 +95,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param deploymentName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -107,7 +107,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>stack</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return stack
 	 */
 	public String getStack() {
@@ -118,7 +118,7 @@ public class CreateDeploymentRequest extends Request<CreateDeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>stack</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param stack
 	 *            a {@link java.lang.String} object.
 	 */

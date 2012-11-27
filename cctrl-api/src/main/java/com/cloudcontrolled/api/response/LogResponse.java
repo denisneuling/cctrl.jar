@@ -25,9 +25,9 @@ import com.cloudcontrolled.api.response.normalize.LogNormalizer;
  * <p>
  * LogResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(LogNormalizer.class)
 public class LogResponse extends Response<LogResponse> {
@@ -47,7 +47,7 @@ public class LogResponse extends Response<LogResponse> {
 	 * <p>
 	 * Getter for the field <code>logs</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link com.cloudcontrolled.api.model.Log} objects.
 	 */
 	public Log[] getLogs() {
@@ -58,7 +58,7 @@ public class LogResponse extends Response<LogResponse> {
 	 * <p>
 	 * Setter for the field <code>logs</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param logs
 	 *            an array of {@link com.cloudcontrolled.api.model.Log} objects.
 	 */

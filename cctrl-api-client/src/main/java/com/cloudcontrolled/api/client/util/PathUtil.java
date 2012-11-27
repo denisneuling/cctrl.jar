@@ -31,9 +31,9 @@ import com.cloudcontrolled.api.request.Request;
  * <p>
  * PathUtil class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class PathUtil {
 
@@ -43,16 +43,15 @@ public class PathUtil {
 	 * <p>
 	 * infixPotentialDefaults.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param targetClazz
 	 *            a {@link java.lang.Class} object. If <code>null</code> it will
 	 *            be set to the requests class.
-	 * @param infixPotentialValuesOfSuperClass
-	 *            a boolean.
 	 * @param <T>
 	 *            a T object.
+	 * @since 0.1.1
 	 */
 	public static <T> void infixPotentialPathDefaults(Request<T> request, Class<?> targetClazz) {
 		if (targetClazz == null) {
@@ -85,7 +84,7 @@ public class PathUtil {
 	 * <p>
 	 * resolveResourcePath.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param <T>

@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.ApplicationNormalizer;
  * <p>
  * CreateApplicationResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(ApplicationNormalizer.class)
 public class CreateApplicationResponse extends Response<CreateApplicationResponse> {
@@ -45,7 +45,7 @@ public class CreateApplicationResponse extends Response<CreateApplicationRespons
 	 * <p>
 	 * Getter for the field <code>application</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.Application} object.
 	 */
 	public Application getApplication() {
@@ -56,7 +56,7 @@ public class CreateApplicationResponse extends Response<CreateApplicationRespons
 	 * <p>
 	 * Setter for the field <code>application</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param application
 	 *            a {@link com.cloudcontrolled.api.model.Application} object.
 	 */

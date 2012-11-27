@@ -25,9 +25,9 @@ import com.cloudcontrolled.api.response.normalize.ListAddonNormalizer;
  * <p>
  * ListAddonAnonymousResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(ListAddonNormalizer.class)
 public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousResponse> {
@@ -47,7 +47,7 @@ public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousRespo
 	 * <p>
 	 * Getter for the field <code>addons</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link com.cloudcontrolled.api.model.AddonAnonymous}
 	 *         objects.
 	 */
@@ -59,7 +59,7 @@ public class ListAddonAnonymousResponse extends Response<ListAddonAnonymousRespo
 	 * <p>
 	 * Setter for the field <code>addons</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param addons
 	 *            an array of
 	 *            {@link com.cloudcontrolled.api.model.AddonAnonymous} objects.

@@ -40,9 +40,9 @@ import com.cloudcontrolled.api.response.Response;
  * <p>
  * RequestUtil class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class RequestUtil {
 
@@ -52,7 +52,7 @@ public class RequestUtil {
 	 * <p>
 	 * getInstanceOfParameterizedType.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param <T>
@@ -74,7 +74,7 @@ public class RequestUtil {
 	 * <p>
 	 * getBodyAsMultiValuedMap.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @param <T>
@@ -103,10 +103,13 @@ public class RequestUtil {
 	}
 
 	/**
-	 * 
-	 * @param request
-	 * @param webClient
-	 * @return
+	 * <p>resolveAndSetQueryPart.</p>
+	 *
+	 * @param request a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param webClient a {@link org.apache.cxf.jaxrs.client.WebClient} object.
+	 * @param <T> a T object.
+	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
+	 * @since 0.1.1
 	 */
 	public static <T> WebClient resolveAndSetQueryPart(Request<T> request, WebClient webClient) {
 		HashMap<String, String> queryParts = resolveQueryPart(request);
@@ -124,9 +127,12 @@ public class RequestUtil {
 	}
 
 	/**
-	 * 
-	 * @param request
-	 * @return
+	 * <p>resolveQueryPart.</p>
+	 *
+	 * @param request a {@link com.cloudcontrolled.api.request.Request} object.
+	 * @param <T> a T object.
+	 * @return a {@link java.util.HashMap} object.
+	 * @since 0.1.1
 	 */
 	public static <T> HashMap<String, String> resolveQueryPart(Request<T> request) {
 		HashMap<String, String> queryParts = new HashMap<String, String>();
@@ -153,13 +159,14 @@ public class RequestUtil {
 	 * <p>
 	 * validate.
 	 * </p>
-	 * 
+	 *
 	 * @param request
 	 *            a {@link com.cloudcontrolled.api.request.Request} object.
 	 * @throws com.cloudcontrolled.api.client.exception.ValidationConstraintViolationException
 	 *             if any.
 	 * @param <T>
 	 *            a T object.
+	 * @since 0.1.1
 	 */
 	public static <T> void validate(Request<T> request) throws ValidationConstraintViolationException {
 		if (request != null) {

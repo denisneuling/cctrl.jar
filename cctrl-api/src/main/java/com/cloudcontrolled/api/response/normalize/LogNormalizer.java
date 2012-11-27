@@ -25,9 +25,9 @@ import org.json.JSONObject;
  * <p>
  * LogNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class LogNormalizer extends JSONNormalizer {
 

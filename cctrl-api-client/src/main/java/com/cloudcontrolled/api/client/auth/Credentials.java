@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.client.auth;
  * <p>
  * Credentials class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class Credentials {
 
@@ -40,7 +40,7 @@ public class Credentials {
 	 * <p>
 	 * Constructor for Credentials.
 	 * </p>
-	 * 
+	 *
 	 * @param userName
 	 *            a {@link java.lang.String} object.
 	 * @param password
@@ -55,7 +55,7 @@ public class Credentials {
 	 * <p>
 	 * Getter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getUserName() {
@@ -66,7 +66,7 @@ public class Credentials {
 	 * <p>
 	 * Setter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param userName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -78,7 +78,7 @@ public class Credentials {
 	 * <p>
 	 * Getter for the field <code>password</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getPassword() {
@@ -89,7 +89,7 @@ public class Credentials {
 	 * <p>
 	 * Setter for the field <code>password</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param password
 	 *            a {@link java.lang.String} object.
 	 */

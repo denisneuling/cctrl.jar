@@ -24,8 +24,10 @@ import java.lang.annotation.Target;
 /**
  * The decorated <strong>{@link com.cloudcontrolled.api.request.Request}'s
  * property</strong> defines a query fragment which will be part of the URI.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
+ *
+ * @since 0.1.1
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

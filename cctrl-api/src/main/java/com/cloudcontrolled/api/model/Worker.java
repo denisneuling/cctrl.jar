@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The worker object contains informations about your heavy working scripts and
  * / or programs which are connected to your deployment.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class Worker extends AbstractModel {
 
@@ -42,7 +42,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>wrk_id</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return workerId the id of the concerning worker
 	 */
 	public String getWrk_id() {
@@ -53,7 +53,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>wrk_id</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param wrk_id
 	 *            the worker id to set
 	 */
@@ -65,7 +65,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>date_created</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return created the datetime when the worker was created
 	 */
 	public String getDate_created() {
@@ -76,7 +76,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>date_created</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param date_created
 	 *            the datetime to set
 	 */
@@ -88,7 +88,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>params</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return parameters the parameters of the worker start command
 	 */
 	public String getParams() {
@@ -99,7 +99,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>params</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param params
 	 *            the parameters to set
 	 */
@@ -111,7 +111,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>command</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return command the command how the worker was started
 	 */
 	public String getCommand() {
@@ -122,7 +122,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>command</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param command
 	 *            the command to set
 	 */
@@ -134,7 +134,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>size</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return size the amount of memory which the worker can use
 	 */
 	public int getSize() {
@@ -145,7 +145,7 @@ public class Worker extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>size</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param size
 	 *            the amount of memory to set
 	 */

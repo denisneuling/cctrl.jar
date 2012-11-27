@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.AddonNormalizer;
  * <p>
  * AmendAddonResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(AddonNormalizer.class)
 public class AmendAddonResponse extends Response<AmendAddonResponse> {
@@ -45,7 +45,7 @@ public class AmendAddonResponse extends Response<AmendAddonResponse> {
 	 * <p>
 	 * Getter for the field <code>addon</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.Addon} object.
 	 */
 	public Addon getAddon() {
@@ -56,7 +56,7 @@ public class AmendAddonResponse extends Response<AmendAddonResponse> {
 	 * <p>
 	 * Setter for the field <code>addon</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param addon
 	 *            a {@link com.cloudcontrolled.api.model.Addon} object.
 	 */

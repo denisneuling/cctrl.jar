@@ -11,9 +11,10 @@ import org.apache.cxf.jaxrs.client.WebClient;
  * <p>
  * Header class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
+ * @since 0.1.1
  */
 public class Header {
 
@@ -64,7 +65,7 @@ public class Header {
 	 * <p>
 	 * getInstance.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.client.common.Header} object.
 	 */
 	public static Header getInstance() {
@@ -83,7 +84,7 @@ public class Header {
 	 * <p>
 	 * Setter for the field <code>header</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.

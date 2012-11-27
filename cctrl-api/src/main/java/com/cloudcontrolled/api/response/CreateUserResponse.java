@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.UserNormalizer;
  * <p>
  * CreateUserResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(UserNormalizer.class)
 public class CreateUserResponse extends Response<CreateUserResponse> {
@@ -45,7 +45,7 @@ public class CreateUserResponse extends Response<CreateUserResponse> {
 	 * <p>
 	 * Getter for the field <code>user</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.User} object.
 	 */
 	public User getUser() {
@@ -56,7 +56,7 @@ public class CreateUserResponse extends Response<CreateUserResponse> {
 	 * <p>
 	 * Setter for the field <code>user</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param user
 	 *            a {@link com.cloudcontrolled.api.model.User} object.
 	 */

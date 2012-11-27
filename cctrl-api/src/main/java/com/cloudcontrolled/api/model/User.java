@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.model;
  * The user object contains informations about requested users. For example
  * users which have access to your application / deployment or user accounts you
  * own.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class User extends AbstractModel {
 
@@ -43,7 +43,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * getFirstName.
 	 * </p>
-	 * 
+	 *
 	 * @return preName the prename of the concerning user
 	 */
 	public String getFirstName() {
@@ -54,7 +54,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * setFirstName.
 	 * </p>
-	 * 
+	 *
 	 * @param first_name
 	 *            the prename to set
 	 */
@@ -66,7 +66,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>username</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return username the username of the concerning user
 	 */
 	public String getUsername() {
@@ -77,7 +77,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>username</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param username
 	 *            the username to set
 	 */
@@ -89,7 +89,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * isActive.
 	 * </p>
-	 * 
+	 *
 	 * @return active the boolean value which specifies whether the user is
 	 *         active
 	 */
@@ -101,7 +101,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * setActive.
 	 * </p>
-	 * 
+	 *
 	 * @param is_active
 	 *            the boolean value to set
 	 */
@@ -113,7 +113,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>email</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return emailAddress the eamil address of the user
 	 */
 	public String getEmail() {
@@ -124,7 +124,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>email</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param email
 	 *            the email address to set
 	 */
@@ -136,7 +136,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * getLastName.
 	 * </p>
-	 * 
+	 *
 	 * @return surName the surname of the concerning user
 	 */
 	public String getLastName() {
@@ -147,7 +147,7 @@ public class User extends AbstractModel {
 	 * <p>
 	 * setLastName.
 	 * </p>
-	 * 
+	 *
 	 * @param last_name
 	 *            the surname to set
 	 */

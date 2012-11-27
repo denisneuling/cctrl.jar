@@ -19,9 +19,9 @@ package com.cloudcontrolled.api.response.normalize;
  * <p>
  * JSONNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class JSONNormalizer {
 
@@ -29,7 +29,7 @@ public class JSONNormalizer {
 	 * <p>
 	 * normalize and map the <small>(json)</small> response.
 	 * </p>
-	 * 
+	 *
 	 * @param jsonResponse
 	 *            a {@link java.lang.String} object.
 	 * @throws java.lang.Exception

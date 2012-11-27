@@ -22,9 +22,9 @@ import com.cloudcontrolled.api.response.normalize.DeleteNormalizer;
  * <p>
  * DeleteApplicationResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(DeleteNormalizer.class)
 public class DeleteApplicationResponse extends Response<DeleteApplicationResponse> {
@@ -44,7 +44,7 @@ public class DeleteApplicationResponse extends Response<DeleteApplicationRespons
 	 * <p>
 	 * Getter for the field <code>message</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public String getMessage() {
@@ -55,7 +55,7 @@ public class DeleteApplicationResponse extends Response<DeleteApplicationRespons
 	 * <p>
 	 * Setter for the field <code>message</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param message
 	 *            a {@link java.lang.String} object.
 	 */

@@ -25,13 +25,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateWorkerResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#WorkerCREATE"
  * >https://api.cloudcontrol.com/doc/#WorkerCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/app/${app}/deployment/${dep}/worker/")
@@ -63,7 +63,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -74,7 +74,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -86,7 +86,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Getter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return deploymentName
 	 */
 	public String getDeploymentName() {
@@ -97,7 +97,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Setter for the field <code>deploymentName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param deploymentName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -109,7 +109,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Getter for the field <code>worker</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return worker
 	 */
 	public String getWorker() {
@@ -120,7 +120,7 @@ public class CreateWorkerRequest extends Request<CreateWorkerResponse> {
 	 * <p>
 	 * Setter for the field <code>worker</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param worker
 	 *            a {@link java.lang.String} object.
 	 */

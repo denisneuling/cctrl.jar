@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.DeploymentNormalizer;
  * <p>
  * DeploymentResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(DeploymentNormalizer.class)
 public class DeploymentResponse extends Response<DeploymentResponse> {
@@ -45,7 +45,7 @@ public class DeploymentResponse extends Response<DeploymentResponse> {
 	 * <p>
 	 * Getter for the field <code>deployment</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.Deployment} object.
 	 */
 	public Deployment getDeployment() {
@@ -56,7 +56,7 @@ public class DeploymentResponse extends Response<DeploymentResponse> {
 	 * <p>
 	 * Setter for the field <code>deployment</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param deployment
 	 *            a {@link com.cloudcontrolled.api.model.Deployment} object.
 	 */

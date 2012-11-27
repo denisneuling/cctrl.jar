@@ -25,9 +25,9 @@ import com.cloudcontrolled.api.response.normalize.ListWorkerNormalizer;
  * <p>
  * ListWorkerResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(ListWorkerNormalizer.class)
 public class ListWorkerResponse extends Response<ListWorkerResponse> {
@@ -47,7 +47,7 @@ public class ListWorkerResponse extends Response<ListWorkerResponse> {
 	 * <p>
 	 * Getter for the field <code>workers</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return an array of {@link com.cloudcontrolled.api.model.Worker} objects.
 	 */
 	public Worker[] getWorkers() {
@@ -58,7 +58,7 @@ public class ListWorkerResponse extends Response<ListWorkerResponse> {
 	 * <p>
 	 * Setter for the field <code>workers</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param workers
 	 *            an array of {@link com.cloudcontrolled.api.model.Worker}
 	 *            objects.

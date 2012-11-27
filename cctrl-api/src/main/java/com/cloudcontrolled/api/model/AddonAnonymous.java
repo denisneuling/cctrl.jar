@@ -21,9 +21,9 @@ import java.util.Arrays;
  * The anonymous add-on object contains the name and the staging phase in which
  * the available add-on currently is. It also contains some options you might
  * use for your application.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class AddonAnonymous extends AbstractModel {
 
@@ -43,7 +43,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return name the name of the concerning addon
 	 */
 	public String getName() {
@@ -54,7 +54,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>name</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param name
 	 *            the name to set
 	 */
@@ -66,7 +66,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>stage</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return stage the staging phase in which the concerning add-on currently
 	 *         is
 	 */
@@ -78,7 +78,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>stage</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param stage
 	 *            set the staging phase of the concerning add-on
 	 */
@@ -90,7 +90,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * getAddonOptions.
 	 * </p>
-	 * 
+	 *
 	 * @return addonOption the add-on options of the concerning add-on
 	 */
 	public AddonOption[] getAddonOptions() {
@@ -101,7 +101,7 @@ public class AddonAnonymous extends AbstractModel {
 	 * <p>
 	 * setAddonOptions.
 	 * </p>
-	 * 
+	 *
 	 * @param options
 	 *            the add-on options to set
 	 */

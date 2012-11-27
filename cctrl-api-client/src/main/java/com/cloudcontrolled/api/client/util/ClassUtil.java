@@ -24,9 +24,9 @@ import java.util.List;
  * <p>
  * ClassUtil class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class ClassUtil {
 
@@ -34,7 +34,7 @@ public class ClassUtil {
 	 * <p>
 	 * getClassAnnotationValue.
 	 * </p>
-	 * 
+	 *
 	 * @param source
 	 *            a {@link java.lang.Class} object.
 	 * @param annotation
@@ -64,7 +64,7 @@ public class ClassUtil {
 	 * <p>
 	 * getAnnotatedFields.
 	 * </p>
-	 * 
+	 *
 	 * @param clazz
 	 *            a {@link java.lang.Class} object.
 	 * @param annotationClass
@@ -88,7 +88,7 @@ public class ClassUtil {
 	 * <p>
 	 * getAllDeclaredFields.
 	 * </p>
-	 * 
+	 *
 	 * @param clazz
 	 *            a {@link java.lang.Class} object.
 	 * @return an array of {@link java.lang.reflect.Field} objects.
@@ -106,10 +106,16 @@ public class ClassUtil {
 	 * <p>
 	 * getValueOf.
 	 * </p>
-	 * 
+	 *
 	 * @param field
 	 *            a {@link java.lang.reflect.Field} object.
 	 * @param reference
+	 * @param referenceClazz
+	 * @param referenceClazz
+	 *            a {@link java.lang.Class} object.
+	 * @param referenceClazz
+	 * @param referenceClazz
+	 *            a {@link java.lang.Class} object.
 	 * @param referenceClazz
 	 * @param referenceClazz
 	 *            a {@link java.lang.Class} object.
@@ -137,10 +143,16 @@ public class ClassUtil {
 	 * <p>
 	 * getValueOf.
 	 * </p>
-	 * 
+	 *
 	 * @param fieldName
 	 *            a {@link java.lang.String} object.
 	 * @param reference
+	 * @param referenceClazz
+	 * @param referenceClazz
+	 *            a {@link java.lang.Class} object.
+	 * @param referenceClazz
+	 * @param referenceClazz
+	 *            a {@link java.lang.Class} object.
 	 * @param referenceClazz
 	 * @param referenceClazz
 	 *            a {@link java.lang.Class} object.
@@ -167,7 +179,7 @@ public class ClassUtil {
 	 * <p>
 	 * getValueOfField.
 	 * </p>
-	 * 
+	 *
 	 * @param field
 	 *            a {@link java.lang.reflect.Field} object.
 	 * @param ref

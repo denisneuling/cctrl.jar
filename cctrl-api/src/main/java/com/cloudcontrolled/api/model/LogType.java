@@ -28,9 +28,9 @@ package com.cloudcontrolled.api.model;
  * <li><strong>deploy</strong> <small>for an overview about the activity while
  * the deployment is installing</small></li>
  * </ul>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public enum LogType {
 

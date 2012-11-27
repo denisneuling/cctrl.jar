@@ -24,9 +24,9 @@ import java.lang.annotation.Target;
 /**
  * The decorated <strong>field</strong> got an optional default
  * <strong>value</strong> in case it was not set.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

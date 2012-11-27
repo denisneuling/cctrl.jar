@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.SSHKeyNormalizer;
  * <p>
  * CreateSSHKeyResponse class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Normalized(SSHKeyNormalizer.class)
 public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
@@ -37,7 +37,7 @@ public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
 	 * <p>
 	 * Getter for the field <code>sshKey</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link com.cloudcontrolled.api.model.SSHKey} object.
 	 */
 	public SSHKey getSshKey() {
@@ -48,7 +48,7 @@ public class CreateSSHKeyResponse extends Response<CreateSSHKeyResponse> {
 	 * <p>
 	 * Setter for the field <code>sshKey</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param sshKey
 	 *            a {@link com.cloudcontrolled.api.model.SSHKey} object.
 	 */

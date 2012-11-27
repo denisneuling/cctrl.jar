@@ -18,9 +18,9 @@ package com.cloudcontrolled.api.model;
 /**
  * The SSHKey object defines the resource 'public ssh key' which is registered
  * for an user.
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class SSHKey extends AbstractModel {
 
@@ -39,7 +39,7 @@ public class SSHKey extends AbstractModel {
 	 * <p>
 	 * Getter for the field <code>key</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return key the sshKey
 	 */
 	public String getKey() {
@@ -50,7 +50,7 @@ public class SSHKey extends AbstractModel {
 	 * <p>
 	 * Setter for the field <code>key</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param key
 	 *            the sshKey to set
 	 */
@@ -62,7 +62,7 @@ public class SSHKey extends AbstractModel {
 	 * <p>
 	 * getKeyId.
 	 * </p>
-	 * 
+	 *
 	 * @return keyId the ssh key id
 	 */
 	public String getKeyId() {
@@ -73,7 +73,7 @@ public class SSHKey extends AbstractModel {
 	 * <p>
 	 * setKeyId.
 	 * </p>
-	 * 
+	 *
 	 * @param keyId
 	 *            the ssh key id to set
 	 */

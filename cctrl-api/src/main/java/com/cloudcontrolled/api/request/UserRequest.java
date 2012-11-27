@@ -23,13 +23,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.UserResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#UserREAD"
  * >https://api.cloudcontrol.com/doc/#UserREAD</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.GET)
 @Path("/user/${user}")
@@ -52,7 +52,7 @@ public class UserRequest extends Request<UserResponse> {
 	 * <p>
 	 * Getter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return userName
 	 */
 	public String getUserName() {
@@ -63,7 +63,7 @@ public class UserRequest extends Request<UserResponse> {
 	 * <p>
 	 * Setter for the field <code>userName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param userName
 	 *            a {@link java.lang.String} object.
 	 */

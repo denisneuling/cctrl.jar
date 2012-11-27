@@ -23,9 +23,9 @@ import com.cloudcontrolled.api.response.normalize.JSONNormalizer;
  * <p>
  * StandardizationUtil class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class StandardizationUtil {
 
@@ -33,7 +33,7 @@ public class StandardizationUtil {
 	 * <p>
 	 * getJSONStandardizer.
 	 * </p>
-	 * 
+	 *
 	 * @param response
 	 *            a {@link com.cloudcontrolled.api.response.Response} object.
 	 * @param <T>

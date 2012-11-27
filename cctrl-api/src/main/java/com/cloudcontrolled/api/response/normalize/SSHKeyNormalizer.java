@@ -24,9 +24,9 @@ import org.json.JSONObject;
  * <p>
  * SSHKeyNormalizer class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class SSHKeyNormalizer extends JSONNormalizer {
 

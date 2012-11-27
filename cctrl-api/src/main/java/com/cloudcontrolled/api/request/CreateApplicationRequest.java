@@ -24,13 +24,13 @@ import com.cloudcontrolled.api.common.HttpMethod;
 import com.cloudcontrolled.api.response.CreateApplicationResponse;
 
 /**
- * 
+ *
  * Or for reference have a look here: <a
  * href="https://api.cloudcontrol.com/doc/#AppCREATE"
  * >https://api.cloudcontrol.com/doc/#AppCREATE</a>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 @Method(HttpMethod.POST)
 @Path("/app/")
@@ -62,7 +62,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Getter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return applicationName
 	 */
 	public String getApplicationName() {
@@ -73,7 +73,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Setter for the field <code>applicationName</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param applicationName
 	 *            a {@link java.lang.String} object.
 	 */
@@ -85,7 +85,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Getter for the field <code>type</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return type
 	 */
 	public String getType() {
@@ -96,7 +96,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Setter for the field <code>type</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param type
 	 *            a {@link java.lang.String} object.
 	 */
@@ -108,7 +108,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Getter for the field <code>repositoryType</code>.
 	 * </p>
-	 * 
+	 *
 	 * @return repositoryType
 	 */
 	public String getRepositoryType() {
@@ -119,7 +119,7 @@ public class CreateApplicationRequest extends Request<CreateApplicationResponse>
 	 * <p>
 	 * Setter for the field <code>repositoryType</code>.
 	 * </p>
-	 * 
+	 *
 	 * @param repositoryType
 	 *            a {@link java.lang.String} object.
 	 */

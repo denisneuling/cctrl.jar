@@ -41,9 +41,9 @@ import com.cloudcontrolled.api.response.Response;
  * <p>
  * CloudControlClientSupport class.
  * </p>
- * 
+ *
  * @author Denis Neuling (denisneuling@gmail.com)
- * 
+ *
  */
 public class CloudControlClientSupport extends AbstractCloudControlClientSupport {
 
@@ -140,7 +140,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * <p>
 	 * getTargetUrl.
 	 * </p>
-	 * 
+	 *
 	 * @return a {@link java.lang.String} object.
 	 */
 	public static String getTargetUrl() {
@@ -157,7 +157,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * <p>
 	 * toBase64.
 	 * </p>
-	 * 
+	 *
 	 * @param user
 	 *            a {@link java.lang.String} object.
 	 * @param password
@@ -176,7 +176,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * <p>
 	 * instantiateWebClient.
 	 * </p>
-	 * 
+	 *
 	 * @param targetUrl
 	 *            a {@link java.lang.String} object.
 	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
@@ -207,7 +207,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * <p>
 	 * setAuthorizationBase64.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @param base64
@@ -222,7 +222,7 @@ public class CloudControlClientSupport extends AbstractCloudControlClientSupport
 	 * <p>
 	 * setAuthorizationCCAuthToken.
 	 * </p>
-	 * 
+	 *
 	 * @param webClient
 	 *            a {@link org.apache.cxf.jaxrs.client.WebClient} object.
 	 * @return a {@link org.apache.cxf.jaxrs.client.WebClient} object.
